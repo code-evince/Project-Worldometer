@@ -7,9 +7,6 @@ from urllib.request import Request, urlopen
 import numpy as np
 from tabulate import tabulate
 
-
-
-
 ###DEFINING TOKENS###
 tokens = ('BEGINTABLEA','TABLEH','TABLET','SEPA',
 'OPENTABLE', 'CLOSETABLE', 'OPENROW', 'CLOSEROW',
@@ -26,13 +23,10 @@ def t_BEGINTABLEA(t):
     r'<table.id="main_table_countries_yesterday".class="table.table-bordered.table-hover.main_table_countries".style="width:100%;margin-top:.0px.!important;display:none;">'
     return t
 
-def t_SEPA(t):
-    r'<div.style=\"width:.100[^>]*>'
-    return t
-
 def t_TABLEH(t):
     r'<table[^>]*>'
-    return t
+    # return t
+
 def t_THEAD_OPEN(t):
     r'<thead[^>]*>'
     return t
@@ -43,7 +37,7 @@ def t_THEAD_CLOSE(t):
 
 def t_TABLET(t):
     r'</table[^>]*>'
-    return t
+    # return t
 
 
 def t_spa(t):
@@ -88,9 +82,11 @@ def t_OPENDATA(t):
     r'<td[^>]*>'
     return t
 
+
 def t_CLOSEDATA(t):
     r'</td[^>]*>'
     return t
+
 def t_V(t):
     r'v'
 def t_D(t):
@@ -99,7 +95,7 @@ def t_D(t):
 
 
 def t_CONTENT(t):
-    r'[A-Za-z0-9–.()]+'
+    r'[A-Za-z0-9–/\+.()]+'
     return t
 
 def t_OPENDIV(t):
@@ -134,9 +130,7 @@ def t_error(t):
 def p_start(p):
     '''start : table'''
 
-def p_empty(p):
-    '''empty :'''
-    pass
+
 
 def p_skiptag(p):
     '''skiptag : CONTENT skiptag
@@ -146,12 +140,16 @@ def p_skiptag(p):
                | CLOSEDATA skiptag
                | OPENHEADER skiptag
                | CLOSEHEADER skiptag
+               | THEAD_OPEN skiptag
+               | THEAD_CLOSE skiptag
+               | OPENTABLE skiptag
+               | CLOSETABLE skiptag
+               | CLOSEROW skiptag
                | empty'''
    
 
 def p_table(p):
-    '''table : BEGINTABLEA skiptag OPENROW  startrow CLOSETABLE
-                | empty 
+    '''table : BEGINTABLEA skiptag OPENROW startrow CLOSETABLE
     ''' 
 
 
@@ -160,20 +158,58 @@ def p_startrow(p):
                  | OPENROW getcell CLOSEROW startrow
                  | empty
        '''
-            
-        
-def p_firstrow(p):
-    '''firstrow : OPENDATA content CLOSEDATA
-    '''
+    if(len(p)==4):
+        p[0] = p[1]
+    if(len(p)==5):
+        p[0]=p[2]
+    
 
-def p_content(p):
-    '''content : CONTENT 
-                | CONTENT CONTENT 
+            
+def p_firstrow(p):
+    '''firstrow : OPENDATA content CLOSEDATA firstrow
                 | empty
     '''
+    
+    if(len(p)==5):
+        p[0]=p[2]
+        # print(p[2])
+
+
+def p_content(p):
+    '''content : CONTENT CONTENT CONTENT CONTENT
+                | CONTENT CONTENT CONTENT
+                | CONTENT CONTENT
+                | CONTENT
+                | empty
+    '''
+    if(len(p)==5):
+        p[0]=p[1]+p[2]+p[3]+p[4]
+        myList.append(p[1]+p[2]+p[3]+p[4])
+    if(len(p)==4):
+        p[0]=p[1]+p[2]+p[3]
+        myList.append(p[1]+p[2]+p[3])
+    if(len(p)==3):
+        p[0]=p[1]+p[2]
+        myList.append(p[1]+p[2])
+    if(len(p)==2):
+        p[0]=p[1]
+        myList.append(p[1])
+    
+
 def p_getcell(p):
-    '''getcell : OPENDATA content CLOSEDATA'''
+    '''getcell : OPENDATA content CLOSEDATA skipdata getcell
+               | empty
+    '''
+    if(len(p)==5):
+        p[0]=p[2]
+def p_skipdata(p):
+    '''skipdata : CONTENT skipdata
+               | CLOSEDATA skipdata
+               | empty'''
 def p_error(p):
+    pass
+def p_empty(p):
+    '''empty :'''
     pass
 #########DRIVER FUNCTION#######
 def main():
@@ -190,8 +226,16 @@ def main():
     parser.parse(data)
     file_obj.close()
 
+    for i in range (len(myList)):
+        if (myList[i] ==  None or myList[i]=='N/A'):
+            myList[i]=0
             
-
+    while(len(myList)):
+        new = myList[:15]
+        final.append(new)
+        del myList[:22]
+    for i in final:
+        print(i)
 
 
 if __name__ == '__main__':
