@@ -13,6 +13,7 @@ def main():
     active_cases = graph_activeCases.fetchActiveCases(country)
     dates,daily_deaths = graph_dailyDeaths.fetchDailyDeaths(country)
     new_recovery,new_cases = graph_recovered_newCases.fetchRecover_NewCases(country)
+
     # print('dates ',len(dates))
     # print('active cases',len(active_cases))
     # print('daily deaths',len(daily_deaths))

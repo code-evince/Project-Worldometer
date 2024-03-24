@@ -234,8 +234,7 @@ def main():
         new = myList[:15]
         final.append(new)
         del myList[:22]
-    for i in final:
-        print(i)
+    return final
 
 
 if __name__ == '__main__':
