@@ -222,7 +222,7 @@ def main():
         for tok in lexer:
             p.write(str(tok)+'\n')
     parser = yacc.yacc()
-    print("*************************************************************************************************")
+   
     parser.parse(data)
     file_obj.close()
 
