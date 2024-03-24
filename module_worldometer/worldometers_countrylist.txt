@@ -20,7 +20,7 @@ Cuba
 Costa Rica
 Panama
 
-Asia
+Asia:
 ---------
 India
 Turkey
@@ -36,7 +36,7 @@ Iraq
 Bangladesh
 Pakistan
 
-South America
+South America:
 ---------
 Brazil
 Argentina
@@ -48,7 +48,7 @@ Uruguay
 Paraguay
 Venezuela
 
-Africa
+Africa:
 --------
 South Africa
 Morocco
@@ -63,7 +63,7 @@ Botswana
 Nigeria
 Zimbabwe
 
-Oceania
+Oceania:
 --------
 Australia
 Fiji
