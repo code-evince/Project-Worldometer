@@ -55,7 +55,7 @@ def t_CLOSETABLE(t):
     return t
 
 def t_OPENROW(t):
-    r'<tr[^>]*>'
+    r'<tr.style[^>]*>'
     return t
 
 def t_CLOSEROW(t):
