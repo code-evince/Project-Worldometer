@@ -46,7 +46,7 @@ def t_error(t):
 											#GRAMMAR RULES
 def p_start(p):
     '''start : BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR'''
-    print('start ')
+    
     values.append(p[8])
 def p_content(p):
     '''content : CONTENT content
@@ -72,11 +72,13 @@ def p_empty(p):
     '''empty :'''
     pass
 ####################functions########################
-import sys
+
 
 
 #########DRIVER FUNCTION#######
 def main(file,token_file):
+    # dates=[]
+    # values=[]
     file_obj = open(file, 'r', encoding="utf-8")
     data = file_obj.read()
     lexer = lex.lex()
@@ -88,25 +90,41 @@ def main(file,token_file):
     parser = yacc.yacc()
     parser.parse(data)
     file_obj.close()
+    # print(dates)
+    # print(values)
+    # if(len(dates)== 0):
+    #     dates = [0 for i in range (1499)]
+    #     values = [0 for i in range (1499)]
+    #     return  dates,values
+    a=dates
+    
+    if(len(a)==0):
+        a = [0 for i in range (1499)]
+        # print(a)
+        # print(b)
+        return a
+    
     new_dates = list(filter(lambda x : x.strip() != ',', dates))
 
     new_dates.reverse()
     new_values = values[0].split(',')
-    print(new_dates)
-    print(new_values)
-    # print(len(new_dates))
-    # print(len(new_values))
+    # print(new_dates)
+    # print(new_values)
+    return new_values
 
 
-def get_daily_cases_data(country):
- 
-    main(f'html/{country}.html','new.txt')
+
+def fetchActiveCases(country):
+    a= main(f'html/{country}.html','new.txt')
+    return a
 
 
-if __name__ == '__main__':
 
-    country = input('give country ')
-    get_daily_cases_data(country)
+# country = input("enter: ")
+# fetchActiveCases(country)
+
+
+
     
 
 

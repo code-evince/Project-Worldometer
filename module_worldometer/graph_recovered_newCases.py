@@ -1,10 +1,10 @@
 import ply.lex as lex
 import ply.yacc as yacc
 import warnings
-# warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 import sys
 import os
-# sys.stderr = open(os.devnull,'w')
+sys.stderr = open(os.devnull,'w')
 
 dates=[]
 values=[]
@@ -47,7 +47,7 @@ def t_error(t):
 											#GRAMMAR RULES
 def p_start(p):
     '''start : BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR'''
-    print('start ')
+
     values.append(p[8])
     values1.append(p[12])
 
@@ -75,7 +75,7 @@ def p_empty(p):
     '''empty :'''
     pass
 ####################functions########################
-import sys
+
 
 
 #########DRIVER FUNCTION#######
@@ -84,36 +84,39 @@ def main(file,token_file):
     data = file_obj.read()
     lexer = lex.lex()
     lexer.input(data)  
-    with open(token_file, 'w', encoding='utf-8') as file:
-        for tok in lexer:
-            file.write(str(tok))
-            file.write('\n')
+    # with open(token_file, 'w', encoding='utf-8') as file:
+    #     for tok in lexer:
+    #         file.write(str(tok))
+    #         file.write('\n')
     parser = yacc.yacc()
     parser.parse(data)
     file_obj.close()
+    a = dates
+    if(len(a)==0):
+        a = [0 for i in range (1499)]
+        b = [0 for i in range(1499)]
+        return a,b
     new_dates = list(filter(lambda x : x.strip() != ',', dates))
 
     new_dates.reverse()
     recovered = values[0].split(',')
     new_cases = values1[0].split(',')
     
-    print(new_dates)
-    print(recovered)
-    print(new_cases)
-    # print(len(new_dates))
-    # print(len(new_values))
+    # print(new_dates)
+    # print(recovered)
+    # print(new_cases)
+    return recovered,new_cases
 
-
-def get_daily_cases_data(country):
+def fetchRecover_NewCases(country):
  
-    main(f'html/{country}.html','new.txt')
-
-
-if __name__ == '__main__':
-
-    country = input('give country ')
-    get_daily_cases_data(country)
+    a,b =main(f'html/{country}.html','new.txt')
+    return a,b
     
 
 
-# sys.stderr = sys.__stderr__
+# country = input("enter: ")
+# fetchRecover_NewCases(country)
+
+
+
+sys.stderr = sys.__stderr__

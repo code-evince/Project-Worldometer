@@ -1,10 +1,10 @@
 import ply.lex as lex
 import ply.yacc as yacc
 import warnings
-# warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 import sys
 import os
-# sys.stderr = open(os.devnull,'w')
+sys.stderr = open(os.devnull,'w')
 
 dates=[]
 values=[]
@@ -46,7 +46,7 @@ def t_error(t):
 											#GRAMMAR RULES
 def p_start(p):
     '''start : BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR'''
-    print('start ')
+
     values.append(p[8])
 def p_content(p):
     '''content : CONTENT content
@@ -81,10 +81,10 @@ def main(file,token_file):
     data = file_obj.read()
     lexer = lex.lex()
     lexer.input(data)  
-    with open(token_file, 'w', encoding='utf-8') as file:
-        for tok in lexer:
-            file.write(str(tok))
-            file.write('\n')
+    # with open(token_file, 'w', encoding='utf-8') as file:
+    #     for tok in lexer:
+    #         file.write(str(tok))
+    #         file.write('\n')
     parser = yacc.yacc()
     parser.parse(data)
     file_obj.close()
@@ -92,22 +92,21 @@ def main(file,token_file):
 
     new_dates.reverse()
     new_values = values[0].split(',')
-    print(new_dates)
-    print(new_values)
-    # print(len(new_dates))
-    # print(len(new_values))
+    # print(new_dates)
+    # print(new_values)
+    # # print(len(new_dates))
+    # # print(len(new_values))
+    return new_dates,new_values
 
 
-def get_daily_cases_data(country):
+def fetchDailyDeaths(country):
  
-    main(f'html/{country}.html','new.txt')
+    a,b = main(f'html/{country}.html','new.txt')
+    return a,b
+
+# country = input("enter: ")
+# fetchDailyDeaths(country)
 
 
-if __name__ == '__main__':
 
-    country = input('give country ')
-    get_daily_cases_data(country)
-    
-
-
-# sys.stderr = sys.__stderr__
+sys.stderr = sys.__stderr__
