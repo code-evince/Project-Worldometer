@@ -1,6 +1,7 @@
 import ply.lex as lex
 import ply.yacc as yacc
 import os
+import requests
 import ply.lex as lex
 import ply.yacc as yacc
 from urllib.request import Request, urlopen
@@ -211,16 +212,32 @@ def p_error(p):
 def p_empty(p):
     '''empty :'''
     pass
+
+def download_page(url, file_name):
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            with open(file_name, 'wb') as f:
+                f.write(response.content)
+            print(f"Page downloaded successfully as {file_name}")
+        else:
+            print(f"Failed to download page: {response.status_code}")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
 #########DRIVER FUNCTION#######
 def main():
-    
+
+    url = "https://www.worldometers.info/coronavirus/"
+    file_name = "Worldometer_home.html"
+    download_page(url, file_name)
+
     file_obj= open('Worldometer_home.html','r',encoding="utf-8")
     data=file_obj.read()
     lexer = lex.lex()
     lexer.input(data)
-    with open('new.txt','w') as p:
-        for tok in lexer:
-            p.write(str(tok)+'\n')
+    # with open('new.txt','w') as p:
+    #     for tok in lexer:
+    #         p.write(str(tok)+'\n')
     parser = yacc.yacc()
    
     parser.parse(data)

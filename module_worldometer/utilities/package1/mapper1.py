@@ -1,12 +1,10 @@
 import sys  
 
-
-
-if len(sys.argv) < 2:
-    print("Usage: python mapper.py <option>")
+if len(sys.argv) < 3:
+    print("Usage: python mapper.py <option> <file.txt>")
     sys.exit(1)
 
-col = sys.argv[1]
+col = int(sys.argv[1])
 if(col==1):
     attrib = 2
 if(col==2):
@@ -29,12 +27,12 @@ if(col==10):
     attrib = 7
 
 
-with open(sys.argv[1],'r') as f:
+with open(sys.argv[2],'r') as f:
     for line in f:
         if(line==""):
             break
         line = line.strip()
         row = line.split("\t")
-        print(row[1],row[attrib])
+        print(row[1],",",row[attrib])
         
         
