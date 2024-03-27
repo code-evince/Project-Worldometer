@@ -3,6 +3,7 @@ import warnings
 # warnings.filterwarnings("ignore")
 import sys
 import os
+import subprocess
 import getWorld
 # sys.stderr = open(os.devnull,'w')
 
@@ -43,6 +44,7 @@ def main():
                 continue
             if(ip >0 and ip<11):
                 getWorld.main()
+                run_map_reduce("\cache\world.txt",ip,country)
 
 
             
@@ -50,7 +52,21 @@ def main():
 
 
 
-    
+
+
+def run_map_reduce(file_name, option, country_name):
+    mapper_cmd = f"cat {file_name} | mapper.py {option}"
+    reducer_cmd =   f"reducer.py {country_name}"
+    combiner_cmd = f"combiner.py {country_name}"
+
+    # Constructing the full command
+    full_cmd = f"{mapper_cmd} | {reducer_cmd} | {combiner_cmd}"
+
+    # Running the command
+    subprocess.run(full_cmd, shell=True)
+
+
+
 
 
 
