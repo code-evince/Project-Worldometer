@@ -7,9 +7,9 @@ import sys
 import os
 sys.stderr = open(os.devnull,'w')
 
-def main():
+def main(country):
 
-    country = input("Enter the name of the country: ")
+    # country = input("Enter the name of the country: ")
     active_cases = graph_activeCases.fetchActiveCases(country)
     dates,daily_deaths = graph_dailyDeaths.fetchDailyDeaths(country)
     new_recovery,new_cases = graph_recovered_newCases.fetchRecover_NewCases(country)
@@ -27,7 +27,6 @@ def main():
         for values in zipped_arrays:
             # Join the values with tabs and write to the file
             file.write("\t".join(map(str, values)) + "\n")
-
 if __name__ == '__main__':
     main()
 
