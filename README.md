@@ -53,5 +53,10 @@ To run the workflow:
    ```bash
    python3 menu.py 
 
+![Screenshot 2024-03-29 043346](https://github.com/code-evince/Project-Worldometer/assets/38295546/7f533633-5f7f-4151-bfe1-560f929859b1)
+
+
+# MODULE WIKIPEDIA COVID
+
 
 
