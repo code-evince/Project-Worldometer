@@ -85,18 +85,6 @@ def main():
                     getWorld.main()
                 run_map_reduce1("cache/world.txt",ip,country)
 
-
-            
-        # if(user==2): Checking for cuncurrency
-
-
-
-
-
-def run_map_reduce(file_name, option, country_name):
-    mapper_cmd = f"python3 utilities/package1/mapper1.py {option} {file_name}"
-    combiner_cmd = f"python3 utilities/package1/combiner1.py {country_name} "
-    reducer_cmd =   f"python3 utilities/package1/reducer1.py {country_name} {option}"
         if(user==2):
             print("----------------MENU-----------------")
             print()
@@ -158,5 +146,3 @@ if __name__ == '__main__':
     main()
 
 # sys.stderr = sys.__stderr__
-    
-
