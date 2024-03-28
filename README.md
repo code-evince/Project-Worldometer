@@ -59,7 +59,6 @@ To run the workflow:
 # MODULE WIKIPEDIA COVID
 
 
-# Project Name
 
 ## Description
 
