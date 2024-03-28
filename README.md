@@ -59,4 +59,9 @@ To run the workflow:
 # MODULE WIKIPEDIA COVID
 
 
+# Project Name
+
+## Description
+
+This project is a [brief description of your project]. It aims to [state the purpose or goal of your project]. Whether you're a developer looking to contribute, a user exploring its features, or a researcher leveraging its capabilities, this project provides [mention the benefits or value proposition of your project]. With an intuitive interface and powerful functionality, it's designed to [highlight the key advantages or strengths of your project]. From [specific use case or scenario] to [another potential application], this project offers [mention another advantage or benefit] to [target audience or user group].
 
