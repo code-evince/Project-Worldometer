@@ -48,11 +48,10 @@ This project implements a Mapper-Combiner-Reducer workflow to analyze COVID-19 d
 
 To run the workflow:
 
-1. Prepare the input file (`world.txt`) containing COVID-19 data in a tabular format.
 
-2. Run the Mapper script with appropriate command-line arguments:
+1. Run the module worldometer  with appropriate command-line arguments:
    ```bash
-   python mapper.py <query> <world.txt>
+   python3 menu.py 
 
 
 
