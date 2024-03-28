@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'BEGINTABLE CLOSEDATA CLOSEDIV CLOSEHEADER CLOSEHREF CLOSEROW CLOSESPAN CLOSESTYLE CLOSETABLE CONTENT END GARBAGE OPENDATA OPENDIV OPENHEADER OPENHREF OPENROW OPENSPAN OPENSTYLE OPENTABLEstart : tabletable : BEGINTABLE OPENHREF CONTENT CONTENT CONTENT CLOSEHREF OPENTABLE OPENROW skiptag handlerow skiptag : CONTENT skiptag\n               | OPENHEADER skiptag\n               | CLOSEHEADER skiptag\n               | OPENHREF skiptag\n               | CLOSEHREF skiptag\n               | OPENDATA skiptag\n               | CLOSEDATA skiptag\n               | CLOSEROW skiptag\n               | emptyhandlerow : OPENROW handleheader dataCell CLOSEROW handlerow \n                 | emptyhandleheader : OPENDATA CONTENT CLOSEDATA OPENHEADER CONTENT OPENHREF CONTENT CLOSEHREF CLOSEHEADER\n                    \n                    dataCell : OPENDATA CONTENT CLOSEDATA dataCell\n                | empty \n                 empty :'
+_lr_signature = 'BEGINTABLE CONTENT ENDTABLE GARBAGEstart : tabletable : bt content et\n    bt : BEGINTABLE\n    \n    et : ENDTABLE\n    \n    content : CONTENT content\n            | empty\n    \n    empty :\n    '
     
-_lr_action_items = {'BEGINTABLE':([0,],[3,]),'$end':([1,2,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,26,27,28,29,30,31,38,41,],[0,-1,-17,-17,-17,-17,-17,-17,-17,-17,-17,-17,-11,-6,-3,-7,-2,-13,-4,-5,-8,-9,-10,-17,-12,]),'OPENHREF':([3,10,11,12,13,15,16,17,18,19,45,],[4,11,11,11,11,11,11,11,11,11,46,]),'CONTENT':([4,5,6,10,11,12,13,15,16,17,18,19,33,35,43,46,],[5,6,7,12,12,12,12,12,12,12,12,12,37,39,45,47,]),'CLOSEHREF':([7,10,11,12,13,15,16,17,18,19,47,],[8,13,13,13,13,13,13,13,13,13,48,]),'OPENTABLE':([8,],[9,]),'OPENROW':([9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,27,28,29,30,31,38,],[10,-17,-17,-17,-17,24,-17,-17,-17,-17,-17,-11,-6,-3,-7,-4,-5,-8,-9,-10,24,]),'OPENHEADER':([10,11,12,13,15,16,17,18,19,40,],[15,15,15,15,15,15,15,15,15,43,]),'CLOSEHEADER':([10,11,12,13,15,16,17,18,19,48,],[16,16,16,16,16,16,16,16,16,49,]),'OPENDATA':([10,11,12,13,15,16,17,18,19,24,32,42,49,],[17,17,17,17,17,17,17,17,17,33,35,35,-14,]),'CLOSEDATA':([10,11,12,13,15,16,17,18,19,37,39,],[18,18,18,18,18,18,18,18,18,40,42,]),'CLOSEROW':([10,11,12,13,15,16,17,18,19,32,34,36,42,44,49,],[19,19,19,19,19,19,19,19,19,-17,38,-16,-17,-15,-14,]),}
+_lr_action_items = {'BEGINTABLE':([0,],[4,]),'$end':([1,2,8,9,],[0,-1,-2,-4,]),'CONTENT':([3,4,6,],[6,-3,6,]),'ENDTABLE':([3,4,5,6,7,10,],[-7,-3,9,-7,-6,-5,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'start':([0,],[1,]),'table':([0,],[2,]),'skiptag':([10,11,12,13,15,16,17,18,19,],[14,21,22,23,27,28,29,30,31,]),'empty':([10,11,12,13,14,15,16,17,18,19,32,38,42,],[20,20,20,20,26,20,20,20,20,20,36,26,36,]),'handlerow':([14,38,],[25,41,]),'handleheader':([24,],[32,]),'dataCell':([32,42,],[34,44,]),}
+_lr_goto_items = {'start':([0,],[1,]),'table':([0,],[2,]),'bt':([0,],[3,]),'content':([3,6,],[5,10,]),'empty':([3,6,],[7,7,]),'et':([5,],[8,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,21 +27,11 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> start","S'",1,None,None,None),
-  ('start -> table','start',1,'p_start','parse_timelines.py',95),
-  ('table -> BEGINTABLE OPENHREF CONTENT CONTENT CONTENT CLOSEHREF OPENTABLE OPENROW skiptag handlerow','table',10,'p_table','parse_timelines.py',99),
-  ('skiptag -> CONTENT skiptag','skiptag',2,'p_skiptag','parse_timelines.py',102),
-  ('skiptag -> OPENHEADER skiptag','skiptag',2,'p_skiptag','parse_timelines.py',103),
-  ('skiptag -> CLOSEHEADER skiptag','skiptag',2,'p_skiptag','parse_timelines.py',104),
-  ('skiptag -> OPENHREF skiptag','skiptag',2,'p_skiptag','parse_timelines.py',105),
-  ('skiptag -> CLOSEHREF skiptag','skiptag',2,'p_skiptag','parse_timelines.py',106),
-  ('skiptag -> OPENDATA skiptag','skiptag',2,'p_skiptag','parse_timelines.py',107),
-  ('skiptag -> CLOSEDATA skiptag','skiptag',2,'p_skiptag','parse_timelines.py',108),
-  ('skiptag -> CLOSEROW skiptag','skiptag',2,'p_skiptag','parse_timelines.py',109),
-  ('skiptag -> empty','skiptag',1,'p_skiptag','parse_timelines.py',110),
-  ('handlerow -> OPENROW handleheader dataCell CLOSEROW handlerow','handlerow',5,'p_handlerow','parse_timelines.py',113),
-  ('handlerow -> empty','handlerow',1,'p_handlerow','parse_timelines.py',114),
-  ('handleheader -> OPENDATA CONTENT CLOSEDATA OPENHEADER CONTENT OPENHREF CONTENT CLOSEHREF CLOSEHEADER','handleheader',9,'p_handleheader','parse_timelines.py',116),
-  ('dataCell -> OPENDATA CONTENT CLOSEDATA dataCell','dataCell',4,'p_dataCell','parse_timelines.py',123),
-  ('dataCell -> empty','dataCell',1,'p_dataCell','parse_timelines.py',124),
-  ('empty -> <empty>','empty',0,'p_empty','parse_timelines.py',132),
+  ('start -> table','start',1,'p_start','parse_timelines.py',34),
+  ('table -> bt content et','table',3,'p_table','parse_timelines.py',38),
+  ('bt -> BEGINTABLE','bt',1,'p_bt','parse_timelines.py',42),
+  ('et -> ENDTABLE','et',1,'p_et','parse_timelines.py',48),
+  ('content -> CONTENT content','content',2,'p_content','parse_timelines.py',53),
+  ('content -> empty','content',1,'p_content','parse_timelines.py',54),
+  ('empty -> <empty>','empty',0,'p_empty','parse_timelines.py',61),
 ]
