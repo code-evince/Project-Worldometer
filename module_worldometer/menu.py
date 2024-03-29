@@ -6,10 +6,10 @@ import sys
 import os
 import subprocess
 import getWorld
-import getData
+from getData import main as getCountryData
 # sys.stderr = open(os.devnull,'w')
 
-worldometers_countrylist = ('France', 'UK', 'Russia', 'Italy', 'Germany', 'Spain', 'Poland', 'Netherlands', 'Ukraine', 'Belgium', 'USA', 'Mexico', 'Canada', 'Cuba', 'Costa Rica', 'Panama', 'India', 'Turkey', 'Iran', 'Indonesia', 'Philippines', 'Japan', 'Israel', 'Malaysia', 'Thailand', 'Vietnam', 'Iraq', 'Bangladesh', 'Pakistan', 'South Africa', 'Morocco', 'Tunisia', 'Ethiopia', 'Libya', 'Egypt', 'Kenya', 'Zambia', 'Algeria', 'Botswana', 'Nigeria', 'Zimbabwe', 'Australia', 'Fiji', 'Papua New Guinea', 'New Caledonia', 'New Zealand')
+worldometers_countrylist = ('France', 'UK', 'Russia', 'Italy', 'Germany', 'Spain', 'Poland', 'Netherlands', 'Ukraine', 'Belgium', 'USA', 'Mexico', 'Canada', 'Cuba', 'Costa Rica', 'Panama', 'India', 'Turkey', 'Iran', 'Indonesia', 'Philippines', 'Japan', 'Israel', 'Malaysia', 'Thailand', 'Vietnam', 'Iraq', 'Bangladesh', 'Pakistan', 'Brazil', 'Argentina', 'Colombia', 'Peru', 'Chile', 'Bolivia', 'Uruguay', 'Paraguay', 'Venezuela', 'South Africa', 'Morocco', 'Tunisia', 'Ethiopia', 'Libya', 'Egypt', 'Kenya', 'Zambia', 'Algeria', 'Botswana', 'Nigeria', 'Zimbabwe', 'Australia', 'Fiji', 'Papua New Guinea', 'New Caledonia', 'New Zealand')
 # worldometers_countrylist = ('France', 'India', 'USA')
 
 def get_current_time():
@@ -82,6 +82,7 @@ def main():
                 continue
             if(ip >0 and ip<11):
                 if not check_last_updated("lastUpdated.txt"):
+                    print("\vWait!! Parsing required webpages...\n")
                     getWorld.main()
                 run_map_reduce1("cache/world.txt",ip,country)
 
@@ -94,20 +95,25 @@ def main():
             print("4.  Change in new cases in %")
             print("5.  Main Menu")
             print("6.  EXIT")
-            # country = "USA"
-            # start_date = "08-04-2020"
-            # end_date = "12-04-2020"
+
+            #input
             ip = int(input("Your input : "))
-            country = input("Enter name of the Country : ")
-            start_date = input("Enter the start date[dd-mm-yyyy format]: ")
-            end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            country = "Bolivia"
+            start_date = "08-04-2020"
+            end_date = "12-04-2022"
+            # country = input("Enter name of the Country : ")
+            # start_date = input("Enter the start date[dd-mm-yyyy format]: ")
+            # end_date = input("Enter the end date[dd-mm-yyyy format]: ")
             if(ip==6):
                 exit=1
                 continue
             if(ip==5):
                 continue
             if(ip >0 and ip<5):
-                getData.main()
+                if not check_last_updated("checkCountryCache.txt"):
+                    print('\nDownloading & Parsing Countries webpages...\n')
+                    for country in worldometers_countrylist:
+                        getCountryData(country)
                 run_map_reduce2(start_date, end_date, ip, country)
     pass
 
@@ -131,7 +137,8 @@ def change_format(date):
     return date
 
 def run_map_reduce2(start_date, end_date, option, given_country):
-    reducer_cmd = f"python3 utilities/package2/reducer2.py {option} {start_date} {end_date} {given_country}"
+    given_country = given_country.replace(' ', '_')
+    reducer_cmd = f"python3 utilities/package2/reducer2.py {option} {start_date} {end_date} '{given_country}'"
 
     # normalize date format
     start_date = change_format(start_date)
@@ -141,15 +148,17 @@ def run_map_reduce2(start_date, end_date, option, given_country):
     temp_cmd = "("
     list_length = len(worldometers_countrylist)
     for index, country in enumerate(worldometers_countrylist):
+        country = country.replace(' ', '_')
         ipfile = f"cache/country/{country}.txt"
-        mapper_cmd = f"python3 utilities/package2/mapper2.py {ipfile} {option} {start_date} {end_date} {country} {given_country}"
-        combiner_cmd = f"python3 utilities/package2/combiner2.py {start_date} {end_date} {country} {given_country}"
+        mapper_cmd = f"python3 utilities/package2/mapper2.py {ipfile} {option} {start_date} {end_date} '{country}' '{given_country}'"
+        combiner_cmd = f"python3 utilities/package2/combiner2.py {start_date} {end_date} '{country}' '{given_country}'"
         if index < (list_length-1):
             temp_cmd += f"{mapper_cmd} | {combiner_cmd} & "
         else:
             temp_cmd += f"{mapper_cmd} | {combiner_cmd})"
     
     full_cmd = f"{temp_cmd} | {reducer_cmd}"
+    # print(full_cmd,"\n")
 
     # Running the command
     subprocess.run(full_cmd, shell=True)

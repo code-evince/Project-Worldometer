@@ -1,10 +1,10 @@
 import ply.lex as lex
 import ply.yacc as yacc
 import warnings
-# warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 import sys
 import os
-# sys.stderr = open(os.devnull,'w')
+sys.stderr = open(os.devnull,'w')
 
 dates=[]
 values=[]
@@ -128,4 +128,4 @@ def fetchActiveCases(country):
     
 
 
-# sys.stderr = sys.__stderr__
+sys.stderr = sys.__stderr__

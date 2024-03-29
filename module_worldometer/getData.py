@@ -35,11 +35,15 @@ def main(country):
     zipped_arrays = zip(dates, active_cases, daily_deaths, new_recovery, new_cases)
 
     # Open the file in write mode
-    with open(f"cache\country\{country}.txt", "w") as file:
+    country = country.replace(' ', '_')
+    with open(f"cache/country/{country}.txt", "w") as file:
         # Iterate over the zipped arrays
         for values in zipped_arrays:
             # Join the values with tabs and write to the file
             file.write("\t".join(map(str, values)) + "\n")
+    
+    file_name = "checkCountryCache.txt"
+    write_last_updated_time(file_name)
 
 
 if __name__ == '__main__':
