@@ -9,7 +9,7 @@ st = []
 cont = []
 et = []
 ###DEFINING TOKENS###
-tokens = ('BEGINTABLE', 'ENDTABLE', 'CONTENT', 'GARBAGE')
+tokens = (['BEGINTABLE', 'ENDTABLE', 'CONTENT', 'GARBAGE'])
 t_ignore = ' |\t'
 
 ###############Tokenizer Rules################
