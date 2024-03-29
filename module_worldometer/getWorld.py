@@ -31,6 +31,8 @@ def main():
     
     file_name = "lastUpdated.txt"
     write_last_updated_time(file_name)
+
+
 if __name__ == '__main__':
     main()
 
