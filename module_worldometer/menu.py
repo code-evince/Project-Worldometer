@@ -1,13 +1,13 @@
 import worldometer
 import warnings
 import time
-# warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")
 import sys
 import os
 import subprocess
 import getWorld
 from getData import main as getCountryData
-# sys.stderr = open(os.devnull,'w')
+sys.stderr = open(os.devnull,'w')
 
 worldometers_countrylist = ('France', 'UK', 'Russia', 'Italy', 'Germany', 'Spain', 'Poland', 'Netherlands', 'Ukraine', 'Belgium', 'USA', 'Mexico', 'Canada', 'Cuba', 'Costa Rica', 'Panama', 'India', 'Turkey', 'Iran', 'Indonesia', 'Philippines', 'Japan', 'Israel', 'Malaysia', 'Thailand', 'Vietnam', 'Iraq', 'Bangladesh', 'Pakistan', 'Brazil', 'Argentina', 'Colombia', 'Peru', 'Chile', 'Bolivia', 'Uruguay', 'Paraguay', 'Venezuela', 'South Africa', 'Morocco', 'Tunisia', 'Ethiopia', 'Libya', 'Egypt', 'Kenya', 'Zambia', 'Algeria', 'Botswana', 'Nigeria', 'Zimbabwe', 'Australia', 'Fiji', 'Papua New Guinea', 'New Caledonia', 'New Zealand')
 # worldometers_countrylist = ('France', 'India', 'USA')
@@ -98,12 +98,12 @@ def main():
 
             #input
             ip = int(input("Your input : "))
-            country = "Bolivia"
-            start_date = "08-04-2020"
-            end_date = "12-04-2022"
-            # country = input("Enter name of the Country : ")
-            # start_date = input("Enter the start date[dd-mm-yyyy format]: ")
-            # end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            # country = "Bolivia"
+            # start_date = "08-04-2020"
+            # end_date = "12-04-2022"
+            country = input("Enter name of the Country '_' seprated e.g. South_Africa: ")
+            start_date = input("Enter the start date[dd-mm-yyyy format]: ")
+            end_date = input("Enter the end date[dd-mm-yyyy format]: ")
             if(ip==6):
                 exit=1
                 continue
@@ -168,4 +168,4 @@ def run_map_reduce2(start_date, end_date, option, given_country):
 if __name__ == '__main__':
     main()
 
-# sys.stderr = sys.__stderr__
+sys.stderr = sys.__stderr__
