@@ -23,7 +23,6 @@ def main():
 
     world = worldometer.main()
 
-
     # Open the file in write mode
     with open(f"cache/world.txt", "w") as file:
         for i in range(len(world)):

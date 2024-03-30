@@ -219,7 +219,7 @@ def download_page(url, file_name):
         if response.status_code == 200:
             with open(file_name, 'wb') as f:
                 f.write(response.content)
-            print(f"Page downloaded successfully as {file_name}")
+            print(f"Page downloaded successfully as {file_name} !!")
         else:
             print(f"Failed to download page: {response.status_code}")
     except Exception as e:
@@ -231,6 +231,7 @@ def main():
     file_name = "Worldometer_home.html"
     download_page(url, file_name)
 
+    print('Wait for Parsing...')
     file_obj= open('Worldometer_home.html','r',encoding="utf-8")
     data=file_obj.read()
     lexer = lex.lex()

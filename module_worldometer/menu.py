@@ -118,12 +118,14 @@ def main():
     pass
 
 def run_map_reduce1(file_name, option, country_name):
+    country_name = country_name.replace(' ', '')
     mapper_cmd = f"python3 utilities/package1/mapper1.py {option} {file_name}"
     combiner_cmd = f"python3 utilities/package1/combiner1.py {country_name} "
     reducer_cmd =   f"python3 utilities/package1/reducer1.py {country_name} {option}"
 
     # Constructing the full command
     full_cmd = f"{mapper_cmd} | {combiner_cmd} | {reducer_cmd}"
+    # full_cmd = f"{mapper_cmd} | {combiner_cmd}"
 
     # Running the command
     subprocess.run(full_cmd, shell=True)
