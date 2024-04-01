@@ -25,7 +25,8 @@ def t_BEGINDATE(t):
     return t
 
 def t_ENDTABLE(t):
-    r'<span.class="mw-headline".id="References">References</span>'
+    # r'<span.class="mw-headline".id="References">References</span>'
+    r'<span.class="mw-headline".id="See_also">See.also</span>'
     return t
 
 
