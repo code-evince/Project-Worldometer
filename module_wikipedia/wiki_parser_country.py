@@ -184,11 +184,11 @@ def runparser(name, url):
 
 if __name__ == "__main__":
     #
-    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Australia_(July%E2%80%93December_2021)"
+    url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_India_(January%E2%80%93May_2020)"
     name = "try"
-    url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Malaysia_(2023)"
+    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Malaysia_(2023)"
 
     covidnews = runparser(name, url)
-    # print('##########################\n\n')
-    # for news in covidnews:
-    #     print(news)
+    print('##########################\n\n')
+    for news in covidnews:
+        print(news)

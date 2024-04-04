@@ -2,73 +2,65 @@ Created by PLY version 3.11 (http://www.dabeaz.com/ply)
 
 Unused terminals:
 
-    CLOSEDIV
-    CLOSEROW
-    CLOSESPAN
-    CLOSESTYLE
     GARBAGE
     NBSP
-    OPENDIV
-    OPENROW
-    OPENSPAN
-    OPENSTYLE
 
 Grammar
 
 Rule 0     S' -> start
 Rule 1     start -> table
-Rule 2     skipall -> OPENHREF skipall
-Rule 3     skipall -> CLOSEHREF skipall
-Rule 4     skipall -> OPENDATA skipall
-Rule 5     skipall -> CLOSEDATA skipall
+Rule 2     skipall -> OPENTABLE skipall
+Rule 3     skipall -> CLOSETABLE skipall
+Rule 4     skipall -> OPENROW skipall
+Rule 5     skipall -> CLOSEROW skipall
 Rule 6     skipall -> CONTENT skipall
 Rule 7     skipall -> empty
 Rule 8     skiptag -> CONTENT skiptag
 Rule 9     skiptag -> empty
-Rule 10    table -> BEGININFO skiptag news skiptag ENDINFO
+Rule 10    table -> BEGININFO skipall news skiptag ENDINFO
 Rule 11    date -> OPENH3 CONTENT textdata CLOSEH3
 Rule 12    textdata -> CONTENT textdata
 Rule 13    textdata -> empty
-Rule 14    news -> date textdata news
-Rule 15    news -> date textdata
+Rule 14    news -> date picktable textdata news
+Rule 15    news -> date textdata news
 Rule 16    news -> empty
-Rule 17    content -> CONTENT
-Rule 18    content -> empty
-Rule 19    empty -> <empty>
+Rule 17    picktable -> OPENTABLE handlerow CLOSETABLE
+Rule 18    handlerow -> OPENROW tabledata CLOSEROW handlerow
+Rule 19    handlerow -> empty
+Rule 20    tabledata -> CONTENT tabledata
+Rule 21    tabledata -> empty
+Rule 22    content -> CONTENT
+Rule 23    content -> empty
+Rule 24    empty -> <empty>
 
 Terminals, with rules where they appear
 
 BEGININFO            : 10
-CLOSEDATA            : 5
-CLOSEDIV             : 
 CLOSEH3              : 11
-CLOSEHREF            : 3
-CLOSEROW             : 
-CLOSESPAN            : 
-CLOSESTYLE           : 
-CONTENT              : 6 8 11 12 17
+CLOSEROW             : 5 18
+CLOSETABLE           : 3 17
+CONTENT              : 6 8 11 12 20 22
 ENDINFO              : 10
 GARBAGE              : 
 NBSP                 : 
-OPENDATA             : 4
-OPENDIV              : 
 OPENH3               : 11
-OPENHREF             : 2
-OPENROW              : 
-OPENSPAN             : 
-OPENSTYLE            : 
+OPENROW              : 4 18
+OPENTABLE            : 2 17
 error                : 
 
 Nonterminals, with rules where they appear
 
 content              : 
 date                 : 14 15
-empty                : 7 9 13 16 18
-news                 : 10 14
-skipall              : 2 3 4 5 6
-skiptag              : 8 10 10
+empty                : 7 9 13 16 19 21 23
+handlerow            : 17 18
+news                 : 10 14 15
+picktable            : 14
+skipall              : 2 3 4 5 6 10
+skiptag              : 8 10
 start                : 0
 table                : 1
+tabledata            : 18 20
 textdata             : 11 12 14 15
 
 Parsing method: LALR
@@ -77,7 +69,7 @@ state 0
 
     (0) S' -> . start
     (1) start -> . table
-    (10) table -> . BEGININFO skiptag news skiptag ENDINFO
+    (10) table -> . BEGININFO skipall news skiptag ENDINFO
 
     BEGININFO       shift and go to state 3
 
@@ -99,96 +91,215 @@ state 2
 
 state 3
 
-    (10) table -> BEGININFO . skiptag news skiptag ENDINFO
-    (8) skiptag -> . CONTENT skiptag
-    (9) skiptag -> . empty
-    (19) empty -> .
+    (10) table -> BEGININFO . skipall news skiptag ENDINFO
+    (2) skipall -> . OPENTABLE skipall
+    (3) skipall -> . CLOSETABLE skipall
+    (4) skipall -> . OPENROW skipall
+    (5) skipall -> . CLOSEROW skipall
+    (6) skipall -> . CONTENT skipall
+    (7) skipall -> . empty
+    (24) empty -> .
 
   ! shift/reduce conflict for CONTENT resolved as shift
-    CONTENT         shift and go to state 5
-    OPENH3          reduce using rule 19 (empty -> .)
-    ENDINFO         reduce using rule 19 (empty -> .)
+    OPENTABLE       shift and go to state 5
+    CLOSETABLE      shift and go to state 6
+    OPENROW         shift and go to state 7
+    CLOSEROW        shift and go to state 8
+    CONTENT         shift and go to state 9
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
 
-  ! CONTENT         [ reduce using rule 19 (empty -> .) ]
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
 
-    skiptag                        shift and go to state 4
-    empty                          shift and go to state 6
+    skipall                        shift and go to state 4
+    empty                          shift and go to state 10
 
 state 4
 
-    (10) table -> BEGININFO skiptag . news skiptag ENDINFO
-    (14) news -> . date textdata news
-    (15) news -> . date textdata
+    (10) table -> BEGININFO skipall . news skiptag ENDINFO
+    (14) news -> . date picktable textdata news
+    (15) news -> . date textdata news
     (16) news -> . empty
     (11) date -> . OPENH3 CONTENT textdata CLOSEH3
-    (19) empty -> .
+    (24) empty -> .
 
-    OPENH3          shift and go to state 10
-    CONTENT         reduce using rule 19 (empty -> .)
-    ENDINFO         reduce using rule 19 (empty -> .)
+    OPENH3          shift and go to state 14
+    CONTENT         reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
 
-    news                           shift and go to state 7
-    date                           shift and go to state 8
-    empty                          shift and go to state 9
+    news                           shift and go to state 11
+    date                           shift and go to state 12
+    empty                          shift and go to state 13
 
 state 5
 
-    (8) skiptag -> CONTENT . skiptag
-    (8) skiptag -> . CONTENT skiptag
-    (9) skiptag -> . empty
-    (19) empty -> .
+    (2) skipall -> OPENTABLE . skipall
+    (2) skipall -> . OPENTABLE skipall
+    (3) skipall -> . CLOSETABLE skipall
+    (4) skipall -> . OPENROW skipall
+    (5) skipall -> . CLOSEROW skipall
+    (6) skipall -> . CONTENT skipall
+    (7) skipall -> . empty
+    (24) empty -> .
 
   ! shift/reduce conflict for CONTENT resolved as shift
-    CONTENT         shift and go to state 5
-    OPENH3          reduce using rule 19 (empty -> .)
-    ENDINFO         reduce using rule 19 (empty -> .)
+    OPENTABLE       shift and go to state 5
+    CLOSETABLE      shift and go to state 6
+    OPENROW         shift and go to state 7
+    CLOSEROW        shift and go to state 8
+    CONTENT         shift and go to state 9
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
 
-  ! CONTENT         [ reduce using rule 19 (empty -> .) ]
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
 
-    skiptag                        shift and go to state 11
-    empty                          shift and go to state 6
+    skipall                        shift and go to state 15
+    empty                          shift and go to state 10
 
 state 6
 
-    (9) skiptag -> empty .
+    (3) skipall -> CLOSETABLE . skipall
+    (2) skipall -> . OPENTABLE skipall
+    (3) skipall -> . CLOSETABLE skipall
+    (4) skipall -> . OPENROW skipall
+    (5) skipall -> . CLOSEROW skipall
+    (6) skipall -> . CONTENT skipall
+    (7) skipall -> . empty
+    (24) empty -> .
 
-    OPENH3          reduce using rule 9 (skiptag -> empty .)
-    CONTENT         reduce using rule 9 (skiptag -> empty .)
-    ENDINFO         reduce using rule 9 (skiptag -> empty .)
+  ! shift/reduce conflict for CONTENT resolved as shift
+    OPENTABLE       shift and go to state 5
+    CLOSETABLE      shift and go to state 6
+    OPENROW         shift and go to state 7
+    CLOSEROW        shift and go to state 8
+    CONTENT         shift and go to state 9
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
 
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
+
+    skipall                        shift and go to state 16
+    empty                          shift and go to state 10
 
 state 7
 
-    (10) table -> BEGININFO skiptag news . skiptag ENDINFO
-    (8) skiptag -> . CONTENT skiptag
-    (9) skiptag -> . empty
-    (19) empty -> .
+    (4) skipall -> OPENROW . skipall
+    (2) skipall -> . OPENTABLE skipall
+    (3) skipall -> . CLOSETABLE skipall
+    (4) skipall -> . OPENROW skipall
+    (5) skipall -> . CLOSEROW skipall
+    (6) skipall -> . CONTENT skipall
+    (7) skipall -> . empty
+    (24) empty -> .
 
-    CONTENT         shift and go to state 5
-    ENDINFO         reduce using rule 19 (empty -> .)
+  ! shift/reduce conflict for CONTENT resolved as shift
+    OPENTABLE       shift and go to state 5
+    CLOSETABLE      shift and go to state 6
+    OPENROW         shift and go to state 7
+    CLOSEROW        shift and go to state 8
+    CONTENT         shift and go to state 9
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
 
-    skiptag                        shift and go to state 12
-    empty                          shift and go to state 6
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
+
+    skipall                        shift and go to state 17
+    empty                          shift and go to state 10
 
 state 8
 
-    (14) news -> date . textdata news
-    (15) news -> date . textdata
-    (12) textdata -> . CONTENT textdata
-    (13) textdata -> . empty
-    (19) empty -> .
+    (5) skipall -> CLOSEROW . skipall
+    (2) skipall -> . OPENTABLE skipall
+    (3) skipall -> . CLOSETABLE skipall
+    (4) skipall -> . OPENROW skipall
+    (5) skipall -> . CLOSEROW skipall
+    (6) skipall -> . CONTENT skipall
+    (7) skipall -> . empty
+    (24) empty -> .
 
   ! shift/reduce conflict for CONTENT resolved as shift
-    CONTENT         shift and go to state 14
-    OPENH3          reduce using rule 19 (empty -> .)
-    ENDINFO         reduce using rule 19 (empty -> .)
+    OPENTABLE       shift and go to state 5
+    CLOSETABLE      shift and go to state 6
+    OPENROW         shift and go to state 7
+    CLOSEROW        shift and go to state 8
+    CONTENT         shift and go to state 9
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
 
-  ! CONTENT         [ reduce using rule 19 (empty -> .) ]
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
 
-    textdata                       shift and go to state 13
-    empty                          shift and go to state 15
+    skipall                        shift and go to state 18
+    empty                          shift and go to state 10
 
 state 9
+
+    (6) skipall -> CONTENT . skipall
+    (2) skipall -> . OPENTABLE skipall
+    (3) skipall -> . CLOSETABLE skipall
+    (4) skipall -> . OPENROW skipall
+    (5) skipall -> . CLOSEROW skipall
+    (6) skipall -> . CONTENT skipall
+    (7) skipall -> . empty
+    (24) empty -> .
+
+  ! shift/reduce conflict for CONTENT resolved as shift
+    OPENTABLE       shift and go to state 5
+    CLOSETABLE      shift and go to state 6
+    OPENROW         shift and go to state 7
+    CLOSEROW        shift and go to state 8
+    CONTENT         shift and go to state 9
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
+
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
+
+    skipall                        shift and go to state 19
+    empty                          shift and go to state 10
+
+state 10
+
+    (7) skipall -> empty .
+
+    OPENH3          reduce using rule 7 (skipall -> empty .)
+    CONTENT         reduce using rule 7 (skipall -> empty .)
+    ENDINFO         reduce using rule 7 (skipall -> empty .)
+
+
+state 11
+
+    (10) table -> BEGININFO skipall news . skiptag ENDINFO
+    (8) skiptag -> . CONTENT skiptag
+    (9) skiptag -> . empty
+    (24) empty -> .
+
+    CONTENT         shift and go to state 21
+    ENDINFO         reduce using rule 24 (empty -> .)
+
+    skiptag                        shift and go to state 20
+    empty                          shift and go to state 22
+
+state 12
+
+    (14) news -> date . picktable textdata news
+    (15) news -> date . textdata news
+    (17) picktable -> . OPENTABLE handlerow CLOSETABLE
+    (12) textdata -> . CONTENT textdata
+    (13) textdata -> . empty
+    (24) empty -> .
+
+  ! shift/reduce conflict for CONTENT resolved as shift
+    OPENTABLE       shift and go to state 25
+    CONTENT         shift and go to state 26
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
+
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
+
+    picktable                      shift and go to state 23
+    textdata                       shift and go to state 24
+    empty                          shift and go to state 27
+
+state 13
 
     (16) news -> empty .
 
@@ -196,71 +307,151 @@ state 9
     ENDINFO         reduce using rule 16 (news -> empty .)
 
 
-state 10
+state 14
 
     (11) date -> OPENH3 . CONTENT textdata CLOSEH3
 
-    CONTENT         shift and go to state 16
+    CONTENT         shift and go to state 28
 
 
-state 11
+state 15
 
-    (8) skiptag -> CONTENT skiptag .
+    (2) skipall -> OPENTABLE skipall .
 
-    OPENH3          reduce using rule 8 (skiptag -> CONTENT skiptag .)
-    CONTENT         reduce using rule 8 (skiptag -> CONTENT skiptag .)
-    ENDINFO         reduce using rule 8 (skiptag -> CONTENT skiptag .)
-
-
-state 12
-
-    (10) table -> BEGININFO skiptag news skiptag . ENDINFO
-
-    ENDINFO         shift and go to state 17
+    OPENH3          reduce using rule 2 (skipall -> OPENTABLE skipall .)
+    CONTENT         reduce using rule 2 (skipall -> OPENTABLE skipall .)
+    ENDINFO         reduce using rule 2 (skipall -> OPENTABLE skipall .)
 
 
-state 13
+state 16
 
-    (14) news -> date textdata . news
-    (15) news -> date textdata .
-    (14) news -> . date textdata news
-    (15) news -> . date textdata
+    (3) skipall -> CLOSETABLE skipall .
+
+    OPENH3          reduce using rule 3 (skipall -> CLOSETABLE skipall .)
+    CONTENT         reduce using rule 3 (skipall -> CLOSETABLE skipall .)
+    ENDINFO         reduce using rule 3 (skipall -> CLOSETABLE skipall .)
+
+
+state 17
+
+    (4) skipall -> OPENROW skipall .
+
+    OPENH3          reduce using rule 4 (skipall -> OPENROW skipall .)
+    CONTENT         reduce using rule 4 (skipall -> OPENROW skipall .)
+    ENDINFO         reduce using rule 4 (skipall -> OPENROW skipall .)
+
+
+state 18
+
+    (5) skipall -> CLOSEROW skipall .
+
+    OPENH3          reduce using rule 5 (skipall -> CLOSEROW skipall .)
+    CONTENT         reduce using rule 5 (skipall -> CLOSEROW skipall .)
+    ENDINFO         reduce using rule 5 (skipall -> CLOSEROW skipall .)
+
+
+state 19
+
+    (6) skipall -> CONTENT skipall .
+
+    OPENH3          reduce using rule 6 (skipall -> CONTENT skipall .)
+    CONTENT         reduce using rule 6 (skipall -> CONTENT skipall .)
+    ENDINFO         reduce using rule 6 (skipall -> CONTENT skipall .)
+
+
+state 20
+
+    (10) table -> BEGININFO skipall news skiptag . ENDINFO
+
+    ENDINFO         shift and go to state 29
+
+
+state 21
+
+    (8) skiptag -> CONTENT . skiptag
+    (8) skiptag -> . CONTENT skiptag
+    (9) skiptag -> . empty
+    (24) empty -> .
+
+    CONTENT         shift and go to state 21
+    ENDINFO         reduce using rule 24 (empty -> .)
+
+    skiptag                        shift and go to state 30
+    empty                          shift and go to state 22
+
+state 22
+
+    (9) skiptag -> empty .
+
+    ENDINFO         reduce using rule 9 (skiptag -> empty .)
+
+
+state 23
+
+    (14) news -> date picktable . textdata news
+    (12) textdata -> . CONTENT textdata
+    (13) textdata -> . empty
+    (24) empty -> .
+
+  ! shift/reduce conflict for CONTENT resolved as shift
+    CONTENT         shift and go to state 26
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
+
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
+
+    textdata                       shift and go to state 31
+    empty                          shift and go to state 27
+
+state 24
+
+    (15) news -> date textdata . news
+    (14) news -> . date picktable textdata news
+    (15) news -> . date textdata news
     (16) news -> . empty
     (11) date -> . OPENH3 CONTENT textdata CLOSEH3
-    (19) empty -> .
+    (24) empty -> .
 
-  ! reduce/reduce conflict for CONTENT resolved using rule 15 (news -> date textdata .)
-  ! reduce/reduce conflict for ENDINFO resolved using rule 15 (news -> date textdata .)
-    CONTENT         reduce using rule 15 (news -> date textdata .)
-    ENDINFO         reduce using rule 15 (news -> date textdata .)
-    OPENH3          shift and go to state 10
+    OPENH3          shift and go to state 14
+    CONTENT         reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
 
-  ! CONTENT         [ reduce using rule 19 (empty -> .) ]
-  ! ENDINFO         [ reduce using rule 19 (empty -> .) ]
+    date                           shift and go to state 12
+    news                           shift and go to state 32
+    empty                          shift and go to state 13
 
-    date                           shift and go to state 8
-    news                           shift and go to state 18
-    empty                          shift and go to state 9
+state 25
 
-state 14
+    (17) picktable -> OPENTABLE . handlerow CLOSETABLE
+    (18) handlerow -> . OPENROW tabledata CLOSEROW handlerow
+    (19) handlerow -> . empty
+    (24) empty -> .
+
+    OPENROW         shift and go to state 34
+    CLOSETABLE      reduce using rule 24 (empty -> .)
+
+    handlerow                      shift and go to state 33
+    empty                          shift and go to state 35
+
+state 26
 
     (12) textdata -> CONTENT . textdata
     (12) textdata -> . CONTENT textdata
     (13) textdata -> . empty
-    (19) empty -> .
+    (24) empty -> .
 
   ! shift/reduce conflict for CONTENT resolved as shift
-    CONTENT         shift and go to state 14
-    OPENH3          reduce using rule 19 (empty -> .)
-    ENDINFO         reduce using rule 19 (empty -> .)
-    CLOSEH3         reduce using rule 19 (empty -> .)
+    CONTENT         shift and go to state 26
+    OPENH3          reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
+    CLOSEH3         reduce using rule 24 (empty -> .)
 
-  ! CONTENT         [ reduce using rule 19 (empty -> .) ]
+  ! CONTENT         [ reduce using rule 24 (empty -> .) ]
 
-    textdata                       shift and go to state 19
-    empty                          shift and go to state 15
+    textdata                       shift and go to state 36
+    empty                          shift and go to state 27
 
-state 15
+state 27
 
     (13) textdata -> empty .
 
@@ -270,35 +461,86 @@ state 15
     CLOSEH3         reduce using rule 13 (textdata -> empty .)
 
 
-state 16
+state 28
 
     (11) date -> OPENH3 CONTENT . textdata CLOSEH3
     (12) textdata -> . CONTENT textdata
     (13) textdata -> . empty
-    (19) empty -> .
+    (24) empty -> .
 
-    CONTENT         shift and go to state 14
-    CLOSEH3         reduce using rule 19 (empty -> .)
+    CONTENT         shift and go to state 26
+    CLOSEH3         reduce using rule 24 (empty -> .)
 
-    textdata                       shift and go to state 20
-    empty                          shift and go to state 15
+    textdata                       shift and go to state 37
+    empty                          shift and go to state 27
 
-state 17
+state 29
 
-    (10) table -> BEGININFO skiptag news skiptag ENDINFO .
+    (10) table -> BEGININFO skipall news skiptag ENDINFO .
 
-    $end            reduce using rule 10 (table -> BEGININFO skiptag news skiptag ENDINFO .)
-
-
-state 18
-
-    (14) news -> date textdata news .
-
-    CONTENT         reduce using rule 14 (news -> date textdata news .)
-    ENDINFO         reduce using rule 14 (news -> date textdata news .)
+    $end            reduce using rule 10 (table -> BEGININFO skipall news skiptag ENDINFO .)
 
 
-state 19
+state 30
+
+    (8) skiptag -> CONTENT skiptag .
+
+    ENDINFO         reduce using rule 8 (skiptag -> CONTENT skiptag .)
+
+
+state 31
+
+    (14) news -> date picktable textdata . news
+    (14) news -> . date picktable textdata news
+    (15) news -> . date textdata news
+    (16) news -> . empty
+    (11) date -> . OPENH3 CONTENT textdata CLOSEH3
+    (24) empty -> .
+
+    OPENH3          shift and go to state 14
+    CONTENT         reduce using rule 24 (empty -> .)
+    ENDINFO         reduce using rule 24 (empty -> .)
+
+    date                           shift and go to state 12
+    news                           shift and go to state 38
+    empty                          shift and go to state 13
+
+state 32
+
+    (15) news -> date textdata news .
+
+    CONTENT         reduce using rule 15 (news -> date textdata news .)
+    ENDINFO         reduce using rule 15 (news -> date textdata news .)
+
+
+state 33
+
+    (17) picktable -> OPENTABLE handlerow . CLOSETABLE
+
+    CLOSETABLE      shift and go to state 39
+
+
+state 34
+
+    (18) handlerow -> OPENROW . tabledata CLOSEROW handlerow
+    (20) tabledata -> . CONTENT tabledata
+    (21) tabledata -> . empty
+    (24) empty -> .
+
+    CONTENT         shift and go to state 41
+    CLOSEROW        reduce using rule 24 (empty -> .)
+
+    tabledata                      shift and go to state 40
+    empty                          shift and go to state 42
+
+state 35
+
+    (19) handlerow -> empty .
+
+    CLOSETABLE      reduce using rule 19 (handlerow -> empty .)
+
+
+state 36
 
     (12) textdata -> CONTENT textdata .
 
@@ -308,27 +550,102 @@ state 19
     CLOSEH3         reduce using rule 12 (textdata -> CONTENT textdata .)
 
 
-state 20
+state 37
 
     (11) date -> OPENH3 CONTENT textdata . CLOSEH3
 
-    CLOSEH3         shift and go to state 21
+    CLOSEH3         shift and go to state 43
 
 
-state 21
+state 38
+
+    (14) news -> date picktable textdata news .
+
+    CONTENT         reduce using rule 14 (news -> date picktable textdata news .)
+    ENDINFO         reduce using rule 14 (news -> date picktable textdata news .)
+
+
+state 39
+
+    (17) picktable -> OPENTABLE handlerow CLOSETABLE .
+
+    CONTENT         reduce using rule 17 (picktable -> OPENTABLE handlerow CLOSETABLE .)
+    OPENH3          reduce using rule 17 (picktable -> OPENTABLE handlerow CLOSETABLE .)
+    ENDINFO         reduce using rule 17 (picktable -> OPENTABLE handlerow CLOSETABLE .)
+
+
+state 40
+
+    (18) handlerow -> OPENROW tabledata . CLOSEROW handlerow
+
+    CLOSEROW        shift and go to state 44
+
+
+state 41
+
+    (20) tabledata -> CONTENT . tabledata
+    (20) tabledata -> . CONTENT tabledata
+    (21) tabledata -> . empty
+    (24) empty -> .
+
+    CONTENT         shift and go to state 41
+    CLOSEROW        reduce using rule 24 (empty -> .)
+
+    tabledata                      shift and go to state 45
+    empty                          shift and go to state 42
+
+state 42
+
+    (21) tabledata -> empty .
+
+    CLOSEROW        reduce using rule 21 (tabledata -> empty .)
+
+
+state 43
 
     (11) date -> OPENH3 CONTENT textdata CLOSEH3 .
 
+    OPENTABLE       reduce using rule 11 (date -> OPENH3 CONTENT textdata CLOSEH3 .)
     CONTENT         reduce using rule 11 (date -> OPENH3 CONTENT textdata CLOSEH3 .)
     OPENH3          reduce using rule 11 (date -> OPENH3 CONTENT textdata CLOSEH3 .)
     ENDINFO         reduce using rule 11 (date -> OPENH3 CONTENT textdata CLOSEH3 .)
+
+
+state 44
+
+    (18) handlerow -> OPENROW tabledata CLOSEROW . handlerow
+    (18) handlerow -> . OPENROW tabledata CLOSEROW handlerow
+    (19) handlerow -> . empty
+    (24) empty -> .
+
+    OPENROW         shift and go to state 34
+    CLOSETABLE      reduce using rule 24 (empty -> .)
+
+    handlerow                      shift and go to state 46
+    empty                          shift and go to state 35
+
+state 45
+
+    (20) tabledata -> CONTENT tabledata .
+
+    CLOSEROW        reduce using rule 20 (tabledata -> CONTENT tabledata .)
+
+
+state 46
+
+    (18) handlerow -> OPENROW tabledata CLOSEROW handlerow .
+
+    CLOSETABLE      reduce using rule 18 (handlerow -> OPENROW tabledata CLOSEROW handlerow .)
 
 WARNING: 
 WARNING: Conflicts:
 WARNING: 
 WARNING: shift/reduce conflict for CONTENT in state 3 resolved as shift
 WARNING: shift/reduce conflict for CONTENT in state 5 resolved as shift
+WARNING: shift/reduce conflict for CONTENT in state 6 resolved as shift
+WARNING: shift/reduce conflict for CONTENT in state 7 resolved as shift
 WARNING: shift/reduce conflict for CONTENT in state 8 resolved as shift
-WARNING: shift/reduce conflict for CONTENT in state 14 resolved as shift
-WARNING: reduce/reduce conflict in state 13 resolved using rule (news -> date textdata)
-WARNING: rejected rule (empty -> <empty>) in state 13
+WARNING: shift/reduce conflict for CONTENT in state 9 resolved as shift
+WARNING: shift/reduce conflict for CONTENT in state 12 resolved as shift
+WARNING: shift/reduce conflict for CONTENT in state 23 resolved as shift
+WARNING: shift/reduce conflict for CONTENT in state 26 resolved as shift

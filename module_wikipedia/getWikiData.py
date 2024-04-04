@@ -10,7 +10,7 @@ import wiki_parser_country
 warnings.filterwarnings("ignore")
 sys.stderr = open(os.devnull,'w')
 
-months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
+months = {'January': '01','February': '02','March': '03','April': '04','May': '05','June': '06','July': '07','August': '08','September': '09','October': '10','November': '11','December': '12'}
 
 def get_current_time():
     return time.strftime("%Y-%m-%d %H:%M:%S")
@@ -45,12 +45,12 @@ def run(ctrl):
                                      
         # handle year 2020-2022                                   
         for year in [2020, 2021, 2022]:
-            for month in months:
+            for month, num in months.items():
                 name = f'Webpages/timelines/{month}_{year}'
                 url = f"https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_{month}_{year}"
                 covidnews = wiki_parser.runparser(name, url)
                 #write to file
-                fname = f'{month}_{year}'
+                fname = f'{num}_{year}'
                 loc = f'CovidNewsTxt/timelines'
                 writefile(fname, loc, covidnews)
 
@@ -69,14 +69,14 @@ def run(ctrl):
         write_last_updated_time(file_name) 
 
         for year in [2020, 2021, 2022]:
-            for month in months:
+            for month, num in months.items():
                 if (year == 2022 and (month in ['November', 'December'])):
                     continue
                 name = f'Webpages/responses/{month}_{year}'
                 url = f"https://en.wikipedia.org/wiki/Responses_to_the_COVID-19_pandemic_in_{month}_{year}"
                 covidnews = wiki_parser.runparser(name, url)
                 #write to file
-                fname = f'{month}_{year}'
+                fname = f'{num}_{year}'
                 loc = f'CovidNewsTxt/responses'
                 writefile(fname, loc, covidnews)
 
@@ -85,9 +85,24 @@ def run(ctrl):
         file_name = "checkCountriesCache.txt"
         write_last_updated_time(file_name) 
 
-        with open('link_countries', 'r') as f:
-            url = f.readline()
-
+        with open('link_countries.txt', 'r') as file:
+            # lines = file.readlines()
+            # for url in lines:
+            for line in file:
+                # temp = url.split('_')
+                # country = temp[-2:]
+                url = line
+                print(url)##############################
+                country = url.split('_')
+                c_name = country[6]
+                c_year = country[7]
+                print(c_name,c_year)###########################
+                name = f'Webpages/countries/{c_name}_{c_year}'
+                covidnews = wiki_parser_country.runparser(name, url)
+                #write to file
+                fname = f'{c_name}_{c_year}'
+                loc = f'CovidNewsTxt/countries'
+                writefile(fname, loc, covidnews)
         pass
 
     elif ctrl == 4:     #get all countries data

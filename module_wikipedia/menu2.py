@@ -81,12 +81,12 @@ def run_map_reduce3(file_name, option, country_name):
     pass
 
 def main():
-    print("----------------------------------")
+    print("------------------------------------")
     print("        Welcome to Wikipedia")
-    print("----------------------------------")
+    print("------------------------------------")
     exit = 0
     while(exit==0):
-        print("\n-------------- MENU --------------")
+        print("\n-------------- MENU ----------------")
         print("1. COVID-19 World News")
         print("2. COVID-19 World Responses")
         print("3. COVID-19 Country-wise News")
@@ -112,7 +112,7 @@ def main():
             start_date = input("Enter the start date[dd-mm-yyyy format]: ")
             end_date = input("Enter the end date[dd-mm-yyyy format]: ")
             # run_map_reduce2(start_date, end_date, ip, country)
-        elif(user == 2):
+        elif(user == 3):
             if not check_last_updated("checkCountriesCache.txt"):
                 print('\nWait!! Downloading & Parsing Countries webpages...\n')
                 getWikiData.run(3)
