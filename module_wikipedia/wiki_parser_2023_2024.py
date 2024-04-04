@@ -154,6 +154,7 @@ def p_error(p):
 
 #########-------------------------DRIVER FUNCTION----------------------#######
 def runparser(name, url):
+    covidnews.clear()
     # downloading required webpage
     req = Request(url, headers ={'User-Agent':'Mozilla/5.0'})
     webpage = urlopen(req).read()
@@ -186,14 +187,14 @@ def runparser(name, url):
     return covidnews
 
 
-if __name__ == "__main__":
-    # 
-    name = "try"
-    url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2023"
-    name = "try"
-    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2024"
+# if __name__ == "__main__":
+#     # 
+#     name = "try"
+#     url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2023"
+#     name = "try"
+#     # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2024"
 
-    covidnews = runparser(name, url)
-    # print('##########################\n\n')
-    # for news in covidnews:
-    #     print(news)
+#     covidnews = runparser(name, url)
+#     # print('##########################\n\n')
+#     # for news in covidnews:
+#     #     print(news)

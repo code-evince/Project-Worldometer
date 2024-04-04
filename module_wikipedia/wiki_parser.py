@@ -154,6 +154,7 @@ def p_error(p):
 
 #########-------------------------DRIVER FUNCTION----------------------#######
 def runparser(name, url):
+    covidnews.clear()
     # downloading required webpage
     req = Request(url, headers ={'User-Agent':'Mozilla/5.0'})
     webpage = urlopen(req).read()
@@ -186,16 +187,16 @@ def runparser(name, url):
     return covidnews
 
 
-if __name__ == "__main__":
-    # # name = "January_2020"
-    url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_January_2020"
-    name = "June_2021"
-    # url = "https://en.wikipedia.org/wiki/Responses_to_the_COVID-19_pandemic_in_June_2021"
-    # # name = "try"
-    # # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Singapore_(2021)"
+# if __name__ == "__main__":
+#     # # name = "January_2020"
+#     url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_January_2020"
+#     name = "June_2021"
+#     # url = "https://en.wikipedia.org/wiki/Responses_to_the_COVID-19_pandemic_in_June_2021"
+#     # # name = "try"
+#     # # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Singapore_(2021)"
 
-    covidnews = runparser(name, url)
+#     covidnews = runparser(name, url)
 
-    # # with open('op.txt', 'w') as f:
-    # #     for news in covidnews:
-    # #         f.write(news)
+#     # # with open('op.txt', 'w') as f:
+#     # #     for news in covidnews:
+#     # #         f.write(news)

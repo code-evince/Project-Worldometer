@@ -150,6 +150,7 @@ def p_error(p):
 
 #########-------------------------DRIVER FUNCTION----------------------#######
 def runparser(name, url):
+    covidnews.clear()
     # downloading required webpage
     req = Request(url, headers ={'User-Agent':'Mozilla/5.0'})
     webpage = urlopen(req).read()
