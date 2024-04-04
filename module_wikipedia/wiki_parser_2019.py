@@ -7,8 +7,7 @@ from urllib.request import Request, urlopen
 
 sys.stderr = open(os.devnull, 'w')
 ##----------------------global var...----------------
-# table_header = ['Name', 'Sport', 'Gold', 'Silver', 'Bronze', 'Total']
-# table_data = []
+covidnews = []
 
 ###------------------------------DEFINING TOKENS---------------------------###
 # tokens = ('BEGININFO', 'ENDINFO', 'OPENH3', 'CLOSEH3', 'CONTENT', 'GARBAGE')
@@ -112,7 +111,8 @@ def p_skiptag(p):
 
 def p_table(p):
     '''table : BEGININFO skiptag news skiptag ENDINFO'''
-    print(p[3])
+    # print(p[3])
+    covidnews.append(p[3])
 
 def p_date(p):
     '''date : OPENH3 CONTENT textdata CLOSEH3'''
@@ -132,10 +132,10 @@ def p_news(p):
             | date textdata
             | empty'''
     if len(p) == 4:
-        p[0] = p[1]+'\n'+p[2]+'\n'+p[3]
+        p[0] = p[1]+'::'+p[2]+'\n'+p[3]
         # print('news:\n', p[0])
     elif len(p) == 3:
-        p[0] = p[1]+'\n'+p[2]
+        p[0] = p[1]+'::'+p[2]
     else:
         p[0] = ""
     # print('News:\n', p[0])
@@ -158,12 +158,12 @@ def runparser(name, url):
     req = Request(url, headers ={'User-Agent':'Mozilla/5.0'})
     webpage = urlopen(req).read()
     mydata = webpage.decode("utf8")
-    f = open(f'webpage_{name}.html','w',encoding="utf-8")
+    f = open(f'{name}.html','w',encoding="utf-8")
     f.write(mydata)
     f.close
 
     # read html for parsing the webpage
-    file_obj = open(f'webpage_{name}.html','r',encoding="utf-8")
+    file_obj = open(f'{name}.html','r',encoding="utf-8")
     data = file_obj.read()
     
     lexer = lex.lex()  #creating lex...
@@ -180,26 +180,18 @@ def runparser(name, url):
     parser = yacc.yacc() #creating parser...
     parser.parse(data)
 
-    # print("Header: ",table_header, "\nData: ", table_data)
+    print(f'Fetched News from {name}!!')
+    file_obj.close()
 
-    # new_data = []
-    # for data in table_data:
-    #     data = list(data[0].split("','"))
-    #     new_data.append(data[:5])
-    # # print(">>>>>>>>>>>>>\n",new_data)
-    # print(tabulate(new_data, headers=table_header, tablefmt="fancy_grid"))
-    # table_data.clear()
-    # # table_header.clear()
-
-    # return 
+    return covidnews
 
 
 if __name__ == "__main__":
-    # name = "January_2020"
-    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_January_2020"
-    # name = "try"
-    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Australia_(July%E2%80%93December_2021)"
+    #
     name = "try"
     url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2019"
 
-    runparser(name, url)
+    covidnews = runparser(name, url)
+    # print('##########################\n\n')
+    # for news in covidnews:
+    #     print(news)

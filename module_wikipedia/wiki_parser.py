@@ -111,7 +111,7 @@ def p_skiptag(p):
 
 def p_table(p):
     '''table : BEGININFO skiptag news skiptag ENDINFO'''
-    print(p[3])
+    # print(p[3])
     covidnews.append(p[3])
 
 def p_date(p):
@@ -158,12 +158,12 @@ def runparser(name, url):
     req = Request(url, headers ={'User-Agent':'Mozilla/5.0'})
     webpage = urlopen(req).read()
     mydata = webpage.decode("utf8")
-    f = open(f'webpage_{name}.html','w',encoding="utf-8")
+    f = open(f'{name}.html','w',encoding="utf-8")
     f.write(mydata)
     f.close
 
     # read html for parsing the webpage
-    file_obj = open(f'webpage_{name}.html','r',encoding="utf-8")
+    file_obj = open(f'{name}.html','r',encoding="utf-8")
     data = file_obj.read()
     
     lexer = lex.lex()  #creating lex...
@@ -180,19 +180,22 @@ def runparser(name, url):
     parser = yacc.yacc() #creating parser...
     parser.parse(data)
 
+    print(f'Fetched News from {name}!!')
+    file_obj.close()
+
     return covidnews
 
 
 if __name__ == "__main__":
-    # name = "January_2020"
-    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_January_2020"
+    # # name = "January_2020"
+    url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_January_2020"
     name = "June_2021"
-    url = "https://en.wikipedia.org/wiki/Responses_to_the_COVID-19_pandemic_in_June_2021"
-    # name = "try"
-    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Singapore_(2021)"
+    # url = "https://en.wikipedia.org/wiki/Responses_to_the_COVID-19_pandemic_in_June_2021"
+    # # name = "try"
+    # # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Singapore_(2021)"
 
     covidnews = runparser(name, url)
 
-    with open('op.txt', 'w') as f:
-        for news in covidnews:
-            f.write(news)
+    # # with open('op.txt', 'w') as f:
+    # #     for news in covidnews:
+    # #         f.write(news)

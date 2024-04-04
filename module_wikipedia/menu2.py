@@ -27,10 +27,6 @@ def check_last_updated(file_name):
             last_updated_timestamp = time.mktime(time.strptime(last_updated_time, "%Y-%m-%d %H:%M:%S"))
             current_time = get_current_time()
             twenty_four_hours=  (24 * 3600)  # 24 hours in seconds
-            # print(current_time)
-            # print(last_updated_time)
-            # print(twenty_four_hours)
-            # print(current_time - last_updated_timestamp)
             return current_time - last_updated_timestamp < twenty_four_hours
         
         except Exception as e:
@@ -88,51 +84,48 @@ def main():
     print("----------------------------------")
     print("        Welcome to Wikipedia")
     print("----------------------------------")
-    try:
-        exit = 0
-        while(exit==0):
-            print("\n-------------- MENU --------------")
-            print("1. COVID-19 World News")
-            print("2. COVID-19 World Responses")
-            print("3. COVID-19 Country-wise News")
-            print("4. Menu")
-            print("5. EXIT")
-            user = int(input("\nEnter your choice: "))
-            if(user == 5):
-                exit = 1
-                continue
-            elif(user == 4):
-                continue
-            elif(user == 1):
-                if not check_last_updated("checkTimelinesCache.txt"):
-                    print('\nWait!! Downloading & Parsing Countries webpages...\n')
-                    getWikiData.run(1)
-                start_date = input("Enter the start date[dd-mm-yyyy format]: ")
-                end_date = input("Enter the end date[dd-mm-yyyy format]: ")
-                # run_map_reduce1("cache/world.txt",ip,country)
-            elif(user == 2):
-                if not check_last_updated("checkResponsesCache.txt"):
-                    print('\nWait!! Downloading & Parsing Countries webpages...\n')
-                    getWikiData.run(2)
-                start_date = input("Enter the start date[dd-mm-yyyy format]: ")
-                end_date = input("Enter the end date[dd-mm-yyyy format]: ")
-                # run_map_reduce2(start_date, end_date, ip, country)
-            elif(user == 2):
-                if not check_last_updated("checkCountriesCache.txt"):
-                    print('\nWait!! Downloading & Parsing Countries webpages...\n')
-                    getWikiData.run(3)
-                country = input("Enter name of the Country: ")
-                start_date = input("Enter the start date[dd-mm-yyyy format]: ")
-                end_date = input("Enter the end date[dd-mm-yyyy format]: ")
-                # country = "Bolivia"
-                # start_date = "08-04-2020"
-                # end_date = "12-04-2022"
-                # run_map_reduce3(start_date, end_date, ip, country)
-            else:
-                print('Try Again! Enter the valid choice.')
-    except:
-        print('Error! Check Input!')
-        pass
+    exit = 0
+    while(exit==0):
+        print("\n-------------- MENU --------------")
+        print("1. COVID-19 World News")
+        print("2. COVID-19 World Responses")
+        print("3. COVID-19 Country-wise News")
+        print("4. Menu")
+        print("5. EXIT")
+        user = int(input("\nEnter your choice: "))
+        if(user == 5):
+            exit = 1
+            continue
+        elif(user == 4):
+            continue
+        elif(user == 1):
+            if not check_last_updated("checkTimelinesCache.txt"):
+                print('\nWait!! Downloading & Parsing Countries webpages...\n')
+                getWikiData.run(1)
+            start_date = input("Enter the start date[dd-mm-yyyy format]: ")
+            end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            # run_map_reduce1("cache/world.txt",ip,country)
+        elif(user == 2):
+            if not check_last_updated("checkResponsesCache.txt"):
+                print('\nWait!! Downloading & Parsing Countries webpages...\n')
+                getWikiData.run(2)
+            start_date = input("Enter the start date[dd-mm-yyyy format]: ")
+            end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            # run_map_reduce2(start_date, end_date, ip, country)
+        elif(user == 2):
+            if not check_last_updated("checkCountriesCache.txt"):
+                print('\nWait!! Downloading & Parsing Countries webpages...\n')
+                getWikiData.run(3)
+            country = input("Enter name of the Country: ")
+            start_date = input("Enter the start date[dd-mm-yyyy format]: ")
+            end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            # country = "Australia"
+            # start_date = "08-04-2020"
+            # end_date = "12-04-2022"
+            # run_map_reduce3(start_date, end_date, ip, country)
+        else:
+            print('Try Again! Enter the valid choice.')
+    
     pass
 
 
