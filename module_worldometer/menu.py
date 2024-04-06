@@ -119,8 +119,8 @@ def main():
                 end_date = input("Enter the end date[dd-mm-yyyy format]: ")
                 if not check_last_updated("module_worldometer/checkCountryCache.txt"):
                     print('\nDownloading & Parsing Countries webpages...\n')
-                    for country in worldometers_countrylist:
-                        getCountryData(country)
+                    for i in worldometers_countrylist:
+                        getCountryData(i)
                 run_map_reduce2(start_date, end_date, ip, country)
     pass
 

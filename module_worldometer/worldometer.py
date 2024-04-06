@@ -236,7 +236,7 @@ def main():
     data=file_obj.read()
     lexer = lex.lex()
     lexer.input(data)
-    # with open('new.txt','w') as p:
+    # with open('module_worldometer/new.txt','w') as p:
     #     for tok in lexer:
     #         p.write(str(tok)+'\n')
     parser = yacc.yacc()

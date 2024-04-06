@@ -101,7 +101,7 @@ def main(file,token_file):
 
 def fetchDailyDeaths(country):
  
-    a,b = main(f'module_worldometer/html/{country}.html','new.txt')
+    a,b = main(f'module_worldometer/html/{country}.html','module_worldometer/new.txt')
     return a,b
 
 # country = input("enter: ")
