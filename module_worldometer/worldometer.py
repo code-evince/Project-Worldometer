@@ -228,11 +228,11 @@ def download_page(url, file_name):
 def main():
 
     url = "https://www.worldometers.info/coronavirus/"
-    file_name = "Worldometer_home.html"
+    file_name = "module_worldometer/Worldometer_home.html"
     download_page(url, file_name)
 
     print('Wait for Parsing...')
-    file_obj= open('Worldometer_home.html','r',encoding="utf-8")
+    file_obj= open('module_worldometer/Worldometer_home.html','r',encoding="utf-8")
     data=file_obj.read()
     lexer = lex.lex()
     lexer.input(data)

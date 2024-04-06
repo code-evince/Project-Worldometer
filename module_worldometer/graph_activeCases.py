@@ -115,7 +115,7 @@ def main(file,token_file):
 
 
 def fetchActiveCases(country):
-    a= main(f'html/{country}.html','new.txt')
+    a= main(f'module_worldometer/html/{country}.html','new.txt')
     return a
 
 

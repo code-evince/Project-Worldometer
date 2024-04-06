@@ -2,12 +2,12 @@ import os
 import requests
 import re
 # Create a directory to store HTML files if it doesn't exist
-html_dir = 'html'
+html_dir = 'module_worldometer/html'
 if not os.path.exists(html_dir):
     os.makedirs(html_dir)
 z =0
 # Read country names from the text file
-with open('worldometers_countrylist.txt', 'r') as file:
+with open('module_worldometer/worldometers_countrylist.txt', 'r') as file:
     countries = [line.strip() for line in file]
 
     fcountries = [s for s in countries if re.search(r'^[^:-]+$', s)]
