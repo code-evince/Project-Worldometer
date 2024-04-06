@@ -1,0 +1,25 @@
+
+January::Date	|	Cases	|	Recoveries	|	Deaths	|	Current cases	|	Sources	|	
+New	|	Total	|	New	|	Total	|	New	|	Total	|	Active	|	ICU	|	Ventilators	|	
+6	|	2,330	|	5,244,578	|	2,821	|	5,182,800	|	22	|	37,315	|	23,792	|	37	|	20	|	
+13	|	1,355	|	5,257,009	|	2,316	|	5,199,997	|	8	|	37,323	|	19,689	|	27	|	13	|	
+20	|	857	|	5,265,367	|	1,343	|	5,212,384	|	12	|	37,335	|	15,684	|	17	|	10	|	
+27	|	411	|	5,269,967	|	863	|	5,220,707	|	5	|	37,340	|	11,920	|	11	|	9	|	
+On 1 January 2024, the Deputy Education Minister  Wong Kah Woh  encouraged teachers and students to wear face masks, and staff members to do self-tests if they have COVID-19 symptoms. On 12 January,  Health Minister  Dr.  Dzulkefly Ahmad  stated that the  Health Ministry  would not be setting up field hospitals following a decrease in COVID-19 cases. On 13 January, four COVID-19 cases including a baby were detected at temporary flood evacuation centres in  Johor  state. 
+
+February::Date	|	Cases	|	Recoveries	|	Deaths	|	Current cases	|	Sources	|	
+New	|	Total	|	New	|	Total	|	New	|	Total	|	Active	|	ICU	|	Ventilators	|	
+3	|	190	|	5,272,517	|	409	|	5,225,276	|	7	|	37,347	|	9,894	|	9	|	6	|	
+10	|	170	|	5,273,996	|	188	|	5,227,828	|	0	|	37,347	|	8,821	|	4	|	3	|	
+17	|	142	|	5,274,786	|	166	|	5,229,308	|	0	|	37,347	|	8,131	|	3	|	2	|	
+24	|	97	|	5,275,667	|	143	|	5,230,084	|	0	|	37,347	|	8,236	|	3	|	2	|	
+On 13 February, several health authorities including Medical Practitioners Coalition Association of Malaysia president Dr Raj Kumar Maharajah and  Health Minister  Datuk Seri Dr.  Dzulkefly Ahmad  reported a downward trend in COVID-19 cases, hospitalisation and deaths in the 14 day period leading up to 10 February. 
+
+March::Date	|	Cases	|	Recoveries	|	Deaths	|	Current cases	|	Sources	|	
+New	|	Total	|	New	|	Total	|	New	|	Total	|	Active	|	ICU	|	Ventilators	|	
+2	|	63	|	5,276,312	|	97	|	5,230,953	|	1	|	37,348	|	8,011	|	1	|	1	|	
+9	|	65	|	5,276,880	|	66	|	5,231,597	|	0	|	37,348	|	7,935	|	1	|	1	|	
+16	|	82	|	5,277,473	|	64	|	5,232,165	|	0	|	37,348	|	7,960	|	2	|	2	|	
+23	|	74	|	5,277,929	|	94	|	5,232,678	|	0	|	37,348	|	7,833	|	0	|	0	|	
+30	|	60	|	5,278,355	|	75	|	5,233,212	|	0	|	37,348	|	7,795	|	0	|	0	|	
+On 25 March, the Health Ministry confirmed that COVID-19 would be integrated into the country's broader health approach as Malaysia transitioned into the endemic phase. 

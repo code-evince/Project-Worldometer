@@ -80,6 +80,9 @@ def run_map_reduce2(start_date, end_date, option, given_country):
 def run_map_reduce3(file_name, option, country_name):
     pass
 
+def findJaccardSim(country):
+    pass
+
 def main():
     print("------------------------------------")
     print("        Welcome to Wikipedia")
@@ -90,7 +93,7 @@ def main():
         print("1. COVID-19 World News")
         print("2. COVID-19 World Responses")
         print("3. COVID-19 Country-wise News")
-        print("4. Menu")
+        print("4. Jaccard Similarity")
         print("5. EXIT")
         user = int(input("\nEnter your choice: "))
         if(user == 5):
@@ -115,7 +118,8 @@ def main():
         elif(user == 3):
             if not check_last_updated("checkCountriesCache.txt"):
                 print('\nWait!! Downloading & Parsing Countries webpages...\n')
-                getWikiData.run(3)
+            getWikiData.run(3)
+            ### create menu with news availability timeline ##########
             country = input("Enter name of the Country: ")
             start_date = input("Enter the start date[dd-mm-yyyy format]: ")
             end_date = input("Enter the end date[dd-mm-yyyy format]: ")
@@ -123,6 +127,13 @@ def main():
             # start_date = "08-04-2020"
             # end_date = "12-04-2022"
             # run_map_reduce3(start_date, end_date, ip, country)
+        elif(user == 4):
+            if not check_last_updated("checkCountriesCache.txt"):
+                print('\nWait!! Downloading & Parsing Countries webpages...\n')
+                getWikiData.run(4)
+            country = input("Enter name of the Country: ")
+            findJaccardSim(country)
+            pass
         else:
             print('Try Again! Enter the valid choice.')
     

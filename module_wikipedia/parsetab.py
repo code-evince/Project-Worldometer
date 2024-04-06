@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'BEGININFO CLOSEDATA CLOSEDIV CLOSEH3 CLOSEHREF CLOSEROW CLOSESPAN CLOSESTYLE CONTENT ENDINFO GARBAGE NBSP OPENDATA OPENDIV OPENH3 OPENHREF OPENROW OPENSPAN OPENSTYLEstart : tableskipall : OPENHREF skipall\n                | CLOSEHREF skipall\n                | OPENDATA skipall\n                | CLOSEDATA skipall\n                | CONTENT skipall\n                | emptyskiptag : CONTENT skiptag\n            | emptytable : BEGININFO skiptag news skiptag ENDINFOdate : OPENH3 CONTENT textdata CLOSEH3textdata : CONTENT textdata\n                | emptynews : date textdata news\n            | date textdata\n            | emptycontent : CONTENT\n            | emptyempty :'
+_lr_signature = 'BEGININFO CLOSEH3 CLOSEROW CLOSETABLE CONTENT ENDINFO GARBAGE NBSP OPENH3 OPENROW OPENTABLEstart : tableskipall : OPENTABLE skipall\n                | CLOSETABLE skipall\n                | OPENROW skipall\n                | CLOSEROW skipall\n                | CONTENT skipall\n                | emptyskiptag : CONTENT skiptag\n            | emptytable : BEGININFO skipall news skiptag ENDINFOdate : OPENH3 CONTENT textdata CLOSEH3textdata : CONTENT textdata\n                | emptynews : date skiptag picktable textdata news\n            | date textdata news\n            | emptypicktable : OPENTABLE handlerow CLOSETABLEhandlerow : OPENROW tabledata CLOSEROW handlerow\n                | emptytabledata : CONTENT tabledata\n                | emptycontent : CONTENT\n            | emptyempty :'
     
-_lr_action_items = {'BEGININFO':([0,],[3,]),'$end':([1,2,17,],[0,-1,-10,]),'CONTENT':([3,4,5,6,7,8,9,10,11,13,14,15,16,18,19,21,],[5,-19,5,-9,5,14,-16,16,-8,-15,14,-13,14,-14,-12,-11,]),'OPENH3':([3,4,5,6,8,11,13,14,15,19,21,],[-19,10,-19,-9,-19,-8,10,-19,-13,-12,-11,]),'ENDINFO':([3,4,5,6,7,8,9,11,12,13,14,15,18,19,21,],[-19,-19,-19,-9,-19,-19,-16,-8,17,-15,-19,-13,-14,-12,-11,]),'CLOSEH3':([14,15,16,19,20,],[-19,-13,-19,-12,21,]),}
+_lr_action_items = {'BEGININFO':([0,],[3,]),'$end':([1,2,28,],[0,-1,-10,]),'OPENTABLE':([3,5,6,7,8,9,12,23,25,26,29,41,],[5,5,5,5,5,5,-24,31,-24,-9,-8,-11,]),'CLOSETABLE':([3,5,6,7,8,9,31,38,40,47,49,],[6,6,6,6,6,6,-24,43,-19,-24,-18,]),'OPENROW':([3,5,6,7,8,9,31,47,],[7,7,7,7,7,7,39,39,]),'CLOSEROW':([3,5,6,7,8,9,39,44,45,46,48,],[8,8,8,8,8,8,-24,47,-24,-21,-20,]),'CONTENT':([3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,24,25,26,27,30,32,33,34,36,37,39,41,42,43,45,],[9,-24,9,9,9,9,9,-7,21,25,-16,27,-2,-3,-4,-5,-6,21,-24,25,-13,34,34,-15,-12,34,-13,-24,45,-11,-14,-17,45,]),'OPENH3':([3,4,5,6,7,8,9,10,12,15,16,17,18,19,24,25,26,30,33,34,36,37,41,43,],[-24,14,-24,-24,-24,-24,-24,-7,-24,-2,-3,-4,-5,-6,14,-24,-13,-24,-12,-24,-13,14,-11,-17,]),'ENDINFO':([3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,22,24,25,26,29,30,32,33,34,36,37,41,42,43,],[-24,-24,-24,-24,-24,-24,-24,-7,-24,-24,-16,-2,-3,-4,-5,-6,28,-24,-9,-24,-24,-13,-8,-24,-15,-12,-24,-13,-24,-11,-14,-17,]),'CLOSEH3':([27,33,34,35,36,],[-24,-12,-24,41,-13,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'start':([0,],[1,]),'table':([0,],[2,]),'skiptag':([3,5,7,],[4,11,12,]),'empty':([3,4,5,7,8,13,14,16,],[6,9,6,6,15,9,15,15,]),'news':([4,13,],[7,18,]),'date':([4,13,],[8,8,]),'textdata':([8,14,16,],[13,19,20,]),}
+_lr_goto_items = {'start':([0,],[1,]),'table':([0,],[2,]),'skipall':([3,5,6,7,8,9,],[4,15,16,17,18,19,]),'empty':([3,4,5,6,7,8,9,11,12,21,24,25,27,30,31,34,37,39,45,47,],[10,13,10,10,10,10,10,22,26,22,13,26,36,36,40,36,13,46,46,40,]),'news':([4,24,37,],[11,32,42,]),'date':([4,24,37,],[12,12,12,]),'skiptag':([11,12,21,25,],[20,23,29,29,]),'textdata':([12,25,27,30,34,],[24,33,35,37,33,]),'picktable':([23,],[30,]),'handlerow':([31,47,],[38,49,]),'tabledata':([39,45,],[44,48,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,23 +27,28 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> start","S'",1,None,None,None),
-  ('start -> table','start',1,'p_start','wiki_parser_2019.py',97),
-  ('skipall -> OPENHREF skipall','skipall',2,'p_skipall','wiki_parser_2019.py',101),
-  ('skipall -> CLOSEHREF skipall','skipall',2,'p_skipall','wiki_parser_2019.py',102),
-  ('skipall -> OPENDATA skipall','skipall',2,'p_skipall','wiki_parser_2019.py',103),
-  ('skipall -> CLOSEDATA skipall','skipall',2,'p_skipall','wiki_parser_2019.py',104),
-  ('skipall -> CONTENT skipall','skipall',2,'p_skipall','wiki_parser_2019.py',105),
-  ('skipall -> empty','skipall',1,'p_skipall','wiki_parser_2019.py',106),
-  ('skiptag -> CONTENT skiptag','skiptag',2,'p_skiptag','wiki_parser_2019.py',109),
-  ('skiptag -> empty','skiptag',1,'p_skiptag','wiki_parser_2019.py',110),
-  ('table -> BEGININFO skiptag news skiptag ENDINFO','table',5,'p_table','wiki_parser_2019.py',113),
-  ('date -> OPENH3 CONTENT textdata CLOSEH3','date',4,'p_date','wiki_parser_2019.py',118),
-  ('textdata -> CONTENT textdata','textdata',2,'p_textdata','wiki_parser_2019.py',123),
-  ('textdata -> empty','textdata',1,'p_textdata','wiki_parser_2019.py',124),
-  ('news -> date textdata news','news',3,'p_news','wiki_parser_2019.py',131),
-  ('news -> date textdata','news',2,'p_news','wiki_parser_2019.py',132),
-  ('news -> empty','news',1,'p_news','wiki_parser_2019.py',133),
-  ('content -> CONTENT','content',1,'p_content','wiki_parser_2019.py',144),
-  ('content -> empty','content',1,'p_content','wiki_parser_2019.py',145),
-  ('empty -> <empty>','empty',0,'p_empty','wiki_parser_2019.py',149),
+  ('start -> table','start',1,'p_start','rough.py',74),
+  ('skipall -> OPENTABLE skipall','skipall',2,'p_skipall','rough.py',78),
+  ('skipall -> CLOSETABLE skipall','skipall',2,'p_skipall','rough.py',79),
+  ('skipall -> OPENROW skipall','skipall',2,'p_skipall','rough.py',80),
+  ('skipall -> CLOSEROW skipall','skipall',2,'p_skipall','rough.py',81),
+  ('skipall -> CONTENT skipall','skipall',2,'p_skipall','rough.py',82),
+  ('skipall -> empty','skipall',1,'p_skipall','rough.py',83),
+  ('skiptag -> CONTENT skiptag','skiptag',2,'p_skiptag','rough.py',86),
+  ('skiptag -> empty','skiptag',1,'p_skiptag','rough.py',87),
+  ('table -> BEGININFO skipall news skiptag ENDINFO','table',5,'p_table','rough.py',90),
+  ('date -> OPENH3 CONTENT textdata CLOSEH3','date',4,'p_date','rough.py',95),
+  ('textdata -> CONTENT textdata','textdata',2,'p_textdata','rough.py',100),
+  ('textdata -> empty','textdata',1,'p_textdata','rough.py',101),
+  ('news -> date skiptag picktable textdata news','news',5,'p_news','rough.py',108),
+  ('news -> date textdata news','news',3,'p_news','rough.py',109),
+  ('news -> empty','news',1,'p_news','rough.py',110),
+  ('picktable -> OPENTABLE handlerow CLOSETABLE','picktable',3,'p_picktable','rough.py',121),
+  ('handlerow -> OPENROW tabledata CLOSEROW handlerow','handlerow',4,'p_handlerow','rough.py',125),
+  ('handlerow -> empty','handlerow',1,'p_handlerow','rough.py',126),
+  ('tabledata -> CONTENT tabledata','tabledata',2,'p_tabledata','rough.py',133),
+  ('tabledata -> empty','tabledata',1,'p_tabledata','rough.py',134),
+  ('content -> CONTENT','content',1,'p_content','rough.py',141),
+  ('content -> empty','content',1,'p_content','rough.py',142),
+  ('empty -> <empty>','empty',0,'p_empty','rough.py',146),
 ]

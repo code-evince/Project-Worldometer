@@ -105,11 +105,15 @@ def p_textdata(p):
         p[0] = ""
 
 def p_news(p):
-    '''news : date picktable textdata news
+    '''news : date skiptag picktable textdata news
             | date textdata news
             | empty'''
-    if len(p) == 5:
-        p[0] = p[1]+'::'+p[2]+'\n'+p[3]+'\n'+p[4]
+    # if len(p) == 5:
+    #     p[0] = p[1]+'::'+p[2]+''+p[3]+'\n'+p[4]
+    #     # p[0] = p[1]+'::'+p[3]+'\n'+p[4]
+    if len(p) == 6:
+        p[0] = p[1]+'::'+p[3]+''+p[4]+'\n'+p[5]
+        # p[0] = p[1]+'::'+p[4]+'\n'+p[5]
     elif len(p) == 4:
         p[0] = p[1]+'::'+p[2]+'\n'+p[3]
     else:

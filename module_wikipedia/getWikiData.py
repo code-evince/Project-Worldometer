@@ -1,14 +1,15 @@
 import time
 import sys
 import os
+import re
 import subprocess
 import warnings
 import wiki_parser
 import wiki_parser_2019
 import wiki_parser_2023_2024
 import wiki_parser_country
-warnings.filterwarnings("ignore")
-sys.stderr = open(os.devnull,'w')
+# warnings.filterwarnings("ignore")
+# sys.stderr = open(os.devnull,'w')
 
 months = {'January': '01','February': '02','March': '03','April': '04','May': '05','June': '06','July': '07','August': '08','September': '09','October': '10','November': '11','December': '12'}
 
@@ -28,6 +29,69 @@ def writefile(fname, loc, covidnews):
         for news in covidnews:
             f.write(news)
     f.close()
+
+def fetch_data_date_wise(c_name, c_year):
+    # print(f'@{c_name},{c_year},{len(c_year)}@')###########################
+    # Open the text file in read mode
+    with open(f"CovidNewsTxt/countries/temp/temp_{c_name}_{c_year}.txt", "r") as file:
+        covidnews = []
+        paragraph = ""
+        
+        for line in file:
+            # If the line is not empty, append it to the current paragraph
+            if line.strip():
+                paragraph += line
+            # If the line is empty and current paragraph is not empty, 
+            # append the current paragraph to the list of covidnews
+            elif paragraph:
+                covidnews.append(paragraph.strip())
+                paragraph = ""
+        
+        # Append the last paragraph if any
+        if paragraph:
+            covidnews.append(paragraph.strip())
+    file.close()
+    # print("newssss",covidnews)####################################
+
+    # fetching daily news & write to file
+    with open(f'CovidNewsTxt/countries/{c_name}_{c_year}.txt', 'w') as file:
+        for month_data in covidnews:
+            month_name, data = month_data.split("::")
+            # print(f"\nMonth: {month_name}")
+            # Use regular expression to find dates
+            date_pattern = r"(On|By|From) (\d{1,2}) (\w+)"
+            dates = re.findall(date_pattern, data)
+
+            for date in dates:
+                date_prefix, day, month = date
+                month_num = months.get(month.capitalize(), None)
+                if month_num:
+                    date_str = f"{day} {month}"
+                    # Find the data corresponding to the date
+                    start_index = data.index(date_prefix + " " + date_str)
+                    next_date_pattern = r"(On|By|From) (\d{1,2}) (\w+)"
+                    next_date_match = re.search(next_date_pattern, data[start_index + 1:])
+                    if next_date_match:
+                        end_index = start_index + next_date_match.start()
+                    else:
+                        end_index = len(data)
+                    date_data = data[start_index:end_index]
+
+                    # Check for additional information after the first date
+                    additional_info_start = date_data.find(". On")
+                    if additional_info_start != -1:
+                        additional_info = date_data[additional_info_start + 2:]
+                        date_data = date_data[:additional_info_start + 2] + "" + additional_info
+
+                    # Split the input into day and month
+                    d, m = date_str.split()
+                    # Convert the date into two-digit format
+                    t = d.zfill(2)
+                    formatted_date = f"{t} {m}"
+
+                    file.write(f"{formatted_date}::{date_data}\n\n")
+    file.close()
+    return
 
 def run(ctrl):
     if ctrl == 1:   #get timelines data
@@ -85,27 +149,50 @@ def run(ctrl):
         file_name = "checkCountriesCache.txt"
         write_last_updated_time(file_name) 
 
-        with open('link_countries.txt', 'r') as file:
-            # lines = file.readlines()
-            # for url in lines:
+        with open('link.txt', 'r') as file:
             for line in file:
-                # temp = url.split('_')
-                # country = temp[-2:]
-                url = line
-                print(url)##############################
+                if line == '\n':
+                    continue
+                url = line.strip()
                 country = url.split('_')
                 c_name = country[6]
                 c_year = country[7]
-                print(c_name,c_year)###########################
+                if len(c_year) != 6:
+                    temp = c_year.split('%')
+                    m1 = temp[0]
+                    m1 = m1[1:]
+                    m2 = temp[3]
+                    m2 = m2[2:]
+                    c_year = f'{m1}_to_{m2}_({country[8]}'
+                print(f'+{c_name},{c_year},{len(c_year)}+')###########################
                 name = f'Webpages/countries/{c_name}_{c_year}'
-                covidnews = wiki_parser_country.runparser(name, url)
-                #write to file
-                fname = f'{c_name}_{c_year}'
-                loc = f'CovidNewsTxt/countries'
+                if c_name == 'Australia':
+                    covidnews = wiki_parser_2019.runparser(name, url)
+                elif c_name == 'India':
+                    # covidnews = wiki_parser_2019.runparser(name, url)
+                    covidnews = wiki_parser.runparser(name, url)
+                    # dont use fetch funtn
+                elif c_name == 'Malaysia':
+                    # covidnews = wiki_parser.runparser(name, url)
+                    covidnews = wiki_parser_country.runparser(name, url)
+                elif c_name == 'England':
+                    # covidnews = wiki_parser.runparser(name, url)
+                    covidnews = wiki_parser_country.runparser(name, url)
+                elif c_name == 'Singapore':
+                    # covidnews = wiki_parser.runparser(name, url)
+                    covidnews = wiki_parser_country.runparser(name, url)
+            
+                #write to temp file
+                fname = f'temp_{c_name}_{c_year}'
+                loc = f'CovidNewsTxt/countries/temp'
                 writefile(fname, loc, covidnews)
+                fetch_data_date_wise(c_name, c_year)
         pass
 
     elif ctrl == 4:     #get all countries data
+        # check cache for the COvid News data
+        file_name = "checkCountriesCache.txt"
+        write_last_updated_time(file_name) 
         pass
     
     return
