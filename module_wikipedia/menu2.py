@@ -3,7 +3,6 @@ import sys
 import os
 import subprocess
 import getWikiData
-# from getData import main as getCountryData
 import warnings
 warnings.filterwarnings("ignore")
 sys.stderr = open(os.devnull,'w')
@@ -35,6 +34,8 @@ def check_last_updated(file_name):
     else:
         return False
 
+##############################################
+##############################################
 def run_map_reduce1(file_name, option, country_name):
     # country_name = country_name.replace(' ', '')
     # mapper_cmd = f"python3 utilities/package1/mapper1.py {option} {file_name}"
@@ -82,6 +83,8 @@ def run_map_reduce3(file_name, option, country_name):
 
 def findJaccardSim(country):
     pass
+##############################################
+##############################################
 
 def main():
     exit = 0
@@ -103,21 +106,25 @@ def main():
         elif(user == 4):
             continue
         elif(user == 1):
-            if not check_last_updated("checkTimelinesCache.txt"):
+            if not check_last_updated("module_wikipedia/checkTimelinesCache.txt"):
                 print('\nWait!! Downloading & Parsing Countries webpages...\n')
                 getWikiData.run(1)
             start_date = input("Enter the start date[dd-mm-yyyy format]: ")
             end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            ##############################################
             # run_map_reduce1("cache/world.txt",ip,country)
+            ##############################################
         elif(user == 2):
-            if not check_last_updated("checkResponsesCache.txt"):
+            if not check_last_updated("module_wikipedia/checkResponsesCache.txt"):
                 print('\nWait!! Downloading & Parsing Countries webpages...\n')
                 getWikiData.run(2)
             start_date = input("Enter the start date[dd-mm-yyyy format]: ")
             end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            ##############################################
             # run_map_reduce2(start_date, end_date, ip, country)
+            ##############################################
         elif(user == 3):
-            if not check_last_updated("checkCountriesCache.txt"):
+            if not check_last_updated("module_wikipedia/checkCountriesCache.txt"):
                 print('\nWait!! Downloading & Parsing Countries webpages...\n')
                 getWikiData.run(3)
             while True:
@@ -134,15 +141,19 @@ def main():
                     # country = "Australia"
                     # start_date = "08-04-2020"
                     # end_date = "12-04-2022"
+                    ##############################################
                     # run_map_reduce3(start_date, end_date, ip, country)
+                    ##############################################
                 else:
                     print('Try Again! Enter the valid choice.')
         elif(user == 4):
-            if not check_last_updated("checkCountriesCache.txt"):
+            if not check_last_updated("module_wikipedia/checkCountriesCache.txt"):
                 print('\nWait!! Downloading & Parsing Countries webpages...\n')
                 getWikiData.run(3)
             country = input("Enter name of the Country: ")
+            ##############################################
             findJaccardSim(country)
+            ##############################################
             pass
         else:
             print('Try Again! Enter the valid choice.')

@@ -172,7 +172,7 @@ def runparser(name, url):
     # for tok in lexer:
     #     print(tok)
     # Open a file for writing
-    with open("tokens.txt", "w", encoding = "utf-8") as file:
+    with open("module_wikipedia/tokens.txt", "w", encoding = "utf-8") as file:
         for tok in lexer:
             # print(tok)
             file.write(str(tok))
@@ -189,9 +189,9 @@ def runparser(name, url):
 
 # if __name__ == "__main__":
 #     # 
-#     name = "try"
+#     name = "module_wikipedia/try"
 #     url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2023"
-#     name = "try"
+#     name = "module_wikipedia/try"
 #     # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2024"
 
 #     covidnews = runparser(name, url)

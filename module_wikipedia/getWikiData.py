@@ -9,8 +9,8 @@ import wiki_parser_2019
 import wiki_parser_2023_2024
 import wiki_parser_country
 import wiki_parser_singapore_2022
-# warnings.filterwarnings("ignore")
-# sys.stderr = open(os.devnull,'w')
+warnings.filterwarnings("ignore")
+sys.stderr = open(os.devnull,'w')
 
 months = {'January': '01','February': '02','March': '03','April': '04','May': '05','June': '06','July': '07','August': '08','September': '09','October': '10','November': '11','December': '12'}
 
@@ -33,7 +33,7 @@ def writefile(fname, loc, covidnews):
 
 def readCovidNews(c_name, c_year):
     # Open the text file in read mode
-    with open(f"CovidNewsTxt/countries/temp/temp_{c_name}_{c_year}.txt", "r") as file:
+    with open(f"module_wikipedia/CovidNewsTxt/countries/temp/temp_{c_name}_{c_year}.txt", "r") as file:
         covidnews = []
         paragraph = ""
         
@@ -58,7 +58,7 @@ def fetch_data_date_wise1(c_name, c_year):
     covidnews = readCovidNews(c_name, c_year)
 
     # fetching daily news & write to file
-    with open(f'CovidNewsTxt/countries/{c_name}_{c_year}.txt', 'w') as file:
+    with open(f'module_wikipedia/CovidNewsTxt/countries/{c_name}_{c_year}.txt', 'w') as file:
         for month_data in covidnews:
             month_name, data = month_data.split("::")
             # print(f"\nMonth: {month_name}")
@@ -102,7 +102,7 @@ def fetch_data_date_wise2(c_name, c_year):
     covidnews = readCovidNews(c_name, c_year)
 
     # fetching daily news & write to file
-    with open(f'CovidNewsTxt/countries/{c_name}_{c_year}.txt', 'w') as file:
+    with open(f'module_wikipedia/CovidNewsTxt/countries/{c_name}_{c_year}.txt', 'w') as file:
         # checking for month
         month_pattern = '|'.join(months.keys())
 
@@ -132,60 +132,60 @@ def fetch_data_date_wise2(c_name, c_year):
 def run(ctrl):
     if ctrl == 1:   #get timelines data
         # check cache for the COvid News data
-        file_name = "checkTimelinesCache.txt"
+        file_name = "module_wikipedia/checkTimelinesCache.txt"
         write_last_updated_time(file_name) 
 
         # handle year 2019      
-        name = f'Webpages/timelines/2019'
+        name = f'module_wikipedia/Webpages/timelines/2019'
         url = f"https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_2019"
         covidnews = wiki_parser_2019.runparser(name, url)
         fname = '2019'   #write to file
-        loc = f'CovidNewsTxt/timelines'
+        loc = f'module_wikipedia/CovidNewsTxt/timelines'
         writefile(fname, loc, covidnews)
                                      
         # handle year 2020-2022                                   
         for year in [2020, 2021, 2022]:
             for month, num in months.items():
-                name = f'Webpages/timelines/{month}_{year}'
+                name = f'module_wikipedia/Webpages/timelines/{month}_{year}'
                 url = f"https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_{month}_{year}"
                 covidnews = wiki_parser.runparser(name, url)
                 #write to file
                 fname = f'{num}_{year}'
-                loc = f'CovidNewsTxt/timelines'
+                loc = f'module_wikipedia/CovidNewsTxt/timelines'
                 writefile(fname, loc, covidnews)
 
         # handle year 2023 & 2024 
         for year in [2023, 2024]:
-            name = f'Webpages/timelines/{year}'
+            name = f'module_wikipedia/Webpages/timelines/{year}'
             url = f"https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_{year}"
             covidnews = wiki_parser_2023_2024.runparser(name, url)
             fname = f'{year}'
-            loc = f'CovidNewsTxt/timelines'
+            loc = f'module_wikipedia/CovidNewsTxt/timelines'
             writefile(fname, loc, covidnews)    
 
     elif ctrl == 2:     #get reponses data
         # check cache for the COvid News data
-        file_name = "checkResponsesCache.txt"
+        file_name = "module_wikipedia/checkResponsesCache.txt"
         write_last_updated_time(file_name) 
 
         for year in [2020, 2021, 2022]:
             for month, num in months.items():
                 if (year == 2022 and (month in ['November', 'December'])):
                     continue
-                name = f'Webpages/responses/{month}_{year}'
+                name = f'module_wikipedia/Webpages/responses/{month}_{year}'
                 url = f"https://en.wikipedia.org/wiki/Responses_to_the_COVID-19_pandemic_in_{month}_{year}"
                 covidnews = wiki_parser.runparser(name, url)
                 #write to file
                 fname = f'{num}_{year}'
-                loc = f'CovidNewsTxt/responses'
+                loc = f'module_wikipedia/CovidNewsTxt/responses'
                 writefile(fname, loc, covidnews)
 
     elif ctrl == 3:     #get countries data
         # check cache for the COvid News data
-        file_name = "checkCountriesCache.txt"
+        file_name = "module_wikipedia/checkCountriesCache.txt"
         write_last_updated_time(file_name) 
 
-        with open('link_countries.txt', 'r') as file:
+        with open('module_wikipedia/link_countries.txt', 'r') as file:
             for line in file:
                 if line == '\n':
                     continue
@@ -201,7 +201,7 @@ def run(ctrl):
                     m2 = m2[2:]
                     c_year = f'{m1}_to_{m2}_{country[8][:-1]}'
                 # print(f'+{c_name},{c_year},{len(c_year)}+')###########################
-                name = f'Webpages/countries/{c_name}_{c_year}'
+                name = f'module_wikipedia/Webpages/countries/{c_name}_{c_year}'
                 if c_name == 'Australia':
                     covidnews = wiki_parser_2019.runparser(name, url)
                 elif c_name == 'India':
@@ -219,16 +219,16 @@ def run(ctrl):
                 #write to temp files
                 if c_name == 'Australia' or c_name == 'Malaysia':
                     fname = f'temp_{c_name}_{c_year}'
-                    loc = f'CovidNewsTxt/countries/temp'
+                    loc = f'module_wikipedia/CovidNewsTxt/countries/temp'
                     writefile(fname, loc, covidnews)
                     fetch_data_date_wise1(c_name, c_year)
                 elif c_name == 'India':
                     fname = f'{c_name}_{c_year}'
-                    loc = f'CovidNewsTxt/countries'
+                    loc = f'module_wikipedia/CovidNewsTxt/countries'
                     writefile(fname, loc, covidnews)
                 elif c_name == 'England' or c_name == 'Singapore':
                     fname = f'temp_{c_name}_{c_year}'
-                    loc = f'CovidNewsTxt/countries/temp'
+                    loc = f'module_wikipedia/CovidNewsTxt/countries/temp'
                     writefile(fname, loc, covidnews)
                     fetch_data_date_wise2(c_name, c_year)
         file.close()
@@ -236,7 +236,7 @@ def run(ctrl):
 
     elif ctrl == 4:     #get all countries data
         # check cache for the COvid News data
-        file_name = "checkCountriesCache.txt"
+        file_name = "module_wikipedia/checkCountriesCache.txt"
         write_last_updated_time(file_name) 
         pass
     
