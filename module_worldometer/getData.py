@@ -36,13 +36,13 @@ def main(country):
 
     # Open the file in write mode
     country = country.replace(' ', '_')
-    with open(f"cache/country/{country}.txt", "w") as file:
+    with open(f"module_worldometer/cache/country/{country}.txt", "w") as file:
         # Iterate over the zipped arrays
         for values in zipped_arrays:
             # Join the values with tabs and write to the file
             file.write("\t".join(map(str, values)) + "\n")
     
-    file_name = "checkCountryCache.txt"
+    file_name = "module_worldometer/checkCountryCache.txt"
     write_last_updated_time(file_name)
 
 

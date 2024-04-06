@@ -24,11 +24,11 @@ def main():
     world = worldometer.main()
 
     # Open the file in write mode
-    with open(f"cache/world.txt", "w") as file:
+    with open(f"module_worldometer/cache/world.txt", "w") as file:
         for i in range(len(world)):
             file.write("\t".join(map(str, world[i])) + "\n")
     
-    file_name = "lastUpdated.txt"
+    file_name = "module_worldometer/lastUpdated.txt"
     write_last_updated_time(file_name)
 
 

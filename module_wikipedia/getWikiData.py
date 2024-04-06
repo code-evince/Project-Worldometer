@@ -8,6 +8,7 @@ import wiki_parser
 import wiki_parser_2019
 import wiki_parser_2023_2024
 import wiki_parser_country
+import wiki_parser_singapore_2022
 # warnings.filterwarnings("ignore")
 # sys.stderr = open(os.devnull,'w')
 
@@ -30,8 +31,7 @@ def writefile(fname, loc, covidnews):
             f.write(news)
     f.close()
 
-def fetch_data_date_wise(c_name, c_year):
-    # print(f'@{c_name},{c_year},{len(c_year)}@')###########################
+def readCovidNews(c_name, c_year):
     # Open the text file in read mode
     with open(f"CovidNewsTxt/countries/temp/temp_{c_name}_{c_year}.txt", "r") as file:
         covidnews = []
@@ -51,7 +51,11 @@ def fetch_data_date_wise(c_name, c_year):
         if paragraph:
             covidnews.append(paragraph.strip())
     file.close()
-    # print("newssss",covidnews)####################################
+    return covidnews
+
+def fetch_data_date_wise1(c_name, c_year):
+    # getting news
+    covidnews = readCovidNews(c_name, c_year)
 
     # fetching daily news & write to file
     with open(f'CovidNewsTxt/countries/{c_name}_{c_year}.txt', 'w') as file:
@@ -90,6 +94,38 @@ def fetch_data_date_wise(c_name, c_year):
                     formatted_date = f"{t} {m}"
 
                     file.write(f"{formatted_date}::{date_data}\n\n")
+    file.close()
+    return
+
+def fetch_data_date_wise2(c_name, c_year):
+    # getting news
+    covidnews = readCovidNews(c_name, c_year)
+
+    # fetching daily news & write to file
+    with open(f'CovidNewsTxt/countries/{c_name}_{c_year}.txt', 'w') as file:
+        # checking for month
+        month_pattern = '|'.join(months.keys())
+
+        if c_name == 'England':
+            # Regular expression pattern to match dates in the format "DD Month – "
+            date_pattern = rf"(\d+\s+({month_pattern}))\s+–\s*(.+?)\s*(?=\d+\s+\w+\s+–|$)"
+        elif c_name == 'Singapore':
+            # Regular expression pattern to match dates in the format "DD Month: "
+            date_pattern = rf"(\d+\s+({month_pattern})):\s*(.+?)\s*(?=\d+\s+\w+:|$)"
+
+        for item in covidnews:
+            month, news_items = item.split("::", 1)
+            for match in re.finditer(date_pattern, news_items):
+                date = match.group(1)
+                news = match.group(3)
+                # news_by_date.append(f"{date}::{news}")
+
+                # Split the input into day and month
+                d, m = date.split()
+                # Convert the date into two-digit format
+                t = d.zfill(2)
+                formatted_date = f"{t} {m}"
+                file.write(f"{formatted_date}::{news}\n\n")
     file.close()
     return
 
@@ -149,44 +185,53 @@ def run(ctrl):
         file_name = "checkCountriesCache.txt"
         write_last_updated_time(file_name) 
 
-        with open('link.txt', 'r') as file:
+        with open('link_countries.txt', 'r') as file:
             for line in file:
                 if line == '\n':
                     continue
                 url = line.strip()
                 country = url.split('_')
                 c_name = country[6]
-                c_year = country[7]
-                if len(c_year) != 6:
-                    temp = c_year.split('%')
+                c_year = country[7][1:-1]
+                if len(country[7]) != 6:
+                    temp = country[7].split('%')
                     m1 = temp[0]
                     m1 = m1[1:]
                     m2 = temp[3]
                     m2 = m2[2:]
-                    c_year = f'{m1}_to_{m2}_({country[8]}'
-                print(f'+{c_name},{c_year},{len(c_year)}+')###########################
+                    c_year = f'{m1}_to_{m2}_{country[8][:-1]}'
+                # print(f'+{c_name},{c_year},{len(c_year)}+')###########################
                 name = f'Webpages/countries/{c_name}_{c_year}'
                 if c_name == 'Australia':
                     covidnews = wiki_parser_2019.runparser(name, url)
                 elif c_name == 'India':
-                    # covidnews = wiki_parser_2019.runparser(name, url)
                     covidnews = wiki_parser.runparser(name, url)
-                    # dont use fetch funtn
                 elif c_name == 'Malaysia':
-                    # covidnews = wiki_parser.runparser(name, url)
                     covidnews = wiki_parser_country.runparser(name, url)
                 elif c_name == 'England':
-                    # covidnews = wiki_parser.runparser(name, url)
                     covidnews = wiki_parser_country.runparser(name, url)
                 elif c_name == 'Singapore':
-                    # covidnews = wiki_parser.runparser(name, url)
-                    covidnews = wiki_parser_country.runparser(name, url)
-            
-                #write to temp file
-                fname = f'temp_{c_name}_{c_year}'
-                loc = f'CovidNewsTxt/countries/temp'
-                writefile(fname, loc, covidnews)
-                fetch_data_date_wise(c_name, c_year)
+                    if c_year == '2022':
+                        covidnews = wiki_parser_singapore_2022.runparser(name, url)
+                    else:
+                        covidnews = wiki_parser_country.runparser(name, url)
+
+                #write to temp files
+                if c_name == 'Australia' or c_name == 'Malaysia':
+                    fname = f'temp_{c_name}_{c_year}'
+                    loc = f'CovidNewsTxt/countries/temp'
+                    writefile(fname, loc, covidnews)
+                    fetch_data_date_wise1(c_name, c_year)
+                elif c_name == 'India':
+                    fname = f'{c_name}_{c_year}'
+                    loc = f'CovidNewsTxt/countries'
+                    writefile(fname, loc, covidnews)
+                elif c_name == 'England' or c_name == 'Singapore':
+                    fname = f'temp_{c_name}_{c_year}'
+                    loc = f'CovidNewsTxt/countries/temp'
+                    writefile(fname, loc, covidnews)
+                    fetch_data_date_wise2(c_name, c_year)
+        file.close()
         pass
 
     elif ctrl == 4:     #get all countries data

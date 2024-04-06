@@ -28,11 +28,11 @@ def t_ENDINFO(t):
     return t
 
 def t_OPENH3(t):
-    r'<h3.*?>'
+    r'<h2.*?>'
     return t
 
 def t_CLOSEH3(t):
-    r'</h3.*?>'
+    r'</h2.*?>'
     return t
 
 def t_NBSP(t):
@@ -40,7 +40,7 @@ def t_NBSP(t):
     # return t
 
 def t_ignore_all(t):
-    r'<h4>|</h4>|<i>|</i>|</b>|<b>|<ul>|</ul>|<li>|</li>|</p>|<p>|<h2[^>]*>.*?<\/h2>|<img.*?>|<style.*?>.*?</style>|<figure[^>]*>.*?<\/figure>|<script.*?>.*?</script>|<sup.*?>.*?</sup>|<span.*?>|</span>|<a.href.*?>|</a>|<span.class="mw-editsection">.*?]</span></span>'
+    r'<h4>|</h4>|<i>|</i>|</b>|<b>|<ul>|</ul>|<li>|</li>|</p>|<p>|<img.*?>|<style.*?>.*?</style>|<figure[^>]*>.*?<\/figure>|<script.*?>.*?</script>|<sup.*?>.*?</sup>|<span.*?>|</span>|<a.href.*?>|</a>|<span.class="mw-editsection">.*?]</span></span>'
     pass
 
 def t_OPENTABLE(t):
@@ -189,11 +189,11 @@ def runparser(name, url):
 
 if __name__ == "__main__":
     #
+    url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Singapore_(2022)"
     name = "try"
-    url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Malaysia_(2020)"
+    # url = "https://en.wikipedia.org/wiki/Timeline_of_the_COVID-19_pandemic_in_Malaysia_(2023)"
 
     covidnews = runparser(name, url)
-    # print(covidnews)
-    # print('##########################\n\n')
+    print('##########################\n\n')
     for news in covidnews:
         print(news)

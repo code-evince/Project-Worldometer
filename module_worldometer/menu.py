@@ -45,22 +45,23 @@ def check_last_updated(file_name):
 
 
 options = ['','Total Cases','Active Cases','Total Deaths','Total Recovered','Total Tests','Death/million','Tests/million','New Case','New Death','New Recovered']
+
 def main():
-    print("-----------------------")
-    print("Welcome to Worldometer")
-    print("-----------------------")
     exit = 0
     while(exit==0):
+        print()
+        print("------------------------------------")
+        print("       Welcome to Worldometer       ")
+        print("------------------------------------")
         print("1. World Data and queries")
         print("2. Country Data and queries")
-        print("3. EXIT")
+        print("3. MAIN MENU")
         user = int(input("Your input : "))
         if(user == 3):
             exit = 1
             continue
         if(user == 1):
-            print("----------------MENU-----------------")
-            print()
+            print("\n-------------- MENU ----------------")
             print("1.  Total Cases")
             print("2.  Active Cases")
             print("3.  Total Deaths")
@@ -71,46 +72,52 @@ def main():
             print("8.  New Case")
             print("9.  New Death")
             print("10. New Recovered")
-            print("11. Main Menu")
-            print("12. EXIT")
-            ip = int(input("Your input : "))
-            country = input("Enter name of the Country : ")
+            print("11. GO BACK")
+            print("12. MAIN MENU")
+            ip = int(input("\nYour input : "))
+            # country = input("Enter name of the Country : ")
             if(ip==12):
                 exit=1
                 continue
             if(ip==11):
                 continue
             if(ip >0 and ip<11):
-                if not check_last_updated("lastUpdated.txt"):
+                country = input("Enter name of the Country : ")
+                if not check_last_updated("module_worldometer/lastUpdated.txt"):
                     print("\vWait!! Parsing required webpages...\n")
                     getWorld.main()
-                run_map_reduce1("cache/world.txt",ip,country)
+                run_map_reduce1("module_worldometer/cache/world.txt",ip,country)
 
         if(user==2):
-            print("----------------MENU-----------------")
-            print()
+            print("\n-------------- MENU ----------------")
             print("1.  Change in active cases in %")
             print("2.  Change in daily death in %")
             print("3.  Change in new recovered in %")
             print("4.  Change in new cases in %")
-            print("5.  Main Menu")
-            print("6.  EXIT")
+            print("5.  GO BACK")
+            print("6.  MAIN MENU")
 
             #input
-            ip = int(input("Your input : "))
-            # country = "Bolivia"
-            # start_date = "08-04-2020"
-            # end_date = "12-04-2022"
-            country = input("Enter name of the Country '_' seprated e.g. South_Africa: ")
-            start_date = input("Enter the start date[dd-mm-yyyy format]: ")
-            end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+            ip = int(input("\nYour input : "))
+            # # country = "Bolivia"
+            # # start_date = "08-04-2020"
+            # # end_date = "12-04-2022"
+            # country = input("Enter name of the Country '_' seprated e.g. South_Africa: ")
+            # start_date = input("Enter the start date[dd-mm-yyyy format]: ")
+            # end_date = input("Enter the end date[dd-mm-yyyy format]: ")
             if(ip==6):
                 exit=1
                 continue
             if(ip==5):
                 continue
             if(ip >0 and ip<5):
-                if not check_last_updated("checkCountryCache.txt"):
+                # country = "Bolivia"
+                # start_date = "08-04-2020"
+                # end_date = "12-04-2022"
+                country = input("Enter name of the Country '_' seprated e.g. South_Africa: ")
+                start_date = input("Enter the start date[dd-mm-yyyy format]: ")
+                end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+                if not check_last_updated("module_worldometer/checkCountryCache.txt"):
                     print('\nDownloading & Parsing Countries webpages...\n')
                     for country in worldometers_countrylist:
                         getCountryData(country)
@@ -119,9 +126,9 @@ def main():
 
 def run_map_reduce1(file_name, option, country_name):
     country_name = country_name.replace(' ', '')
-    mapper_cmd = f"python3 utilities/package1/mapper1.py {option} {file_name}"
-    combiner_cmd = f"python3 utilities/package1/combiner1.py {country_name} "
-    reducer_cmd =   f"python3 utilities/package1/reducer1.py {country_name} {option}"
+    mapper_cmd = f"python3 module_worldometer/utilities/package1/mapper1.py {option} {file_name}"
+    combiner_cmd = f"python3 module_worldometer/utilities/package1/combiner1.py {country_name} "
+    reducer_cmd =   f"python3 module_worldometer/utilities/package1/reducer1.py {country_name} {option}"
 
     # Constructing the full command
     full_cmd = f"{mapper_cmd} | {combiner_cmd} | {reducer_cmd}"
@@ -140,7 +147,7 @@ def change_format(date):
 
 def run_map_reduce2(start_date, end_date, option, given_country):
     given_country = given_country.replace(' ', '_')
-    reducer_cmd = f"python3 utilities/package2/reducer2.py {option} {start_date} {end_date} '{given_country}'"
+    reducer_cmd = f"python3 module_worldometer/utilities/package2/reducer2.py {option} {start_date} {end_date} '{given_country}'"
 
     # normalize date format
     start_date = change_format(start_date)
@@ -151,9 +158,9 @@ def run_map_reduce2(start_date, end_date, option, given_country):
     list_length = len(worldometers_countrylist)
     for index, country in enumerate(worldometers_countrylist):
         country = country.replace(' ', '_')
-        ipfile = f"cache/country/{country}.txt"
-        mapper_cmd = f"python3 utilities/package2/mapper2.py {ipfile} {option} {start_date} {end_date} '{country}' '{given_country}'"
-        combiner_cmd = f"python3 utilities/package2/combiner2.py {start_date} {end_date} '{country}' '{given_country}'"
+        ipfile = f"module_worldometer/cache/country/{country}.txt"
+        mapper_cmd = f"python3 module_worldometer/utilities/package2/mapper2.py {ipfile} {option} {start_date} {end_date} '{country}' '{given_country}'"
+        combiner_cmd = f"python3 module_worldometer/utilities/package2/combiner2.py {start_date} {end_date} '{country}' '{given_country}'"
         if index < (list_length-1):
             temp_cmd += f"{mapper_cmd} | {combiner_cmd} & "
         else:
