@@ -1,3 +1,975 @@
+2020-01-31 00:00:00
+The first two cases of  coronavirus (2019-nCoV) in the United Kingdom  are confirmed.
+
+2020-02-06 00:00:00
+A third case of coronavirus is confirmed in the UK.
+
+2020-02-10 00:00:00
+The total number of cases in the UK reaches eight as four further cases are confirmed in people linked to an affected man from Brighton.
+
+2020-02-11 00:00:00
+A ninth case is confirmed in London.
+
+2020-02-23 00:00:00
+The  DHSC  confirms a total of 13 cases in the UK as four new cases in passengers on the cruise ship  Diamond Princess  are detected. They are transferred to hospitals in the UK.
+
+2020-02-28 00:00:00
+The first British death from the disease is confirmed by the  Japanese Health Ministry ; a man  quarantined  on the  Diamond Princess  cruise ship. 29 February - The BBC reports the first case of a man in  Surrey  to be infected with COVID-19 whilst in the UK who had not recently travelled abroad.
+
+2020-03-05 00:00:00
+The first death from coronavirus in the UK is confirmed,  as the number of cases exceeds 100, with a total of 115 having tested positive. England's  Chief Medical Officer ,  Chris Whitty , tells MPs that the UK has now moved to the second stage of dealing with COVID-19 – from  containment  to the  delay  phase.
+
+2020-03-08 00:00:00
+A third death from coronavirus is reported, at  North Manchester General Hospital , as the number of cases in the UK reaches 273, the largest single-day increase so far. Manchester United  played against  Manchester City  at  Old Trafford  with 73,288 spectators.  The match was later estimated to have caused 27 additional COVID deaths. 10-13 March -  Cheltenham Festival  begins its multiple day event with more than 250,000 attending. The event ended on 13 March. Many blame the event for spreading COVID-19 and the BBC reports  Gloucestershire County Council says any investigation should be led at a national level .  The event was estimated to have caused 37 additional COVID deaths, while several of the sporting events also caused thousands of infections.
+
+2020-03-11 00:00:00
+The  Bank of England  cuts its baseline interest rate from 0.75  to 0.25 , back down to the lowest level in history. The  Liverpool FC vs. Atletico Madrid football match  was played at  Anfield  with 3,000 Madrid fans among the 52,000 spectators, some of whom visited bars after the match. The match was later estimated to have added 41 deaths by COVID-19.
+
+2020-03-12 00:00:00
+Public Health England  stops performing  contact tracing , as widespread infections overwhelm capacity.
+
+2020-03-13 00:00:00
+The  Premier League   2019–2020 season  is suspended, amid a growing list of worldwide sporting cancellations and postponements due to COVID-19. Elections including the  English local elections ,  London mayoral election  and  police and crime commissioner elections , scheduled for May 2020, are postponed for a year because of the coronavirus.
+
+2020-03-17 00:00:00
+NHS England announces that from 15 April all non-urgent operations in England will be postponed, to free up 30,000 beds to help tackle the virus.
+
+2020-03-20 00:00:00
+Northwick Park Hospital  in  Harrow  declares a  critical incident  due to a surge in patients with coronavirus. Prime Minister Boris Johnson  orders all cafes, pubs and restaurants to close  from the evening of 20 March, except for take-away food, to tackle coronavirus. All the UK's nightclubs, theatres, cinemas, gyms and leisure centres are told to close  as soon as they reasonably can .
+
+2020-03-21 00:00:00
+The  Health Protection (Coronavirus, Business Closure) (England) Regulations 2020  (SI 327) come into legal effect at 2pm, enforcing the closure in England of businesses selling food and drink for consumption on the premises, as well as a range of other businesses such as nightclubs and indoor leisure centres where a high risk of infection could be expected. NHS England negotiates a cost-price  block booking  of almost all services and facilities at the country's  private hospitals , involving around 8,000 hospital beds, nearly 1,200 ventilators, and more than 10,000 nurses.
+
+2020-03-22 00:00:00
+Boris Johnson warns that  tougher measures  may be introduced if people do not follow government advice on social distancing.
+
+2020-03-23 00:00:00
+In a televised address, Boris Johnson announces a UK-wide partial lockdown, to contain the spread of the virus. The British public are instructed that they must stay at home, except for certain  very limited purposes  – shopping for basic necessities; for  one form of exercise a day ; for any medical need; and to travel to and from work when  absolutely necessary . However, when these restrictions  came into force  on 26 March, the statutory instrument for England omitted any limit on the number of exercise sessions.  A number of other restrictions are imposed, with police given powers to enforce the measures, including the use of fines. Pride in London , the UK's largest LGBT  Pride festival , scheduled for 27 June, is the latest event to be postponed. It is one of a hundred pride events to be postponed or cancelled in the UK.
+
+2020-03-24 00:00:00
+Health Secretary   Matt Hancock  announces the government will open a temporary hospital, the  NHS Nightingale Hospital  at the  ExCeL London , to add extra critical care capacity in response to coronavirus pandemic. The  Church of England  closes all its buildings.
+
+2020-03-25 00:00:00
+The police will be given the power to use  reasonable force  to enforce the lockdown regulations. Routine dental care is suspended in England.
+
+2020-03-26 00:00:00
+The  Health Protection (Coronavirus, Restrictions) (England) Regulations 2020  (SI 350) (the 'Lockdown Regulations') come into effect, significantly extending the range of businesses that are required by law to close with immediate effect including all retail businesses not on an approved list. These regulations also include significant restrictions on freedom of movement:  no person may leave the place where they are living without reasonable excuse . The 2020  Isle of Wight  and  Download  music festivals, scheduled for June, are cancelled.  The organisers of the Download festival subsequently announce plans to hold a virtual festival to be held on the dates it would have happened, and featuring streamed performances and interviews.
+
+2020-04-02 00:00:00
+Matt Hancock sets a target of carrying out 100,000 tests a day by the end of the month (encompassing both swab tests and blood tests).
+
+2020-04-03 00:00:00
+NHS Nightingale Hospital London , the first temporary hospital to treat coronavirus patients, opens at the  ExCel centre  in East London, employing NHS staff and military personnel, with 500 beds and potential capacity for 4,000. It is the first of several such facilities planned across the UK.
+
+2020-04-05 00:00:00
+Manchester City  football club begins a disciplinary procedure against  Kyle Walker  after it was reported that he broke lockdown rules by inviting two sex workers to his home.
+
+2020-04-10 00:00:00
+Jonathan Van-Tam , England's deputy chief medical officer, tells the UK Government's daily briefing the lockdown is  beginning to pay off  but the UK is still in a  dangerous situation , and although  cases in London  have started to drop they are still rising in Yorkshire and the North East. Beginning today, England's  Care Quality Commission  requires care homes to state in daily death notifications whether the death was a result of confirmed or suspected COVID-19. The CQC has not previously published statistics; the data will in future be included in weekly reports from the  Office of National Statistics .
+
+2020-04-11 00:00:00
+The number of people in London hospitals for COVID-19 reaches its peak, according to week-on-week change data; elsewhere in the country, patient numbers continue to increase, although the rate of increase is slowing. Occupancy of critical care beds in England peaks at around 58  of capacity. Occupancy in the month of April for Scotland and Wales will only briefly exceed 40 , while Northern Ireland reported a peak of 51  early in the month.
+
+2020-04-15 00:00:00
+Health Secretary Matt Hancock announces new guidelines that will allow close family members to see dying relatives in order to say goodbye to them. Hancock also launches a new network to provide personal protective equipment to care home staff. NHS England  and the  Care Quality Commission  begin rolling out tests for care home staff and residents as it is reported the number of care home deaths are rising but that official figures, which rely on death certificates, are not reflecting the full extent of the problem.  Helen Whately , the Minister for Social Care, says that the government are aware the figures are being understated.
+
+2020-04-16 00:00:00
+The  NHS Nightingale Hospital Birmingham , at the  National Exhibition Centre , is officially opened by  Prince William .
+
+2020-04-17 00:00:00
+Matt Hancock confirms coronavirus tests will be rolled out to cover more public service staff such as police officers, firefighters and prison staff. Later analysis of death registrations (all causes) in England and Wales by the Office for National Statistics finds the highest total this week, which at 21,805 is 207  of the five-year average for the same week. COVID-19 is mentioned in 8,730 cases.
+
+2020-04-20 00:00:00
+To protect bus drivers,  Transport for London  puts buses' front doors out of use, requiring passengers to board through the middle doors. Passengers are no longer required to pay, so that they do not need to use the card reader near the driver. Prof Dame  Angela Maclean , the UK's deputy chief scientific adviser, says the number of confirmed cases is  flattening out .  The number of people in hospital for COVID-19 has begun to fall in Scotland, Wales and every region of England, with significant falls in London and the Midlands.
+
+2020-04-22 00:00:00
+The Health Protection (Coronavirus, Restrictions) (England) (Amendment) Regulations 2020  (SI 447) come into effect, correcting errors in the original lockdown regulations and allowing some visits to burial grounds and gardens of remembrance.
+
+2020-04-23 00:00:00
+A study involving 20,000 households in England, coordinated by the  Office for National Statistics , will track the progress of COVID-19 and seek to better understand infection and immunity levels, with volunteers asked to provide nose and throat swabs on a regular basis to determine whether they have the virus. Matt Hancock states that daily test capacity has reached 51,000, and announces that all key workers and members of their households are now eligible for COVID-19 tests and will be able to book tests through the government website from the following day.  Tests will be conducted at drive-through centres or using home testing kits,  while mobile testing units operated by the armed forces would increase in number from the present eight to 92, with a further four operated by civilians in Northern Ireland. Hancock also announces preparations to reactivate  contact tracing  in a later phase of the outbreak, including the recruitment of 18,000 contact tracers to greatly supplement Public Health England's staff.
+
+2020-04-28 00:00:00
+Testing capacity reaches 73,000 per day, although only 43,000 were carried out the previous day. Matt Hancock announces that testing will be expanded from the following day to include all care home workers, and people (and their family members) with symptoms who must leave home for their job or are aged over 65.
+
+2020-05-01 00:00:00
+Matt Hancock confirms the government's target of providing (but not necessarily completing) 100,000 tests a day by the end of April has been met, with 122,347 provided over the previous 24 hours.
+
+2020-05-02 00:00:00
+Some recycling centres, including those in Greater Manchester, begin to reopen after six weeks.
+
+2020-05-05 00:00:00
+NHS Nightingale Hospital North East , a temporary critical care hospital built near Sunderland for COVID-19 patients, is officially opened by  Health Secretary   Matt Hancock . The  virtual ceremony  features TV celebrities  Ant and Dec , football pundit  Alan Shearer  and cricketer  Ben Stokes .
+
+2020-05-07 00:00:00
+Baroness  Dido Harding , chair of  NHS Improvement  and former CEO of  TalkTalk , is appointed to lead the government's programme of testing and tracing, supported by  John Newton  of Public Health England.  Testing will be led by Sarah-Jane Marsh, chief executive of  Birmingham Women's and Children's Hospitals , and tracing will be led by  Tom Riordan , chief executive of  Leeds City Council . The 2020  Notting Hill Carnival , scheduled for the August Bank Holiday weekend, is cancelled because of the COVID-19 outbreak.
+
+2020-05-10 00:00:00
+The UK government updates its coronavirus message from  stay at home, protect the NHS, save lives  to  stay alert, control the virus, save lives . The Opposition Labour Party expresses concern the slogan could be confusing, and leaders of the devolved governments in Scotland, Wales and Northern Ireland say they will keep the original slogan. A new alert scale system is announced, ranging from green (level one) to red (level five), similar to the UK's  Terror Threat Levels . A recorded address by Boris Johnson is broadcast at 7pm in which he outlines a  conditional plan  to reopen society, but says it is  not the time simply to end the lockdown this week , and describes the plans as  the first careful steps to modify our measures . Those who cannot work from home, such as construction workers and those in manufacturing, are encouraged to return to work from the following day, but to avoid public transport if possible. The guidance on the number of outdoor exercise periods will be lifted from Wednesday 13 May. Outlining future easing of restrictions, Johnson says  step two  – no sooner than
+
+2020-05-11 00:00:00
+The UK government publishes a 50-page document setting out further details of the phases for lifting the lockdown restrictions. Boris Johnson gives further details as he makes his first statement on the virus to Parliament. Amid concerns about the safety of people returning to work, Johnson tells the Downing Street daily briefing he is not expecting a  sudden big flood  of people returning to work, and that companies will have to prove they have introduced safety measures before they can reopen. The UK government advises people in England to wear face coverings in enclosed spaces where social distancing is not possible, such as on public transport and in shops. Teaching unions express their concern at government plans to reopen schools on 1 June, describing them as  reckless  and unsafe.
+
+2020-05-12 00:00:00
+The  Reading and Leeds Festivals , scheduled for the weekend of 28–30 August, are cancelled because of the ongoing COVID-19 outbreak.
+
+2020-05-13 00:00:00
+The  Health Protection (Coronavirus, Restrictions) (England) (Amendment No. 2) Regulations 2020  (SI 500) come into effect, allowing the re-opening of garden centres, sports courts and recycling centres. In addition to outdoor exercise, open-air recreation is also permitted with no more than one member of another household. Government announcements gloss these with the (non-enforceable) requirement that social distancing must be practised. House moves and viewings are also permitted.
+
+2020-05-14 00:00:00
+A total of 126,064 tests for COVID-19 have been conducted in the most recent 24 hour period, the highest number to date. Figures compiled by  NHS England  giving a breakdown of underlying health conditions among COVID-19 hospital fatalities between 31 March and 12 May indicate one in four had diabetes. Other common health conditions were dementia (18 ), serious breathing problems (15 ), chronic kidney disease (14 ), and ischaemic heart disease (10 ). The Office for National Statistics publishes results of the early phase of a survey programme in England. From swab tests between 27 April and 10 May, they estimate that 148,000 people, or 0.27  of the population, had COVID-19 at any given time during those two weeks (95  confidence interval: 94,000 to 222,000).  This implies roughly 10,000 new cases per day.  No significant difference is found between broad age groups. Their estimate for people working in healthcare or social care is higher, at 1.33  (confidence interval: 0.39  to 3.28 ). The survey does not include people in hospital or care homes, where rates of infection are likely to be higher still. Public Health England  approves a blood test developed by  Roche Diagnostics  that can detect COVID-19 antibodies. Transport for London  is given  1.6bn of emergency government funding to keep bus and tube services running until September.
+
+2020-05-15 00:00:00
+A report on deaths in care homes in England and Wales from the Office for National Statistics finds 9,039 deaths between 2 March and 1 May, and a further 3,444 deaths of residents in hospital. In this period, COVID-19 was involved in 27  of all deaths of care home residents. Since the last week of March, non-COVID deaths have been higher than previous years; deaths of residents from all causes peaked around 14 April. Matt Hancock announces that every resident and staff member in care homes in England will be tested for COVID-19 by early June. Government scientists and teaching unions hold talks in a bid to safely reopen schools.  The  British Medical Association  voices its support for the unions over their concerns about the safety of resuming classes.
+
+2020-05-16 00:00:00
+Anne Longfield , the  Children's Commissioner for England , urges the government and teaching unions to  stop squabbling and agree a plan  to reopen schools, warning that the closure of schools is impacting negatively on  disadvantaged children .
+
+2020-05-17 00:00:00
+In an article for  The Mail on Sunday , Boris Johnson acknowledges frustrations with the government's  stay alert  message for England, but urges the public to be patient as the lockdown measures are eased.
+
+2020-05-18 00:00:00
+The  London congestion charge  is reinstated, and buses in London begin charging passenger fares once again. As part of the  1.6bn deal to bail out Transport for London, the congestion charge will also rise from  11.50 to  15 from 22 June. Jury trials resume at a handful of courts in England and Wales, having been suspended since the beginning of the lockdown restrictions. The 2020  Chelsea Flower Show  begins, and is held as a virtual festival for the first time. English  Premier League  football clubs vote to allow teams to begin training in small groups from the following day as a step towards restarting football in England.
+
+2020-05-20 00:00:00
+At Prime Minister's Questions, Boris Johnson confirms that a track and trace system will be in place from 1 June. The Government faces mounting pressure from councils and teaching unions to reconsider its plans to reopen primary schools from 1 June.  Robert Buckland , the  Secretary of State for Justice , says the Government is taking all concerns  very seriously gt; Figures released by Public Health England indicate no new coronavirus cases were reported in London over the 24-hour period up to Monday 18 May.
+
+2020-05-24 00:00:00
+Samples from blood donors in London during the past week (reported by Public Health England on 4 June) show antibodies indicating exposure to COVID-19 in around 16  of people. Boris Johnson confirms plans (outlined on 10 May) for the phased reopening of schools in England from 1 June: from that date, they will reopen for  early years  pupils,  Reception ,  Year 1  and  Year 6 . For the first time he states that from 15 June a quarter of  Year 10  and  Year 12  students will be allowed  some contact  to help prepare for exams.
+
+2020-05-25 00:00:00
+Boris Johnson outlines plans to reopen car showrooms and outdoor markets from 1 June, and for all non-essential shops to reopen from 15 June. Weston General Hospital  in Somerset temporarily stops admitting new patients because of a high number of COVID-19 cases. The  Football Association  confirms that the  2019–20   Women's Super League  and  2019–20   Women's Championship  have ended immediately, with the outcome of winners and relegations to be decided.
+
+2020-05-27 00:00:00
+Boris Johnson states that a  test and trace system  will be operational in England from the following day. Premier League football clubs vote to resume contact training.
+
+2020-05-28 00:00:00
+Contact tracing systems go live in England and Scotland –  NHS Test and Trace  in England, and Test and Protect in Scotland.  However,  Dido Harding  tells MPs the system in England will not be  fully operational at a local level  until the end of June. Johnson says the government's five tests have been met, and from 1 June in England groups of up to six people will be able to meet outdoors in gardens and outdoor private spaces.  Dental practices will be allowed to reopen from 8 June. Premier League clubs agree to restart games on 17 June, with two matches –  Aston Villa  v  Sheffield United  and  Manchester City  v  Arsenal .  All 92 remaining matches from the season will air live on television.
+
+2020-05-29 00:00:00
+A rehabilitation centre for COVID-19 patients receives its first patients.  NHS Seacole , based at  Headley Court  in Surrey, is named for the British-Jamaican nurse  Mary Seacole .
+
+2020-05-30 00:00:00
+Boris Johnson announces a relaxing of lockdown restrictions for the 2.2 million people who have been  shielding  in their homes, with them allowed outdoors with members of their household from 1 June. Those who live alone can meet one other person outside.
+
+2020-05-31 00:00:00
+Some scientists express their concern about the logic of relaxing lockdown rules for those shielding at home in England.  In response  Robert Jenrick  tells the Downing Street daily briefing he is  reasonably confident  the measures are  manageable  but the room for manoeuvre is limited.
+
+2020-06-01 00:00:00
+The  Health Protection (Coronavirus, Restrictions) (England) (Amendment No. 3) Regulations 2020  (SI 558) come into effect, again without prior parliamentary scrutiny. Car and caravan showrooms, outdoor sports amenities and outdoor non-food markets may reopen. The prohibitions on leaving home are replaced by a prohibition on staying overnight away from home, with certain specific exceptions. Gatherings of people from more than one household are limited to six people outdoors and are prohibited entirely indoors, with exceptions including education. There are further exemptions for elite athletes. As primary schools reopen in England, headteachers report a varied attendance rate of between 40  and 70 . Furniture retailer  Ikea  reopens 19 of its UK stores. Horse racing becomes the first sport to return in England after a gap of 76 days, with the first meeting at  Newcastle .  Snooker also returns. would include reopening some shops and the return of primary school pupils, beginning with reception,  Year 1  and  Year 6 ; and that secondary pupils facing exams next year would get some time in school before the summer holiday.  Step three  – at the earliest by July – would begin the reopening of the hospitality industry and other public places.
+
+2020-06-02 00:00:00
+Public Health England  releases its report into the disproportionately high number of people from ethnic minorities dying from COVID-19. The report finds that age, sex, health, geographical circumstances and ethnicity are all risk factors, with those of Bangladeshi origin experiencing a particularly high number of fatalities. The  England and Wales Cricket Board  confirms  England  will play three test matches against the  West Indies  starting on 8 July.
+
+2020-06-04 00:00:00
+Transport Secretary  Grant Shapps  announces that face coverings will be compulsory on public transport from 15 June. Very young children, disabled people and those with breathing difficulties will be exempt from this requirement.
+
+2020-06-05 00:00:00
+Sir  Patrick Vallance , the UK's  Government Chief Scientific Adviser , says the  R number  is between 0.7 and 0.9, but could be as high as 1 in some areas of England. His comments come after figures from the Office for National Statistics suggest the reproductive rate is between 0.7 and 1 for England. The UK government's ban on tenant evictions in England and Wales is extended by two months to 23 August. Chelsea  are declared the winners of the 2019–20 Women's Super League after the season finished early, while  Liverpool  are relegated.  The 2020–21 season is scheduled to start on 5–6 September. Premiership Rugby  announce plans to restart their 2019–20 season on Saturday 15 August, assuming it is safe to do so.
+
+2020-06-07 00:00:00
+The weekly surveillance report by Public Health England (published 11 June) concludes that the week ending today has  no significant overall excess all-cause mortality . Acute respiratory outbreaks in care homes continue to decline, but there is a small increase in outbreaks in hospitals. New  seroprevalence  data finds antibodies indicating exposure to COVID-19 in around 4  of blood donors in the South East and East England in the previous week. 8 June - The Department of Health and Social Care extends availability of tests to all adult care homes, not just those for over-65s, and states there is capacity to send homes over 50,000 test kits a day. Dental practices can reopen
+
+2020-06-09 00:00:00
+The UK government drops plans for all primary school children to return to school before the end of the summer term, describing it as unfeasible. The English League One and League Two seasons are finished early following a vote by clubs in both football leagues.
+
+2020-06-10 00:00:00
+Prime Minister Boris Johnson announces a further easing of lockdown measures in England from 13 June that will allow people living alone to spend time in one other household as part of a  support bubble . The group will be treated as if they are all part of one household so social distancing will not apply, but they cannot switch the household with which they are in a bubble or choose multiple households, and these new rules do not apply to people who are shielding, who must continue to isolate. Johnson announces that plans are being drawn up for a school catch-up programme over the summer months that will allow schoolchildren to catch up with missed schoolwork, with the plans to be outlined by Education Secretary  Gavin Williamson  shortly.
+
+2020-06-11 00:00:00
+Figures published by the Department of Health and Social Care indicate that in  NHS Test and Trace 's first week of operation, 31,700 contacts were identified, of whom 26,900 (85 ) were reached and asked to self-isolate. Details of these contacts were provided by two-thirds of the 8,117 people who tested positive during this time and had their case transferred to the system. Figures from  NHS England  show the pandemic's impact on cancer care. The number of people being assessed by a cancer specialist after referral fell by 60  in April when compared to 2019, with 79,500 referrals. In the same month patients beginning treatment fell by 20  to 10,800 when compared with April 2019. The government comes under pressure from Conservative Party backbench MPs to reduce the two metre social distancing rule, which they feel is damaging the economy.
+
+2020-06-13 00:00:00
+Parts of the  Health Protection (Coronavirus, Restrictions) (England) (Amendment No. 4) Regulations 2020  (SI 588) come into effect. In England and Northern Ireland, households with one adult may now become linked with one other household of any size, allowing them to be treated as one for the purpose of permitted gatherings. This also allows the members of one household to stay overnight at the home of the other. The government refers to this as a  support bubble .  The rules on gatherings are also relaxed to allow medical appointments and births to be accompanied, and to permit some visits to people in hospital, hospices and care homes.
+
+2020-06-14 00:00:00
+Prime Minister  Boris Johnson  commissions a review into the 2-metre social distancing rule, amid concerns its continuation may make large parts of the hospitality industry not viable. The review will be completed before 4 July, when pubs and cafes are scheduled to reopen. On the eve of the reopening of non-essential retailers, Johnson urges people to  shop, and shop with confidence .
+
+2020-06-15 00:00:00
+The remainder of the  Health Protection (Coronavirus, Restrictions) (England) (Amendment No. 4) Regulations 2020  (SI 588) come into effect, allowing the general re-opening of English retail shops and public-facing businesses apart from those that are on a list of specific exclusions such as restaurants, bars, pubs, nightclubs, most cinemas, theatres, museums, hairdressers, indoor sports and leisure facilities. Outdoor animal-related attractions such as farms, zoos and safari parks may open. Places of worship may again be used for private prayer (but not for communal worship). English libraries still have to remain closed. The  Health Protection (Coronavirus, Wearing of Face Coverings on Public Transport) (England) Regulations 2020  come into effect, requiring travellers on public transport in England to wear a face covering. Secondary school pupils in England from  Year 10  and  Year 12  return to school. The 2020  Great North Run , scheduled for 13 September, is cancelled because of the COVID-19 outbreak.
+
+2020-06-16 00:00:00
+The UK government announces that the school meals voucher scheme will be extended to cover the summer holidays, allowing 1.3 million disadvantaged children to access free meals during the holidays. The decision is a reversal of an earlier decision to suspend the programme during the holidays.
+
+2020-06-17 00:00:00
+English  Premier League  football returns after a 100-day absence.
+
+2020-06-19 00:00:00
+The UK government announces a  1bn fund to help children in England to catch up with work they have missed while schools have been closed.  Education Secretary  Gavin Williamson  also confirms that all children will return to full-time schooling in September. Dr.  David Rosser , chief executive of the  University Hospitals Birmingham NHS Foundation Trust  (UHB), England's largest hospital trust, confirms there are no COVID-19 patients in the trust's intensive care units for the first time since March. He also says there are signs COVID patients  don't seem as sick, on average, as they were .
+
+2020-06-22 00:00:00
+The UK government announces that the 2.2 million people in England who have been shielding since the beginning of lockdown will no longer need to do so from 1 August. From 6 July they will be able to meet up outside with up to five other people and form a  support bubble  with another household.
+
+2020-06-23 00:00:00
+Prime Minister  Boris Johnson  announces that social distancing rules for England will be relaxed from 4 July, with people required to stay a metre apart but advised to maintain two metres distance whenever possible. He also confirms that pubs, restaurants, hotels and hairdressers can reopen on the same day, but social distancing must be maintained. Spas, nail bars and gyms are among premises that must continue to remain closed. Two households can also meet up indoors from 4 July, and need not be exclusive to each other like the bubble system. Weddings with up to 30 guests will also be permitted. In a bid to assuage concerns from the fitness industry that gyms will not be opening on 4 July, Culture Secretary  Oliver Dowden  subsequently announces on Twitter that the government hopes to reopen gyms in mid-July.
+
+2020-06-25 00:00:00
+The UK government announces plans to relax rules for England and Wales allowing pubs and restaurants to utilise outdoor spaces such as terraces, pavements and car parks, while outdoor markets and fetes will no longer need planning permission. Figures from  NHS Test and Trace  indicate that in its first three weeks of operation in excess of 100,000 people have been asked to self-isolate after being contacted by contact tracers, while the service has contacted three quarters of the people whose details have been supplied to it. The UK government publishes a five-stage plan for reopening theatres.  But it is quickly criticised by theatre unions as  meaningless  and  woeful  because it contains no provisions for investment in the performing arts.
+
+2020-06-26 00:00:00
+Merseyside Police  issue a dispersal order after fans of  Liverpool Football Club  gather for a second night of celebration after the team won the  Premier League  title the previous day.
+
+2020-06-28 00:00:00
+Home Secretary  Priti Patel  confirms a  Sunday Times  report that the government is considering imposing a local lockdown on  Leicester , which has seen a spike in COVID-19 cases. Of the 2,494 cases reported in the city, 658 of them (around 25 ) occurred in the two weeks preceding 16 June.
+
+2020-06-29 00:00:00
+Following a spike in COVID-19 cases in  Leicester , Health Secretary  Matt Hancock  announces the reintroduction of stricter lockdown measures for the city, including the closure of non-essential retailers from the following day, and the closure of schools from 2 July. People in Leicester are advised to stay at home as much as possible, while it is recommended that all but essential travel to, from and within the city should be avoided.  Of the 2,987 positive cases in Leicester since the pandemic began, 866 (29 ) were reported in the two weeks preceding 23 June,  while Hancock says Leicester accounted for  10  of all positive cases in the country over the past week .  Sir  Peter Soulsby , the  Mayor of Leicester  has criticises a lack of communication between the UK government and  Leicester City Council  which he describes as  intensely frustrating . The UK government publishes guidelines for weddings in England, which are permitted from 4 July. Up to thirty people can attend, but without singing and without a reception to follow the ceremony. The  England and Wales Cricket Board  confirms that the  2020 domestic first-class cricket season  will begin on 1 August.
+
+2020-06-30 00:00:00
+England's exam regulator,  Ofqual , says that any GCSE or A Level student who is unhappy with the results they are given will be able to sit exams in all subjects in the autumn.  GCSE exams in Maths and English Language only will also be available in early 2021, if needed to cope with demand.
+
+2020-07-01 00:00:00
+Following the reintroduction of stricter lockdown measures in Leicester, a number of local councils take to social media in an attempt to dispel false rumours that local lockdowns are imminent in their areas. A report by  Public Health England  concludes that there was no obvious source for the spike in COVID-19 cases in Leicester.
+
+2020-07-02 00:00:00
+Education Secretary  Gavin Williamson  announces the UK government's safety plans for getting schools in England fully operational in time for September. The plans include keeping classes and whole years separate in  bubbles , and providing schools with home test kits to provide to families of children who develop symptoms. Mobile testing units will also be deployed to schools in an instance of a COVID-19 case being confirmed.
+
+2020-07-03 00:00:00
+The UK government publishes a list of 59 countries for which quarantine will not apply when arriving back in England as from 10 July. They include Greece, France, Belgium and Spain, but Portugal and the United States are among those not on the list. These changes do not apply to Scotland, Wales or Northern Ireland, where quarantine restrictions remain in place for all arrivals from outside the UK. The UK government rushes  The Health Protection (Coronavirus, Restrictions) (Leicester) Regulations 2020  through parliament to give police the powers to enforce lockdown restrictions in Leicester as from 4 July. Public Health England starts including  pillar 1  and  pillar 2  cases for local authorities in England, an adjustment expected to show an apparent rise in cases in many places. On the eve of the latest easing of lockdown restrictions for England, Prime Minister  Boris Johnson  describes the changes as the  biggest step yet on the road to recovery , and warns the public not to let reopening businesses down by ignoring social distancing rules. He also said that local lockdown measures rather than national restrictions may be imposed to control the virus. Boris Johnson announces that recreational cricket can resume in England from 11 July.
+
+2020-07-04 00:00:00
+The Health Protection (Coronavirus, Restrictions) (No. 2) (England) Regulations 2020  come into force in England, replacing and relaxing the previous  Lockdown Regulations  (SI 350), and giving the Secretary of State powers to make declarations restricting access to public outdoor places.  Leicester  is excluded from the relaxations due to its high rate of COVID-19, with more stringent regulations in force. Re-opening  hairdressing salons  announce a variety of safety measures, including the need for customers to book online, to wait outside for the appointment, and to wear a face covering. Hairdresser in some salons will wear protective equipment, and alternate workstations will remain unused. Some will cease to offer dry cuts.
+
+2020-07-05 00:00:00
+In an interview with the BBC,  Sir Simon Stevens , the Chief Executive of  NHS England , says that COVID-19 has shone a  very harsh spotlight  on the  resilience  of the care system, and that adequate plans to fund social care should be in place within a year. The UK government announces new quarantine exemption rules for participants in major sporting events, as well as film and television productions, allowing them to resume. The rules apply to England, where participants will need to work in a controlled environment and be tested for COVID-19.
+
+2020-07-06 00:00:00
+As concerns about increasing unemployment grow, the UK government announces a  111m scheme to help firms in England provide an extra 30,000 trainee places;  21m will be provided to fund similar schemes in Scotland, Wales and Northern Ireland.
+
+2020-07-07 00:00:00
+Three pubs in Yorkshire, Hampshire and Somerset that reopened on 4 July close again after customers tested positive for COVID-19.
+
+2020-07-08 00:00:00
+Hillingdon Hospital  in  Uxbridge  closes its Accident and Emergency Department due to an outbreak of COVID-19, while 70 members of staff at the hospital go into self-isolation.
+
+2020-07-09 00:00:00
+Two sets of data are released that show the number of cases of COVID-19 are falling in England;  Office for National Statistics  figures estimate one in 3,900 people have the virus, down from one in 2,200 the previous week, while  Public Health England  figures indicate that cases fell by 25  in the week to 5 July. Culture Secretary  Oliver Dowden  announces that swimming pools, gyms, grassroots sport, close contact businesses and outdoor theatre can return in England with the following programme: Outdoor pools to reopen from 11 July; grassroots sport to resume from the weekend of 11 July, beginning with cricket; outdoor theatre to resume from 11 July; beauticians, tattooists, spas, tanning salons and other close contact services to reopen from 13 July  subject to some restrictions ; and indoor gyms, swimming pools and sports facilities to reopen from 25 July. In addition, a small pilot of indoor performances with socially distanced audiences will take place to assess the best way to restart them.
+
+2020-07-10 00:00:00
+As the wearing of face coverings becomes mandatory in shops in Scotland, the UK Government considers whether to introduce the same rule for shops in England. The Prime Minister  is seen in public wearing one. Bosses at the  Birmingham Repertory Theatre , one of the UK's leading production theatres, warn that the theatre is at risk of losing 47 of its staff members (about 40  of its workforce), and is in danger of closing because of the economic impact of the COVID-19 pandemic.
+
+2020-07-11 00:00:00
+Parts of  The Health Protection (Coronavirus, Restrictions) (No. 2) (England) (Amendment) Regulations 2020  come into effect, allowing outdoor swimming pools and water parks to re-open. Operators of outdoor swimming pools, many of them community groups and charities, criticise the UK government's timing, citing a lack of preparation time that has made a short summer season  unviable . Belgium includes Leicester on its  red zone  list, meaning anyone who has recently visited the city will be required to quarantine for 14 days on arrival in Belgium.
+
+2020-07-12 00:00:00
+Michael Gove , the  Minister for the Cabinet Office , says he does not believe it should be compulsory to wear face coverings in shops in England, but to do so is  basic good manners . 73 workers at a farm in  Herefordshire  have tested positive for COVID-19, requiring the rest of the farm's 200 or so workers to self-isolate.
+
+2020-07-13 00:00:00
+The remainder of  The Health Protection (Coronavirus, Restrictions) (No. 2) (England) (Amendment) Regulations 2020  comes into effect, allowing the re-opening of nail bars and salons, tanning booths and salons, spas and beauty salons, massage parlours, tattoo parlours, and body and skin piercing services. The Prime Minister says that people  should be wearing  face coverings in shops in England, and the UK government will decide in the next few days whether  tools of enforcement  are required to ensure that they do.
+
+2020-07-14 00:00:00
+The UK government announces that the wearing of face coverings will become compulsory in shops and supermarkets in England from 24 July. Those who fail to do so will face a fine of up to  100. Health Secretary  Matt Hancock  says the move will  give people more confidence to shop safely and enhance protections for those who work in shops . In a bid to avoid a full Leicester-style lockdown, the unitary authority of  Blackburn with Darwen  introduces a series of tighter measures that must be observed for the next month following a spike in COVID-19 cases in the area. These include tighter limits on visitors from another household, and a recommendation to bump elbows rather than hugs or shaking hands. A piece by the street artist  Banksy  appears on a London Underground train, encouraging people to wear face coverings.  The artwork, titled  If You Don't Mask, You Don't Get , is subsequently removed by cleaners who were unaware of the identity of its creator.
+
+2020-07-15 00:00:00
+Health Secretary  Matt Hancock  confirms there are no plans to make the wearing of face coverings compulsory for office workers in England.
+
+2020-07-16 00:00:00
+Education Secretary  Gavin Williamson  announces plans for an emergency loans scheme for universities in England in danger of bankruptcy because of the financial impact of the pandemic. The announcement comes after a report by the  Institute of Fiscal Studies  identified 13 unnamed universities facing financial difficulties. The  Borough of Pendle  in Lancashire introduces extra social distancing precautions to help stem a local rise in COVID-19 cases and avoid full lockdown. Health Secretary  Matt Hancock  announces that restrictions relating to schools and nurseries in Leicester will be lifted from 24 July after a fall in cases in the city. But bars and restaurants will remain closed, and restrictions on gatherings and visitors will continue.
+
+2020-07-17 00:00:00
+The Prime Minister announces a further easing of lockdown restrictions for England, with plans for a  significant return to normality  by Christmas. The new guidelines allow people to use public transport for non-essential journeys with immediate effect, while employers will have more discretion over their work places from 1 August.  From 18 July, local authorities will have the power to enforce local shutdowns. Johnson announces an extra  3bn for the  NHS in England  to help prepare for a possible second wave of COVID-19 over the coming winter. Johnson announces a pilot scheme for a return to spectator sports, with a view to a full return by 1 October. The  2020 World Snooker Championship  and the  Glorious Goodwood Festival  are among the first two sporting events to be part of the pilot.  A pilot scheme is also announced for a return to indoor performances with socially distanced audiences at theatres, music and performance venues, with a view to a full return in August. Health Secretary  Matt Hancock  calls for a review of the way COVID-19 deaths are recorded in England after  Public Health England  confirms it records deaths as COVID related even if the death occurs several months after someone has tested positive for the virus; the other Home Nations do not record a death as COVID related if it occurs more than 28 days after a positive test. Rochdale  introduces extra social distancing precautions to avoid full lockdown following a rise in COVID-19 cases in the area.
+
+2020-07-18 00:00:00
+The Health Protection (Coronavirus, Restrictions) (England) (No. 3) Regulations 2020  come into force, giving local authorities in England new powers to close shops and outdoor public spaces, and to cancel events in order to control COVID-19. A pub in Manchester becomes one of the first venues to stage a live gig since as lockdown measures continue to be eased.
+
+2020-07-19 00:00:00
+Concerns are raised about England's contact-tracing system as it emerges that at least 50  of the people identified as having had close contact with someone in Blackburn who has tested positive for COVID-19 have not been contacted.
+
+2020-07-20 00:00:00
+Figures released by  Public Health England  show that  Blackburn with Darwen  is overtaking  Leicester  as England's COVID-19 hotspot, with 79.2 cases per 100,000 in the week up to 17 July. Cases have almost doubled from 63 to 118 in a week.
+
+2020-07-22 00:00:00
+The UK government permits visits to care homes to resume in England, but recommends one constant visitor per resident, and gives local authorities and public health directors responsibility for giving the go-ahead to individual homes. Driving tests resume in England.
+
+2020-07-23 00:00:00
+On the eve of the introduction of new regulations for the wearing of face coverings in England, the UK Government releases full guidelines on when and where they should be worn. A network of COVID walk-in test centres will be established throughout England, with a view to being fully operational by the end of October. Residents in  Blackburn  and  Luton  are told the latest round of lockdown easing will not be allowed in those towns due to a high number of COVID-19 cases.
+
+2020-07-24 00:00:00
+The Health Protection (Coronavirus, Wearing of Face Coverings in a Relevant Place) (England) Regulations 2020  come into force, requiring members of the public to wear a face covering in most indoor shops, shopping centres, banks, post offices and public transport hubs. They must also be worn by anyone buying takeaway food or drink from an outlet, but may be removed by those eating in. Children under 11, and people with disabilities or certain health conditions that would make the wearing of a face covering difficult are exempt.  The new regulations are similar to  The Health Protection (Coronavirus, Wearing of Face Coverings on Public Transport) (England) Regulations 2020 , which came into force on 15 June 2020. The Football Association confirms that the 2020–21 English Premier League and Football League season will begin on 12 September. The list of countries from where travellers do not have to quarantine when arriving in England is updated, adding Estonia, Latvia, Slovakia, Slovenia and St Vincent and the Grenadines; travellers from Portugal must still isolate for 14 days. The UK government announces that 30 million people in England will be offered the flu vaccine over the coming winter. It is reported that, as a result of the pandemic and job losses, almost 1,000 people have applied to a restaurant in Manchester advertising a vacancy for a receptionist.
+
+2020-07-25 00:00:00
+With the coming into force of  The Health Protection (Coronavirus, Restrictions) (No. 2) (England) (Amendment) (No. 2) Regulations 2020 , indoor gyms, swimming pools and other indoor sports facilities begin to reopen. Public Health England warns that being obese and overweight puts people at greater risk of severe illness or death as a result of COVID-19. The UK government announces  2.25m worth of emergency funding for small music venues in England, which will be shared by 150 venues. Following a rise in COVID-19 cases in Spain, and concerns of a second wave, the UK Government confirms that travellers returning to England from Spain will be required to quarantine for 14 days from 26 July.
+
+2020-07-26 00:00:00
+21 people have tested positive for COVID-19 at a caravan park in  Craven Arms , Shropshire, with health experts warning the number of cases will rise. Westminster Abbey  has warned it is set to make 20  of its staff redundant after losing as much as  12m in tourist revenue because of the lockdown.
+
+2020-07-27 00:00:00
+A concrete-making plant involved in the construction of the  Hinkley Point  nuclear processing plant is closed by owners  Balfour Beatty  following an outbreak of COVID-19 at the site.
+
+2020-07-28 00:00:00
+Oldham  introduces tougher restrictions to curb the virus after a spike in cases; residents are asked to refrain from having social visitors, keep two metres apart when outside, and those who are shielding are asked to continue to do so until 14 August, while care homes will not relax restrictions. Folk musician  Frank Turner  plays a gig to an audience of 200 at London's  Clapham Grand  where safety measures are trialled for the return of live music. But the venue's manager says the format is not economically viable as it would not allow venues to make enough money to cover operating costs.
+
+2020-07-30 00:00:00
+Office for National Statistics  figures indicate that England had the highest number of excess deaths in Europe between the end of February and mid-June, and had the second highest peak in number of deaths behind Spain. Restrictions are placed on  Greater Manchester , and parts of East  Lancashire  and  Yorkshire  prohibiting separate households from meeting indoors following an  increasing rate of transmission  in those areas caused by people failing to adhere to social distancing rules. The restrictions take effect from midnight.
+
+2020-07-31 00:00:00
+Prime Minister  Boris Johnson  postpones some lockdown easing measures scheduled to begin on 1 August for two weeks amid concerns about rising COVID-19 cases. Bowling alleys and casinos will remain closed until 15 August, while wedding receptions of up to 30 people are also moved back to that date. Trials of spectator sporting events are also paused. From 8 August the wearing of face coverings in more indoor settings, such as cinemas and places of worship will become mandatory. The ONS household survey indicates COVID-19 cases in England are rising again, with an increase from 2,800 to 4,200 daily cases in the week of 20–26 July. Pubs, restaurants and hairdressers in Leicester are given permission to reopen from Monday 3 August.
+
+2020-08-01 00:00:00
+The shielding programme is paused for England and Scotland, but will continue for the areas where extra precautions have been introduced. Professor Graham Medley, one of the scientists advising the government, suggests a  trade-off  may be required to allow schools to reopen in England, whereby pubs or  other facilities  have to close. Local authorities warn of the difficulty of enforcing social distancing rules on beaches after a spell of hot weather results in an influx of people to the coast.
+
+2020-08-02 00:00:00
+A major incident is declared in  Greater Manchester  after rises in coronavirus infection rates. Housing Minister Robert Jenrick says that reopening schools in England for September is an  absolute priority  for the government.
+
+2020-08-03 00:00:00
+Restaurants, pubs and hairdressers in Leicester are allowed to reopen as lockdown restrictions are eased in the city.
+
+2020-08-05 00:00:00
+Anne Longfield , England's children's commissioner, says that schools should be the  first to open, last to close  in any future lockdown scenario, because children pose a lesser risk of spreading COVID-19. Tahir Malik  resigns as  mayor of Luton  for breaching lockdown restrictions after being pictured at a garden party with two other councillors. Figures released by  Transport for London  indicate its staff caught 53,900 people not wearing a mask on its buses between 4 July and 2 August.
+
+2020-08-06 00:00:00
+50 million face masks bought by the UK government for use by NHS England in April will not be used due to safety concerns, officials confirm. the masks, which fasten rather than having head loops do not fit tightly enough. Officials state that a second attempt at creating a contact-tracing app for England has almost reached the testing phase.
+
+2020-08-07 00:00:00
+Lockdown measures are reintroduced in  Preston, Lancashire , effective from midnight and following a spike in COVID-19 cases there. They include banning households from meeting up with each other at home.
+
+2020-08-08 00:00:00
+The Health Protection (Coronavirus, Wearing of Face Coverings in a Relevant Place) (England) (Amendment) Regulations 2020  come into effect, extending the range of indoor locations where a face covering has to be worn to include indoor places of worship, community centres, crematoria and burial ground chapels, public areas in hotels, public halls including concert and exhibition halls, cinemas, museums, galleries, aquariums, indoor zoos and visitor farms, indoor parts of tourist, heritage or cultural sites, bingo halls, and public libraries. The rise in COVID cases among those under 30 in the Preston area prompts authorities to launch the  Don't kill Granny  slogan.
+
+2020-08-09 00:00:00
+Writing in  The Mail on Sunday , Prime Minister Boris Johnson says there is a  moral duty  to get all children in England back to school in September. Andy Burnham , the  Mayor of Greater Manchester , warns that pubs may have to close to allow schools to reopen safely if England's  NHS Test and Trace  is not  fixed urgently . His comments come after data suggests a 53  local success rate in tracing those who have had contact with a person testing positive for COVID-19.
+
+2020-08-10 00:00:00
+The UK government announces that  NHS Test and Trace  will shrink its contact tracers from 18,000 to 12,000 by the end of August, with the remainder working in teams alongside local public health officials in the community, where they will visit those who have come into contact with an infected person. The strategy has been deployed successfully in places like Blackburn and Luton.
+
+2020-08-12 00:00:00
+Education Secretary  Gavin Williamson  apologises to every school pupil for  the disruption that they've had to suffer  because of the pandemic, and says the best thing that can happen now is for them all to return to school.
+
+2020-08-13 00:00:00
+England's revamped contact-tracing app begins public trials,  with residents of the  Isle of Wight , the  London Borough of Newham , and NHS volunteer responders being the first to test it. Workers at a sandwich factory in Northampton are self-isolating following an outbreak of COVID-19 at the plant. A Level results are published. In England, 36  of results are lower than teachers predicted, with 3  being two grades lower. Prime Minister Boris Johnson announces a further easing of lockdown measures for England from 15 August, with a greater range of beauty treatments, indoor gigs and wedding receptions of up to 30 permitted, as well as the reopening of bowling alleys, casinos and soft play centres. Potential fines for refusing to wear a mask and the organisers or illegal raves are also to be increased.
+
+2020-08-14 00:00:00
+Office for National Statistics  figures indicate cases of COVID-19 appear to have stabilised in England following a small increase in July, and despite local clusters of cases. The latest statistics show an estimated 1 in 1,900 in England, or 28,300 people, have the virus. Government figures indicate the R number to be between 0.8 and 1 in England, but members of the Scientific Advisory Group for Emergencies (SAGE) that advises the government, say they are not confident the number is below 1. The  Department of Health and Social Care  confirms that lockdown restrictions are to remain in Greater Manchester and parts of East Lancashire as cases have not decreased in the area. Restrictions are also to continue in parts of West Yorkshire and Leicester.
+
+2020-08-15 00:00:00
+Education Secretary Gavin Williamson confirms A Level and GCSE appeals will be free. Liverpool's  Cavern Club , famous for launching the career of  The Beatles , has reported it faces financial ruin because of the COVID-19 pandemic, having lost an estimated  30,000 a week since lockdown began in March.
+
+2020-08-16 00:00:00
+The  Sunday Telegraph  reports that  Public Health England  is to be replaced by a new organisation tasked with protecting the UK against future pandemics.
+
+2020-08-17 00:00:00
+The UK government announces that A Level and GCSE students in England will have their results based on teachers' assessments following uproar over grades.
+
+2020-08-18 00:00:00
+Health Secretary Matt Hancock announces the creation of the  National Institute for Health Protection  to replace  Public Health England ; Baroness Dido Harding is appointed as its chair. Lockdown measures are partially eased in Leicester, allowing beauty salons and outdoor pools to reopen from the following day.
+
+2020-08-19 00:00:00
+Birmingham's Director of Public Health bans  non-essential  visits to care homes following a rise of COVID-19 cases in the city. The UK government announces plans to expand the Office for National Statistics' Infection Survey, which tests people fortnightly for COVID-19; tests will increase from 28,000 people in England to 150,000 by October.
+
+2020-08-20 00:00:00
+GCSE results are published, with grades now based on teachers' assessments; 78.8  of papers rated grade 4 or above, compared to 69.9  in 2019. The UK government lifts the cap on the number of medical, dentistry, veterinary and teaching students enrolling on courses, and agrees targeted extra funding, while universities in England will offer students their first choice of course, though many will have to defer for a year.
+
+2020-08-21 00:00:00
+Stricter restrictions are announced for residents in Oldham, Pendle and Blackburn from midnight on 22 August, preventing them from socialising with anyone outside their household, but workplaces, childcare facilities and businesses, including restaurants and pubs, are to remain open. Restrictions are removed from Wigan, Rossendale and Darwen, while Birmingham is added to the government's watchlist as an  area of enhanced support . Northampton becomes an  area of intervention . Birmingham City Council  introduces a number of voluntary measures aimed at preventing a full  local lockdown  in the city, including a halt on further sectors reopening, advice to wear face coverings in taxi cabs, limitations on gatherings of over 30 people except for acts of worship, and restricting the number of people who can meet up with another household to two. The ban on evictions due to expire on 23 August is extended until 20 September amid concerns that thousands of people could be made homeless. The government appoints senior civil servant  Susan Acland-Hood  to the Department for Education as a second permanent secretary for six weeks to help deal with the response to the A Levels controversy.
+
+2020-08-22 00:00:00
+Council leaders in the north west urge the government to provide clarity on new restrictions amid concerns it is unclear how they will be implemented and policed. A further  1.1m of government funding (as part of the  Culture Recovery Fund ) is announced to help small music venues.
+
+2020-08-23 00:00:00
+Police in Birmingham report that a total of 70 unlicensed social gatherings, including house and street parties, were disrupted overnight.
+
+2020-08-24 00:00:00
+Greater Manchester Police  reveal they have broken up 126 illegal gatherings over the preceding weekend, including a child's tenth birthday party. Responding to criticism of the police for their actions over the party, Chief Constable  Ian Hopkins  says it was not a  jelly and ice cream  event and saw  mostly adults celebrating .
+
+2020-08-25 00:00:00
+Sally Collier  resigns as head of  Ofqual  following the exam grades controversy. After face coverings are made compulsory for students in communal areas of schools in Scotland, pressure grows on the UK government to update the guidelines for wearing face coverings at schools in England.  The government subsequently issues new guidelines requiring pupils at schools in areas subject to lockdown restrictions to wear face coverings in corridors and other communal areas.
+
+2020-08-26 00:00:00
+Birmingham City Council  is given the authority to close pubs and restaurants that fail to comply with COVID-19 regulations.
+
+2020-08-27 00:00:00
+Birmingham City Council announces plans to launch an enhanced test and trace system by mid-September in a bid to avoid full lockdown.
+
+2020-08-28 00:00:00
+Health Secretary Matt Hancock announces that restrictions will be eased from 2 September in Bolton, Stockport, Trafford, Burnley, Hyndburn and parts of Bradford, Calderdale and Kirklees, allowing households to mix again; restrictions in Leicester will be reviewed again on 11 September. The Office for National Statistics weekly household survey indicated cases of COVID-19 are levelling off in England following a slight increase in July; it estimated there were 2,200 cases per day in the week up to 20 August.
+
+2020-08-29 00:00:00
+Government guidelines on COVID-19 in schools suggest that an entire bubble would be sent home to isolate for fourteen days in the event of a single case being confirmed at a school, presenting the possibility that an entire school year could be sent home in such an instance. Schools in areas where COVID cases are high may also teach pupils on a rota basis, with groups being sent home alternately for two weeks. The first football match with spectators takes place in Brighton, with 2,500 people allowed in to watch a pre-season friendly between  Chelsea  and  Brighton . Women's football makes a return for the first time since lockdown, with a Community Shield match between  Chelsea  and  Manchester City , the first Women's Community Shield to be held since 2008.
+
+2020-08-30 00:00:00
+In an open letter to parents, Education Secretary Gavin Williamson warns those who do not send their children back to school risk putting a  huge dent in their future life chances . The activist  Piers Corbyn  has been fined  10,000 for organising an anti-lockdown rally in Trafalgar Square, London.
+
+2020-08-31 00:00:00
+The opposition  Labour Party  urges the UK government to delay 2021's GCSE and A Level exams until mid-summer to help deal with teaching time lost because of lockdown.
+
+2020-09-01 00:00:00
+Education minister  Nick Gibb  confirms the government will make a decision  very soon  about whether to delay school exams in 2021. Research conducted by the  National Foundation for Educational Research  suggests that schoolchildren are three months behind in their studies following lockdown, with boys and poorer pupils the most affected. A trial begins in Blackburn with Darwen, Pendle, and Oldham of payments to those on low incomes who are asked to self-isolate by NHS Test and Trace. Up to  182 will be paid to people receiving Universal Credit or Working Tax Credit, who are either employed and unable to work from home, or self-employed and unable to work without social contact.
+
+2020-09-02 00:00:00
+Plans to ease lockdown restrictions in Bolton and Trafford are scrapped following a rise in COVID-19 cases in the areas, while Mayor of Greater Manchester  Andy Burnham  urges the rest of Greater Manchester to  continue to minimise mixing in the home . England's exam regulator,  Ofqual , says it warned the government there could be widespread dissatisfaction with its emergency grading system, and that an alternative solution such as delaying exams would have been better.
+
+2020-09-04 00:00:00
+Councillors in  Leeds , West Yorkshire, urge residents to make a  collective effort  to avoid local lockdown measures after the seven day average of COVID-19 cases in the city rise to 29.4 cases per 100,000.  Leeds is also added to  Public Health England 's watchlist as an area of concern. Corby ,  Kettering ,  South Tyneside  and  Middlesbrough  are also added to the list as areas of concern, while  Northampton  is downgraded from an area of intervention to an area of enhanced concern.  Rossendale  and  Norfolk  are also listed as areas of enhanced concern. The Office for National Statistics household survey suggests COVID-19 cases remained unchanged in England for the week up to 25 August, despite local spikes in cases.
+
+2020-09-05 00:00:00
+People in  Bolton  are asked to limit their use of public transport to essential journeys and avoid indoor or outdoor mixing with people outside their support bubbles after COVID-19 cases soar to 99 in 100,000 in a week, the highest rate in England. Lawyers express their concern about the delay in court cases in England and Wales, with some 9,000 having been delayed since the start of lockdown, and warn that measures put in place to speed up cases may not be effective.
+
+2020-09-07 00:00:00
+The UK government announces that travellers arriving from the Greek islands of  Lesvos ,  Tinos ,  Serifos ,  Mykonos ,  Santorini ,  Crete  and  Zakynthos  will be required to quarantine from 4am on 9 September. Manchester City  footballers  Riyad Mahrez  and  Aymeric Laporte  test positive for COVID-19 and are required to self-isolate. England  footballers  Phil Foden  and  Mason Greenwood  are sent home from training in Iceland following a breach of COVID-19 rules.
+
+2020-09-08 00:00:00
+Following a rise in COVID-19 cases, social gatherings of more than six people are made illegal from 14 September, with the exception of workplaces, schools, COVID secure weddings and funerals, and organised team sports. Businesses including soft play centres, bowling alleys and casinos are permitted to reopen in Greater Manchester, Lancashire and West Yorkshire. Lockdown measures are further tightened in Bolton after COVID-19 cases increase to 120 in every 100,000. The measures include limiting food outlets to takeaway meals only, and a curfew requiring businesses to close between 22:00 and 05:00. Health Secretary Matt Hancock blames socialising by people in their 20s and 30s for the increase. COVID-19 cases in Birmingham have increased to 62.2 per 100,000, with local officials working to avoid lockdown measures being implemented. Sarah-Jane Marsh, a director of England's test and trace programme, issues an apology for problems with the system, explaining it is laboratories rather than the testing sites that are the  critical pinch-point .
+
+2020-09-09 00:00:00
+The new rules regarding social gatherings are further elaborated upon by Prime Minister Boris Johnson in a government press conference, alongside details of new legal requirements for data gathering on behalf of venues, social distancing  martials  to enforce restrictions, and a  moonshot  plan to further control the virus with greatly expanded mass virus testing. The  St Leger  meeting opens at  Doncaster Racecourse  with spectators, but health officials order the racecourse to hold the meeting behind closed doors from 10 September on public health grounds. Health Secretary Matt Hancock suggests people should avoid the  inappropriate  use of COVID tests if they do not have symptoms, saying it makes getting a test more difficult for those who do have symptoms. The organisers of Birmingham's  German Market  have cancelled the 2020 event because of the COVID-19 pandemic. Solihull Metropolitan Borough Council  suspends care home visits in  Solihull  as COVID-19 cases in the town reach 50 per 100,000; officials will also make extra visits to bars, restaurants and pubs to ensure they are complying with COVID restrictions.
+
+2020-09-10 00:00:00
+Scientists and health experts express their doubt about Boris Johnson's  Operation Moonshot  plans to test several million people daily for COVID-19 with a quick turnaround, saying that the laboratory capacity is not there, while the  British Medical Journal  quotes a leaked document that claims the process would cost  100bn. Health Secretary Matt Hancock says the rules limiting social gatherings to no more than six people will not be kept in place  any longer than we have to . Guidance for universities in England says that they should only switch to full online learning as a last resort if there is a COVID-19 outbreak in the local area. Travellers returning to England from the Portuguese mainland,  Hungary ,  French Polynesia  and  R union  from 12 September must self-isolate for two weeks; those returning from  Sweden  no longer need to self-isolate. Hospital waiting lists in England have increased because of the pandemic, figures show, with the volume of patients waiting for treatment at their highest since records began in 2007. Two million patients have waited 18 weeks or longer for treatment, while 83,000 have waited for more than a year. Two boat shows scheduled for Southampton the following day – BOATS2020, and the smaller sailing show MDL Ocean Village – are cancelled at short notice by public health officials because of fears over the COVID-19 pandemic.
+
+2020-09-11 00:00:00
+Households in  Birmingham  and neighbouring  Solihull  and  Sandwell  are banned from mixing from 15 September as COVID-19 cases in Birmingham reach 90.3 per 100,000, but six people from more than one household can still visit pubs, restaurants and bars, and shops remain open.
+
+2020-09-12 00:00:00
+Cabinet Office Minister  Michael Gove  confirms that children in England will be included in new  rule of six  socialising restrictions; Scotland and Wales have not included children under the age of 12 in the new rules. Anti-lockdown protesters gather in  Birmingham City Centre  to demonstrate against the introduction of tighter restrictions in the area. The  2020–21 English football season  begins.
+
+2020-09-13 00:00:00
+The UK government writes to care home providers in England to warn them of a rise in COVID-19 cases in the sector; cases have risen among staff, but there are fears they could spread to residents.
+
+2020-09-14 00:00:00
+The Health Protection (Coronavirus, Restrictions) (No. 2) (England) (Amendment) (No. 4) Regulations 2020 came into force at 12.01 a.m. Unless one of the exceptions applies, the statutory instrument provides authority to limit the number of persons in a gathering to no more than six; hence the  rule of six . NHS England  writes to GPs surgeries to advise them to make patients aware that face-to-face appointments with a doctor can be made if required; at least half of the 102 million appointments made between March and July are estimated to have been online or via telephone. Headteachers warn that schools are being impacted by delays in COVID tests for teachers.
+
+2020-09-15 00:00:00
+Health Secretary  Matt Hancock  tells the House of Commons that England's COVID-19 testing system has faced an  enormous challenge  after a  sharp rise  in the demand for tests, but that the issue will be resolved in a  matter of weeks . The first official figures for school attendance published since the beginning of the autumn term show that 88  of pupils have returned to the classroom.
+
+2020-09-16 00:00:00
+Secretary of State for Justice  Robert Buckland  says that resolving delays with testing is  the number one issue , with plans to publish a strategy within days that will prioritise NHS facilities and care homes, as well as schools.  Prime Minister Boris Johnson says the system is dealing with a  colossal spike  in demand, and that an  action plan  for care homes will be released shortly. A number of local authorities have said that the introduction of  COVID marshals , announced by Prime Minister Boris Johnson as a way to enforce social distancing, rules on gatherings and the wearing of face coverings, is  unlikely  and  almost impossible . Bolton NHS Trust  urges people who are not seriously ill to avoid visiting accident and emergency departments after 100 people turned up at a local hospital asking for COVID-19 tests.
+
+2020-09-17 00:00:00
+Following a rise in COVID-19 cases in the north east, local lockdown measures are announced for  Newcastle-upon-Tyne ,  Gateshead ,  Sunderland ,  Northumberland ,  South Tyneside ,  North Tyneside  and  County Durham , beginning from midnight. Households are banned from mixing, while pubs, bars and restaurants are only permitted to offer table service; they must close between 22:00 and 05:00. Thailand and Singapore are added to the quarantine exemption list, meaning travellers arriving from there will no longer need to self-isolate. Slovenia and Guadeloupe are removed.
+
+2020-09-18 00:00:00
+The UK government says it is considering a short period of tighter restrictions for England to slow the spread of COVID-19; this would see hospitality businesses closing for a few weeks. Collection of customer / visitor contact details  becomes a legal requirement  with fixed penalties, applying to operators of many types of business and community centres. Tighter restrictions are announced for  Lancashire  (excluding  Blackpool ),  Merseyside ,  Warrington ,  Halton ,  Wolverhampton ,  Oadby ,  Wigston , parts of  Bradford ,  Kirklees  and  Calderdale , beginning on 22 September. Households are banned from mixing, hospitality businesses can offer table service only and must close between 22:00 and 05:00. Residents are advised only to use public transport when essential. Mayor of London   Sadiq Khan  says measures to curb the spread of the virus in London are becoming  increasingly likely . The Office for National Statistics says that new COVID-19 cases may have reached 6,000 a day in England, with a clear rise in cases in those under the age of 35. The  New Year's Eve  fireworks display in London is cancelled because of the COVID-19 pandemic.
+
+2020-09-19 00:00:00
+Up to 1,000 fans are allowed to attend eight  English Football League  matches as part of the government's crowd pilot scheme aimed at reopening spectator sport.
+
+2020-09-20 00:00:00
+Health Secretary  Matt Hancock  warns people in England that tougher COVID-19 restrictions will follow if they do not follow the rules. As Lancashire prepares for tighter restrictions from 22 September, tourists have descended on  Blackpool  for a  last blast  at the coastal resort, despite police urging them not to do so. Labour party leader  Sir Keir Starmer  calls on Prime Minister  Boris Johnson  to apologise for the  near collapse  of the government's test and trace system.
+
+2020-09-21 00:00:00
+Health Secretary  Matt Hancock  announces that people in areas subject to tighter COVID-19 restrictions are to be allowed to look after children from other households. The UK government announces that pubs and restaurants in England must close at 22:00 from Thursday 24 September and be restricted to table service only by law, with the measures to be outlined by Prime Minister Boris Johnson the following day.
+
+2020-09-22 00:00:00
+Prime Minister  Boris Johnson  tells the House of Commons the United Kingdom has reached  a perilous turning point  as he announces new restrictions for England that could last for as long as six months. These include a requirement that all shop staff wear face coverings, and a limit on weddings to fifteen people. Initial fines for rule breaking are increased from  100 to  200.  People are also told to work from home if they can. Johnson confirms that plans for spectator sporting events to resume from 1 October will not go ahead. A report into the COVID response implemented by  Erlestoke Prison  finds that it made the prison  less safe  and  less purposeful .
+
+2020-09-23 00:00:00
+Foreign Secretary  Dominic Raab  defends new COVID-19 measures following criticism from some scientists who feel they do not to far enough, describing them as  balanced, targeted and proportionate . An  English Premier League  match between  Liverpool  and  Arsenal  is brought forward by fifteen minutes to accommodate for the 10pm pubs curfew, with all future Premiership matches being timed to fit in with the new regulations. Couples who live separately are now permitted to meet up for sex, but casual sex is still banned.
+
+2020-09-24 00:00:00
+The second version of the  NHS contact-tracing app  is made available for download by the public in England and Wales.
+
+2020-09-25 00:00:00
+Different households in  Leeds ,  West Yorkshire  are prevented from mixing together in houses and gardens to curb the spread of COVID-19 in the city, the new rules becoming effective from midnight. London is placed on the national coronavirus watchlist following a rise in cases there. 1,700 students at  Manchester Metropolitan University  are told to self-isolate for 14 days after 99 tested positive for COVID-19. The  Department of Health and Social Care  announces that emails and SMS messages will be sent to people in England informing them how to download the  NHS COVID-19  contact-tracing app.
+
+2020-09-26 00:00:00
+Steve Chalke , founder of the  Oasis Trust  which operates 53 schools in England, calls on the  pupil premium  that helps to educate the poorest children should be trebled because the gap between disadvantaged and non-disadvantaged children  has become a gulf  following lockdown. Demand for COVID tests for children in England has tripled through September, with 1  testing positive.
+
+2020-09-27 00:00:00
+In the Birmingham area, 100 military personnel are enlisted to support the  drop and collect  COVID-19 testing programme.
+
+2020-09-28 00:00:00
+The remainder of the regulations ( SI 1029 ) come into force in England, reducing the maximum number who can attend weddings and civil partnership ceremonies and any associated receptions from 30 to 15. Refusing to self-isolate in England after being told to self-isolate becomes illegal, with a fine of up to  10,000. The change in the law comes after a government-commissioned survey found that only 18  of people with symptoms went into self-isolation.  Fines for employers who penalise employees for self-isolating will also be introduced. The Test and Trace Support Payment scheme begins.  500 is available to employed people who are asked to isolate by NHS Test and Trace, if they cannot work at home and are receiving certain state benefits or have a low income. Andy Burnham , the  Mayor of Greater Manchester , calls for an  urgent review  of the 10pm pub curfew because it is  doing more harm than good  and  creates an incentive for people to gather in the street or more probably to gather in the home . Lockdown measures are further tightened in the North East of England from 30 September to make mixing with other households in any indoor setting illegal and enforceable by fines; the decision comes after COVID-19 cases in the area rise to 100 in 100,000.
+
+2020-09-29 00:00:00
+The  NHS Confederation  warns that the health service faces a  triple whammy  of rising COVID-19 cases, a major backlog in treatment and reduced capacity because of COVID measures over the coming winter. The shopworkers' union  USDAW  warns that 10pm pub closures are putting retail workers at greater risk from verbal abuse, violence and COVID infection, because stores that remain open late are attracting people who wish to buy alcohol, something that poses a potential increase in antisocial behaviour. Prime Minister Boris Johnson announces a  radical  shake up of adult education in England, with adults who do not possess A Level qualifications offered A Levels or equivalent qualifications in subjects valuable to industry. Johnson apologises, saying he  misspoke  after being asked to clarify incoming COVID-19 restrictions for meeting up in the North East of England after a junior minister was unable to do so. Johnson wrongly stated that the rule of six applied in the area, when the restrictions mean households are not permitted to mix in indoor or outdoor settings.
+
+2020-09-30 00:00:00
+170 people have tested positive for COVID at a pork processing plant in Cornwall.
+
+2020-10-01 00:00:00
+Tighter restrictions are announced for  Liverpool ,  Warrington ,  Hartlepool  and  Middlesbrough , making it illegal for households to mix in any indoor setting, including pubs and restaurants. The changes come into place following a continued spike of COVID-19 cases in those areas, and will remain effective for as long as necessary. Doctors in the West Midlands have been told to prepare for a mass COVID vaccination programme from as early as November. BBC News  reports that COVID-19 restrictions are to be simplified into a three-tier system following confusion over local rules. 770 students at the  University of Northumbria  have tested positive for COVID-19, requiring them to self-isolate; 79 of them are symptomatic.
+
+2020-10-03 00:00:00
+Tighter restrictions come into force in Liverpool, Hartlepool, Middlesbrough and Warrington.
+
+2020-10-04 00:00:00
+Andy Burnham , the  Mayor of Greater Manchester , warns the north of England faces a  winter of dangerous discontent  if the test and trace system does not improve, and calls for local control over test and trace, a local furlough scheme and better support for local authorities if local lockdown measures are to continue. Fallowfield , a suburb of Manchester and home to thousands of students, is now the coronavirus hotspot with the most cases of anywhere in the country. A possible reason for the soaring COVID-19 infection rate is the concentration of student accommodation in the areas around the  University of Manchester ,  Manchester Metropolitan University  and  Salford University  campuses.
+
+2020-10-05 00:00:00
+According to the  Telegraph , a number of  university cities  experiencing significant COVID-19 infection rate increases, such as Leeds, Exeter, Oxford, Sheffield and Manchester, are poised to be put under more stringent restrictions, even local lockdown measures.
+
+2020-10-06 00:00:00
+The number of daily COVID-19 hospital admissions in England increases by 478, the largest daily increase since June. Health officials in Nottingham express concerns about a spike in COVID cases in the city, where cases have risen to an average of 384 in every 100,000 over the past seven days. In the House of Commons, the UK government wins a vote on retaining the  rule of six  limit on social gatherings by 287 votes to 17. London now has an infection rate of more than 1,000 new COVID-19 cases a day, with 16 boroughs reporting more than 60 new cases per 100,000 people. The increase is thought to be partly due to an upsurge in testing.
+
+2020-10-07 00:00:00
+Labour Party leader  Keir Starmer  challenges Prime Minister Boris Johnson to publish the scientific evidence behind the 10pm closing time ahead of a vote on the issue in the House of Commons. People in  Nottinghamshire  are asked to avoid mixing with other households indoors amid high rates of COVID-19.
+
+2020-10-08 00:00:00
+After details of possible new restrictions to close pubs and restaurants in the areas of England most affected by COVID-19 appear in newspapers ahead of any announcement by the government, MPs and local leaders seek clarification on the situation. Figures released by  NHS England  indicate 111,000 people have been waiting for routine hospital treatment for more than a year, the highest figure since 2008. Almost two million patients have been waiting for more than the target time of 18 weeks. 30m of funding is announced for local authorities to fund COVID measures, including marshals to ensure rules are followed. Police forces in England and Wales are also given  30m to help with enforcing regulations. Data published by  Public Health England  shows Nottingham to have the highest COVID-19 rate in the UK, with 689.1 cases per 100,000. The Evening Standard reports that London has had 6,723 new COVID-19 infections within the week ending 4 October 2020, an increase of 58.2  on the previous week.
+
+2020-10-09 00:00:00
+The Imperial College's  React  study shows the rate at which the coronavirus  epidemic  is spreading in the north of England is double the pace of the rest of England with faster infection  doubling times  of 17 days in the North West, 13 days in Yorkshire and the Humber, as opposed to 29 days in England more generally. Scientists present findings that nearly 25  of NHS Trust inpatients with COVID-19 acquired the infection after admission to hospital.
+
+2020-10-10 00:00:00
+As the government prepares to introduce new measures to fight COVID-19, leaders in the north of England criticise the level of financial support offered by the Chancellor. Mayor of Greater Manchester  Andy Burnham  says that people will not be surrendered to hardship. Five people are arrested and a police officer is injured at an anti-lockdown protest in London.
+
+2020-10-11 00:00:00
+Following a decline in the number of people being contacted by  NHS Test and Trace , Communities Secretary  Robert Jenrick  says the government will  fully embrace  local test and trace systems. Five Manchester MPs write a letter to the Prime Minister arguing against plans to introduce a three-tier system for COVID-19 restrictions, and saying that pub closures will not stop infection rates rising.
+
+2020-10-12 00:00:00
+NHS Nightingale hospitals  in Manchester, Sunderland and Harrogate are told to prepare to take patients. It is confirmed that GCSE and A Level exams will go ahead in 2021, but with reduced content on some papers, and with a start date pushed back by three weeks. 13 October - Figures reveal that the number of secondary schools disrupted by COVID-19 is increasing, with 21  sending pupils home because of the virus. This figure is an increase from 18  in the previous week, and 8  in mid-September. 14 October - The  COVID-19 tier regulations  come into force, defining three levels of restrictions to be applied as necessary in geographic areas. These replace and revoke the existing  local lockdown regulations . The  Liverpool City Region  is the first to be assigned to the strictest tier. Footage of people gathering in Liverpool two hours before the new regulations are introduced emerges on social media;  Joe Anderson , the  Mayor of Liverpool , criticises those involved in the gathering, saying they  shame our city . NHS Hospital Trusts  in Plymouth, Liverpool and Belfast are cancelling planned elective procedures outright or scaling-back surgery due to an upsurge in COVID-19 patients requiring intensive care. The  Joint Biosecurity Centre 's Gold Command recommends Greater Manchester and Lancashire be placed under  Tier 3  measures, subject to being signed off by  Number 10 . 15 October - Health Secretary  Matt Hancock  announces in the  House of Commons  that London, Essex (except Thurrock and Southend), York, North East Derbyshire, Chesterfield,  Erewash ,  Elmbridge , and  Barrow in Furness  will be moved to  Tier 2   High  alert level, restricting different households mixing indoors from midnight on 16 October. Mayor of Greater Manchester Andy Burnham and local politicians resist plans to put the area into the highest level 3 tier, citing the impact the move would have on the local economy.
+
+2020-10-16 00:00:00
+Council leaders in Lancashire agree to move the county into tier 3 restrictions from midnight, but unlike the Liverpool City Region gyms will be allowed to remain open. In a press conference at 10 Downing Street, Prime Minister Boris Johnson says the spread of COVID-19 in Manchester is  grave  and he may  need to intervene  if new measures are not agreed.
+
+2020-10-17 00:00:00
+Protesters march through London to demonstrate against the city's inclusion in tier 2 restrictions. Manchester's restrictions status continues to be unclear as Mayor Andy Burnham rejects a statement from Downing Street that it has arranged talks for the following day. The  DHSC  reveals that  police forces  across England are to be given access to  Test and Trace  data in circumstances where an individual with a positive result has been told to self-isolate and there is evidence of non-compliance  without reasonable justification .
+
+2020-10-18 00:00:00
+Mayor of Greater Manchester Andy Burnham accuses Boris Johnson of exaggerating the risk of COVID-19 in the area in order to persuade local politicians to agree to go into tier 3 restrictions, and writes a letter to the leaders of the UK's major political parties calling for a Parliamentary debate on the proposals. Cabinet Office Minister  Michael Gove  warns that restrictions may be imposed if an agreement cannot be reached. Volunteer co-ordinator and trustee, Mezmin Malida, is featured in a  Guardian  article on how  Locked-down Leicester  feels forgotten.
+
+2020-10-19 00:00:00
+Communities Secretary  Robert Jenrick  confirms that political leaders in Manchester have until midday the following day to reach a decision with the government on enter into tier 3 restrictions.
+
+2020-10-20 00:00:00
+Prime Minister  Boris Johnson  confirms that Greater Manchester will move to level 3 COVID restrictions from Friday 23 October after failure to reach a deal with local leaders.  In response, Andy Burnham says Greater Manchester will face a  punishing  winter. School attendance figures show that at least half of secondary schools in England sent one or more pupils home because of COVID-19 during the previous week. Sadiq Khan , the Mayor of London, calls for the 10pm curfew to be scrapped in London to allow bars and restaurants to deal with the tier 2 restrictions.
+
+2020-10-21 00:00:00
+Dan Jarvis  the Mayor of the  Sheffield City Region , announces that  South Yorkshire  will go into tier 3 restrictions from Saturday 24 October. Prime Minister Boris Johnson announces  60m of funding for Greater Manchester to help it deal with tier 3 restrictions. MPs vote 322–261 to reject a parliamentary motion to provide free school meals to children during holidays until Easter 2021. 22 October - Coventry, Stoke-on-Trent and Slough are to move to tier 2 restrictions from Saturday, 24 October 2020, due to surging infection rates with people over the age of 60, in particular, being among the cases. Manchester's  Nightingale hospital  will reopen from the week commencing 26 October in readiness of the area moving into tier 3 restrictions. Ministers are accused of making decisions favouring London with COVID-19 support, as  Rishi Sunak  announces a financial package worth billions. Mayor of Greater Manchester,  Andy Burnham , points out that the new support is largely similar to what he requested prior to talks breaking down. At a Downing Street press conference, Prime Minister Boris Johnson says he shares  people's frustration  with the turnaround times for the track and trace service, and that the system must improve.
+
+2020-10-23 00:00:00
+The coronavirus  fatality rate  in England increases for the first time since the apex of April 2020. A spokesman for Boris Johnson says the Prime Minister is  hopeful  that  some aspects of our lives  could be  back to normal  by Christmas. As the half-term break begins, a number of councils and local businesses around England are offering to provide free meals for schoolchildren during the holiday. A forthcoming rugby union match between  England  and the  Barbarians  at  Twickenham , scheduled for 25 October, is called off after 12 Barbarians players are stood down for breaking COVID rules. Warrington Borough Council  announces that  Warrington  in  Cheshire  will go into tier 3 restrictions, with tighter measures scheduled to begin on Thursday 29 October.
+
+2020-10-24 00:00:00
+As South Yorkshire enters tier 3 restrictions, Sheffield City Region mayor Dan Jarvis urges the UK government to  define precisely what the exit criteria is  from tier 3. Professor Neil Ferguson, a former member of the government's  Scientific Advisory Group for Emergencies , says that some school years may need to close in order to control the virus. Eighteen people are arrested at an anti-lockdown protest in central London. Headteachers at some schools in England report that access to free government provided laptops for pupils has been cut. Gloucestershire Police  say that during Wales's 17-day lockdown, they will stop people crossing the border from Wales who they suspect are not making an essential journey and advise them to turn back. Those who refuse will have their details passed to police in Wales who can then issue fines.
+
+2020-10-25 00:00:00
+Following criticism of  Test and Trace , the mandatory 14-day quarantine for contacts of people who receive a positive test for COVID-19 may be reduced to 10 days, or even 1 week. A  BMA  survey of 6,610 physicians reveals that 37  hold the view that the recently implemented  tier system  in England will be an ineffectual measure.
+
+2020-10-26 00:00:00
+Prime Minister Boris Johnson rejects mounting calls to reverse the government's decision not to fund free school meals over the half-term holidays. Nottingham is to move into tier 3 restrictions on Thursday, 29 October. With eight million people in England set to be living under tier 3 restrictions by the end of the week, a group of Conservative MPs representing constituencies in the north of England write to the Prime Minister demanding a  clear road-map  out of lockdown.
+
+2020-10-27 00:00:00
+Warrington  enters tier 3 restrictions, the alert level described as  very high , due to rising COVID-19 infection rates. COVID-19 tests that provide a result within an hour are being piloted at universities in England in order to allow students to return home for Christmas. Hospitals in  Leeds  cancel non-essential operations as the number of COVID-19 patients in the city rises above levels seen earlier in the year. Dudley  and  Staffordshire  are announced as the latest areas to enter  tier 2 regulations , though a date for them to do so is not confirmed.
+
+2020-10-28 00:00:00
+It is confirmed that  Nottinghamshire  will enter tier 3 restrictions from Friday 30 October, with auction houses, car boot sales, betting shops, saunas and tattoo parlours required to close. Alcohol cannot be served in shops after 9pm, but can be sold  in hospitality venues where accompanying a  substantial meal  until 10pm. A loophole in the law causes confusion as to whether alcohol can be served in social clubs in areas under tier 3 restrictions. Opposition parties call for COVID rules to be the same across all four nations for the Christmas period, in response to which Environment Secretary  George Eustice  says  It's too early to say  what rules will be in place then.
+
+2020-10-29 00:00:00
+It is confirmed that  Oxford  is to be placed into tier 2 restrictions from Saturday 31 October after cases there rose to 134.5 in every 100,000 for the week ending 23 October,  and that  West Yorkshire  will be placed into tier 3 restrictions from Monday 2 November. More than 10  of London hospital beds are in use with COVID-19 patients as the NHS comes under pressure due to a second wave. Delia Smith , a celebrity chef and director of  Norwich City , writes to Prime Minister Boris Johnson urging him to allow fans to return to football stadiums, citing concern that smaller clubs could be at risk of closure without the return of supporters.
+
+2020-10-30 00:00:00
+Nottinghamshire moves into tier 3 restrictions. The move is distinctive from most other areas subject to tier 3 restrictions since betting shops, nail salons, tattoo parlour and saunas are required to close. Foreign Secretary  Dominic Raab  tells the  BBC Radio 4   Today  programme  the UK government is  striving  to avoid  blanket  COVID measures, which he says would not be in the best interests of the country. The Times  reports that Prime Minister Boris Johnson will announce a nationwide lockdown for England on Monday 2 November, with the restrictions coming into force as early as Wednesday 4 November and lasting until December.
+
+2020-10-31 00:00:00
+Business leaders criticise plans for a second lockdown in England, citing the  immense  damage it will do to businesses. After scientists project that there could be several thousand COVID deaths a day, Prime Minister Boris Johnson announces a second month-long lockdown for England, from Thursday 5 November to Wednesday 2 December, in order to prevent what he describes as a   medical and moral disaster  for the NHS. England will then revert to the tier system.  The announcement was brought forward by two days (from Monday to Saturday) after leaks to media the previous day; a Sky News report later found a noticeable increase in people making journeys in the five days between the announcement and the start of the new restrictions. Unlike the first lockdown, schools, universities, manufacturing businesses and construction sites will remain open.  The  English Premier League  and other elite sports can also continue behind closed doors during the four week lockdown, it is confirmed.
+
+2020-11-01 00:00:00
+Cabinet Office Minister  Michael Gove  confirms the four-week England lockdown could be extended beyond 2 December. Professor Sir  Mark Walport , a member of the government's SAGE advisors, suggests the virus is  unlikely to be completely controlled  by 2 December. Boris Johnson faces a potential rebellion from some of his backbench MPs angry at lockdown measures they describe as  disastrous  to the economy, with Sir  Graham Brady , chairman of the  1922 Committee , suggesting up to 80  Conservative  MPs may vote against the measures when they are debated in Parliament. Transport for London  secures a  1.8bn government bailout to keep bus and tube services running until March 2021. Religious groups criticise the new lockdown rules that ban communal worship. Mayors in some of England's COVID-19 hotspots, including  Andy Burnham  of  Greater Manchester , call for schools and colleges to be closed during the month-long lockdown. Tennis and golf officials urge the government to make their sports exempt from the new lockdown rules amid concerns they are on the brink of collapse.
+
+2020-11-02 00:00:00
+Boris Johnson tells the  House of Commons  the UK faces a  medical and moral disaster  without the planned month-long lockdown for England, but that it will end  without a shred of doubt  on 2 December. Chancellor  Rishi Sunak  announces that self-employed people will be able to claim 80  of their earnings during the lockdown period. Universities advise students not to move home during the lockdown, even if their courses are switched to being taught online.
+
+2020-11-03 00:00:00
+The  Health Protection (Coronavirus, Restrictions) (England) (No. 4) Regulations 2020  are  laid on the table  in parliament, to come into effect for 28 days beginning on 5 November. Liverpool is to pilot a regular COVID-19 rapid testing trial with logistic support from around 2,000 military personnel. Defending impending lockdown restrictions, England's Chief Medical Officer Dr  Chris Whitty  says that  economically and socially destructive  lockdowns are the only practical option until a vaccine and drugs are found to treat COVID-19. A software defect in the Test and Trace scheme has led to more than 7,200 people in England being told to stop self-isolating on the wrong date. Retailers, including  Currys PC World  and  John Lewis , stay open later in the days preceding lockdown to cope with increased customer demand.
+
+2020-11-04 00:00:00
+MPs vote 516–39 to support the four-week lockdown restrictions for England, with 34 Conservative MPs among those to vote against the measures, while a further 19 Conservatives abstain from voting. The NHS in England is put on the highest alert level. New guidelines are issued for care homes allowing visitors. For the first time,  NHS Test and Trace  makes COVID-19 tests available for  GPs  to use at their discretion, for symptomatic patients, symptomatic staff and their symptomatic household members.
+
+2020-11-05 00:00:00
+As England's second lockdown begins, the  UK Statistics Authority  criticises the government over the way it presented data estimating potential COVID deaths to justify the measures at the 31 October Downing Street press conference, and calls for greater transparency of data and the way projections are made. At a Downing Street press conference, Boris Johnson says the four week lockdown should be enough to make a  real impact  on the virus. The  University of Manchester  apologises after large metal fences were erected around halls of residence on its  Fallowfield Campus  without warning. The fences are removed again following protests from several hundred students. Police break up an anti-lockdown protest in central London as 104 are arrested. Foreign Secretary  Dominic Raab  is reported to be self-isolating after coming into contact with a person who had tested positive for COVID-19.
+
+2020-11-06 00:00:00
+The first trial of city-wide COVID testing gets underway in Liverpool.
+
+2020-11-07 00:00:00
+The number of testing sites in Liverpool is doubled after 12,000 people are tested at six sites on the first day of the trial. Non-urgent operations are suspended at hospitals in Greater Manchester. 9 November - The organisers of a Manchester anti-lockdown demonstration involving 600 people are issued with a  10,000 fine.
+
+2020-11-10 00:00:00
+COVID mass testing is to be rolled out to a further 67 areas of England, Health Secretary Matt Hancock announces, including Nottinghamshire, Yorkshire and parts of the West Midlands. A report from  Ofsted  says the COVID crisis has led to a slipping back of learning skills for most children in England, while some have forgotten social skills, such as how to use a knife and fork.
+
+2020-11-11 00:00:00
+An  Evacuation -style operation to get students home safely for Christmas is announced. They will be offered rapid COVID tests, and allocated travel dates in a  student travel window  between 3–9 December. A study by the  Northern Health Science Alliance  says northern England has been hit worse by the COVID crisis,  exacerbating  regional inequalities.
+
+2020-11-12 00:00:00
+The number of people waiting for hospital treatment in England for over a year has hit its highest level since 2008, with 140,000 having waited more than 12 months.
+
+2020-11-13 00:00:00
+Around 90,000 COVID tests have been carried out in Liverpool during the first week of mass testing in the city. Research conducted by the  University of Nottingham  has found that rapid COVID testing in care homes is as effective as tests carried out in hospitals, prompting researchers to suggest mass testing for care homes would be a  game changer  for residents and their families.
+
+2020-11-14 00:00:00
+Professor  Susan Michie , a government scientific adviser, says the next two weeks will be  absolutely crucial  if England's second lockdown is to be lifted on 2 December, and warns people not to be complacent. Fourteen people are arrested at an anti-lockdown protest in Bristol,  and sixteen at a demonstration in Liverpool. Scarborough Council  asks people to stay away from the coastal town as COVID rates increase to 565.5 per 100,000.
+
+2020-11-15 00:00:00
+The Metropolitan Police allow a baptism involving 30 people to go ahead at an  Islington  church in spite of lockdown regulations prohibiting such gatherings. Two police vans attend the baptism, with officers preventing further people from entering the church, but fifteen people already inside are allowed to continue, while a further fifteen attend an outdoor service.
+
+2020-11-16 00:00:00
+Dr  Susan Hopkins  of  Public Health England  suggests the regional COVID tier system may need to be  strengthened  to get the country  through the winter . Mass testing in Liverpool has discovered 700 COVID cases where those testing positive had no symptoms,  Public Health England  has announced. Council leaders in  Hull  write to the Prime Minister to ask for urgent action as COVID cases rise to 770 in 100,000. Andy Marsh, the Chief Constable of  Avon and Somerset Police , criticises anti-lockdown marchers who gathered in Bristol over the preceding weekend as  selfish idiots  and  an embarrassment to Bristol .
+
+2020-11-17 00:00:00
+From 4am, travel rules are relaxed for people arriving in England to work on poultry farms to ensure there is enough turkey available for Christmas. Ministers are reported to be looking at toughening the tier system for England when the second lockdown ends on 2 December. The UK government changes the way it records COVID data for England, resulting in an increase in cases for some areas. The changes involve people, such as students, who have moved location, but whose cases were still being recorded at their home address. Consequently, areas such as Newcastle, York and Lincoln have seen a dramatic increase in case numbers, with those in Newcastle increasing by a quarter. Sources, including BBC News, report the UK government is looking at allowing spectators to return to sports venues in some parts of England as early as Christmas. London Heathrow receives the first transatlantic flight where everyone on board had tested negative for  coronavirus  prior to boarding at  Newark airport , New York.
+
+2020-11-18 00:00:00
+Research has indicated that one in five of London's black cabs has been taken out of service since June due to a slump in demand for their use because of the COVID crisis. Baroness  Dido Harding , the head of  NHS Test and Trace , is self-isolating after receiving an alert that she had been in contact with a person who has tested positive for COVID.
+
+2020-11-20 00:00:00
+A BBC investigation has found that  NHS Test and Trace  is reaching as little as half of those identified as close contacts in some areas.
+
+2020-11-21 00:00:00
+Downing Street confirms plans to introduce a tougher three-tier system of COVID restrictions for England when the lockdown ends on 2 December. Sources, including BBC News, report that Chancellor Rishi Sunak is to announce a  500m package to support mental health services in England, which have been in greater demand because of the COVID crisis. Dozens of arrests are made after hundreds attend anti-lockdown protest in Liverpool, and other parts of England.
+
+2020-11-23 00:00:00
+Prime Minister  Boris Johnson  confirms that  England's three-tier system of COVID regulations  will return once the lockdown expires on 2 December, but with toughened measures for each area. Gyms and non-essential shops will reopen throughout England, while collective worship and weddings will be allowed again, as well as some spectator sport. The tier status of each region will be reviewed every 14 days, with the regional approach scheduled to last until March 2021. Up to 4,000 spectators will be allowed at outdoor sporting events from 2 December in the lowest tier areas, with 2,000 allowed in tier 2 areas. Students are to be urged to take two COVID-19 tests three days apart before travelling home, it is announced. But tests will be voluntary, and will not be on offer at all universities.
+
+2020-11-24 00:00:00
+Transport Secretary  Grant Shapps  announces that travellers arriving in England from 15 December can reduce their quarantine period by paying for a COVID test after five days. Figures have shown that one in five secondary pupils in England has missed schooling in the past week due to disruption caused by COVID-19.
+
+2020-11-26 00:00:00
+England's new  tier system  is announced, coming into force on 2 December. Most of the country, including London and Liverpool, is put into tier 2, while large parts of the Midlands, North East and North West, including Greater Manchester and Birmingham, are put into tier 3. Only the Isle of Wight, Cornwall and the Isles of Scilly are placed into tier 1. Data for 19–21 November shows that cases are falling in every part of England.
+
+2020-11-27 00:00:00
+Health officials have warned that plans for mass testing in England threaten to be a distraction to other priorities, such as the rollout of a vaccine. A laboratory error leads to hundreds of people wrongly being told they have tested positive for COVID-19 by  NHS Test and Trace .
+
+2020-11-28 00:00:00
+Writing in  The Times , Cabinet Office Minister  Michael Gove  warns backbench Conservative MPs planning to vote against the new tier system for England that without the measures hospitals throughout the country will become overwhelmed with COVID cases. More than 150 people are arrested at an anti-lockdown protest in London's West End organised by Save Our Rights UK.
+
+2020-11-29 00:00:00
+Foreign Secretary  Dominic Raab  says that England's new tier system is needed in order to avoid a third wave of COVID-19. The UK government issues new rules for Christmas permitting door-to-door carol singing and the opening of Santa's Grottos in all tiers, but people in tier 3 will not be able to attend a school Nativity play and will instead have to watch it via livestream or as a recording.
+
+2020-11-30 00:00:00
+Health Secretary Matt Hancock announces that the lockdown measures in England have helped to bring COVID-19 under control again, with cases having reduced by around 30  during the preceding week, but warns that vigilance is still needed. In a bid to persuade backbench MPs to support the new tier regulations for England, the UK government publishes data behind its decision to introduce the measures, stating that it seeks to  balance the many complex impacts  of restrictions and keep them in place  for as short a time as possible , but that allowing COVID to spread  would lead to impacts...considered intolerable for society . In response, senior Conservative MP  Mark Harper  claims the  wheels are coming off the government's arguments . The UK government announces a further expansion of community testing in England. Housing Minister  Robert Jenrick  announces a temporary waiver of planning restrictions on Monday–Saturday shopping hours during December and January. Environment Secretary  George Eustice  attracts  media attention after suggesting pubgoers in the new tier 2 could order a scotch egg with their drink, which would count as a substantial meal. Singer  Rita Ora  apologises after breaching lockdown rules to celebrate her 30th birthday at a London restaurant.
+
+2020-12-01 00:00:00
+MPs vote 291–78 in favour of introducing England's tough new COVID tier system, with 55 backbench Conservatives voting against the government, while another 16 abstain. The UK government announces that relatives of people in care homes in England can visit if they receive a negative COVID-19 test. Prime Minister  Boris Johnson  announces that pubs forced to close under the new tier system because they do not serve food will be given  1,000 compensation. Stratford-on-Avon District Council  will seek a judicial review into the government's decision to place it into tier 3 of the new COVID restrictions.
+
+2020-12-02 00:00:00
+England's second lockdown ends at 12.01am, and the second tier system is adopted. Gyms, hairdressers and non-essential shops are allowed to reopen. Students in England will have a staggered return to university over five weeks after the Christmas holidays in order to reduce COVID transmission. Fans are allowed to return to  English Football League  grounds for the first time since March, with spectators attending six venues. Up to 1,000 fans are allowed into Luton and Wycombe, while Carlisle, Charlton, Shrewsbury and Cambridge are allowed to admit 2,000.
+
+2020-12-04 00:00:00
+Figures from the Office for National Statistics indicate COVID-19 rates are falling in every part of England apart from the North East, with 1 in 105 people having the virus in the week up to 28 November, down from 1 in 85 the week before. Councils in Greater Manchester pause rapid COVID testing for care home visitors amid concerns they do not detect enough cases. The  Lancashire FA  suspends grassroots football in parts of the county until January following talks with local health officials.
+
+2020-12-05 00:00:00
+GP surgeries will receive supplies of the Pfizer/BioNTech vaccine on 14 December, and have been told to have vaccination centres staffed and ready to deliver the vaccine within three and a half days of that date. Following criticism that the mass COVID testing introduced to tier 3 areas may not be accurate, Dr  Susan Hopkins , chief medical adviser to  NHS Test and Trace , defends the tests, saying they could identify many cases of infection in people without symptoms. A Christmas market has opened in Nottingham despite concerns from some residents it could lead to a rise in COVID cases. The Nottingham Winter Wonderland was given the go-ahead by Nottingham City Council after organisers said it was safe. The first weekend following the end of lockdown sees an influx of shoppers to high streets as stores hold pre-Christmas sales.  In London, police are called to  Harrod's  to deal with a large crowd gathered outside the store; four arrests are made.
+
+2020-12-06 00:00:00
+Although weekend shopping has returned, figures are reported to be down on 2019. Nottingham's Christmas market is closed a day after it opened amid concerns it could promote the spread of COVID-19. Following criticism of its decision to suspend grassroots football in parts of Lancashire the day before fixtures were scheduled to go ahead, the Lancashire FA defends its eleventh hour decision, saying it communicated the decision as soon as was possible and that its priority is to  protect the community  over Christmas.
+
+2020-12-07 00:00:00
+England's cricket tour of South Africa is abandoned after two members of the team receive positive COVID tests.
+
+2020-12-08 00:00:00
+Health Secretary  Matt Hancock  urges Londoners to adhere to COVID-19 regulations as cases rise in London.
+
+2020-12-09 00:00:00
+Experts have called for London to be placed into tier 3 COVID restrictions to avoid a spike in cases over Christmas after figures indicated a spike in cases in London on 2 December.
+
+2020-12-10 00:00:00
+Health Secretary  Matt Hancock  announces that mass testing will be rolled out for secondary schools in the worst affected areas of London, Kent and Essex. Figures from NHS England show the number of patients in England waiting over a year for routine hospital care is now 100 times higher than before the pandemic.
+
+2020-12-11 00:00:00
+Figures from the Office for National Statistics for the week ending 5 December indicate COVID cases in England are continuing to fall, apart from in London and the East of England. Andy Burnham , the  Mayor of Greater Manchester , expresses his anger after minutes are released of a  SAGE  from the summer in which they urged the government to provide more COVID funding for the area.
+
+2020-12-12 00:00:00
+In a letter to Prime Minister Boris Johnson,  NHS Providers , the body representing hospital trusts in England, warns that relaxing the COVID tier system could result in a third wave of the virus at the busiest time of year for hospitals. Mass testing is to be rolled out to 67 tier 3 areas beginning on Monday 14 December. Thousands of Christmas shoppers descend on central London following warnings from  Sadiq Khan , the Mayor of London, and the police that people should respect COVID regulations.
+
+2020-12-14 00:00:00
+The self-isolation period for contacts of people with confirmed COVID-19 is shortened from 14 days to 10 days, and the same change applies to those returning travellers who are required to go into quarantine. Health Secretary Matt Hancock announces that London, most of Essex and parts of Hertfordshire will move to tier 3 restrictions from Wednesday 16 December following an increase in COVID cases in the south east and the identification of a new strain of the virus that spreads much quicker. After  Greenwich Council  writes to headteachers asking them to move classes online amid rising COVID cases, Education Secretary  Gavin Williamson  orders the authority to keep schools open or face legal action.  Greenwich Council reverses its decision the following day.
+
+2020-12-15 00:00:00
+Mass testing of secondary school pupils will be greatly increased in January with the objective of sending fewer people home. Pupils who come into contact with someone testing positive for COVID-19 will be offered seven days of tests, while teachers will have weekly tests. The  Test to Release  scheme begins in England, allowing travellers to pay privately for a COVID test five days after arrival, and end their quarantine period if they receive a negative test. But the launch is chaotic as the eleven private firms chosen by the government to administer the tests have teething problems. 16 December London, and parts of Essex and Hertfordshire, are placed into tier three of England's  COVID tier system  following an increase in case numbers in those areas.
+
+2020-12-17 00:00:00
+Bedfordshire, Buckinghamshire, Berkshire and Hertfordshire, as well as parts of Surrey, East Sussex, Cambridgeshire and Hampshire are to be moved from tier two to tier three from Saturday 19 December, while Bristol and North Somerset will move from tier three to tier two. Herefordshire will be moved from tier two to tier one. Secondary schools in England will have a staggered return in January 2021 as a mass COVID testing programme is introduced; exam pupils will return immediately, with other students facing the prospect of online lessons for the first week.
+
+2020-12-18 00:00:00
+Prime Minister Boris Johnson says that he hopes to avoid another national lockdown for England, but admits COVID cases have risen  very much . It is reported that nearly 90  of hospital beds in England are full and that health trusts face the prospect of suspending non-COVID treatment. Nicola Mason, a head teacher from Staffordshire, speaks out about how school staff feel  broken  by last minute demands for them to run testing schemes in secondary schools.
+
+2020-12-19 00:00:00
+Prime Minister  Boris Johnson  announces that London, South East and East of England are to go into new Tier 4 restrictions from the following day. The rules are mostly the same as the national restrictions in November, with non-essential retail, hairdressers and gyms closing. Plans for Christmas bubbles are scrapped completely in Tier 4, while in the rest of England and Wales Christmas bubbles are limited to meeting up on Christmas Day. Anti-lockdown protests are held in cities across the country, with police making 27 arrests at a protest in London.
+
+2020-12-20 00:00:00
+Health Secretary Matt Hancock has claimed that the November lockdown did not work, and cannot say when Tier 4 restrictions will be lifted. Metropolitan Police Federation boss  Ken Marsh  says the new Tier 4 rules do not  make sense  and that police will not  be knocking on people's doors on Christmas Day  to check whether they are being observed. Travel operator  Tui  suspends flights from  Luton Airport  because it is in the new Tier 4 area. The  Indian Queens Half Marathon  is held in Cornwall with around 250 participants. Concern is later expressed that all competitors were allowed to start together rather than being staggered to enable better social distancing.
+
+2020-12-21 00:00:00
+Sir  Patrick Vallance , the UK's chief scientific adviser, suggests that more areas of England will need to go into Tier 4 restrictions to combat the new variant of COVID-19. Health officials in the West Midlands and North West advise anyone travelling from Tier 4 areas of England or from Wales they must self-isolate for ten days in order to help stop the spread of the new variant of COVID.
+
+2020-12-23 00:00:00
+Health Secretary Matt Hancock announces that Sussex, Oxfordshire, Suffolk, Norfolk, Cambridgeshire, Hampshire (except the New Forest) and parts of Essex and Surrey still in tier three are to be moved to tier four restrictions from Boxing Day. Many other areas will move up a tier to tiers two and three.
+
+2020-12-24 00:00:00
+Researchers at the  London School of Hygiene and Tropical Medicine  have suggested schools and universities may need to remain closed after Christmas to help control the spread of the new variant of COVID, as well as tier four restrictions. Figures released by the Office for National Statistics indicate 1 in 85 people in England has COVID, with Figures for the week to 18 December estimating that almost 650,000 people had the virus, up from 570,000 the previous week.
+
+2020-12-25 00:00:00
+Residents at a care home in Leeds are allowed to meet and embrace relatives for the first time since March following a rapid COVID test trial at the home.
+
+2020-12-26 00:00:00
+Tier four restrictions are extended in England after rules are briefly relaxed for Christmas Day.
+
+2020-12-27 00:00:00
+Police break up an illegal rave attended by 100 people in the  Shudehill  area of Manchester. Government officials have scheduled a meeting for the next day to decide whether to go ahead with the planned reopening of schools in England in January. The  London Ambulance Service  is reported to have received as many emergency calls on Boxing Day as it did at the height of the pandemic in April.
+
+2020-12-28 00:00:00
+Health officials express concern for the pressure on the health service in England, where 20,426 people are being treated in hospital for COVID, an increase from around 19,000 during the previous peak in April. Cabinet Office Minister  Michael Gove  says he is confident the staggered return of secondary schools can happen in January.
+
+2020-12-29 00:00:00
+An article in the  Health Service Journal  has claimed that COVID patients in London could be transferred to hospitals in Yorkshire because of strains on capacity in London. It is reported that COVID patients are being treated in ambulances outside hospitals in north east London as pressure grows on health trusts in London. A group of ten people are fined for breach of COVID restrictions after being caught playing  dominoes  in a restaurant in  Whitechapel , east London.
+
+2020-12-30 00:00:00
+Tier four measures are extended to more parts of England from midnight, with the Midlands, North East, parts of the North West and South West joining London and the South East in the toughest restrictions. Secondary schools in much of England will fully return two weeks later than originally anticipated, with exam year pupils returning on 11 January, followed by the rest of the years on 18 January.
+
+2020-12-31 00:00:00
+As more areas of England enter  tier four restrictions , a total of 44 million people are now living under the toughest measures. Education Secretary Gain Williamson says he wants the delayed start of the next school term to be as  short as possible . The  NHS Nightingale London  hospital is reactivated and placed on standby ready to receive patients. The  Royal London Hospital  is in  disaster medicine mode  and  no longer providing high standard critical care , according to an internal memo. It is reported that GPs will be paid  10 for each care home patient who is vaccinated against COVID-19.
+
+2021-01-01 00:00:00
+The UK government announces that all primary schools in London will remain closed for the start of the winter term.
+
+2021-01-02 00:00:00
+Teaching unions have told primary school staff it is unsafe to return to school and urged them to implement remote learning as pressure grows on the government to keep schools closed for the first two weeks of January following its decision to do so in London. An  anti-lockdown protest  is held in  Hyde Park  in London; 17 people are arrested at the demonstration. Police chiefs have called for police officers to be given priority for  COVID vaccinations  after reports that 1,300  Metropolitan Police  officers are absent from work because of the virus.
+
+2021-01-03 00:00:00
+Following concerns about the safety of reopening schools, Prime Minister  Boris Johnson  has urged parents of primary age children to send them to school the following day if their school is open, saying there is  no doubt in my mind that schools are safe .  Despite this, many primary schools have still decided to not open after the Christmas break. So far Essex Council has said that would keep schools closed at least until 6 January; Kent county Council along with Birmingham's education authorities asked the  Education Secretary to allow primaries to stay closed. They said the argument for reopening amid high infection rates  does not stack up . Johnson has also stated that tougher restrictions are  probably about to get tougher  in some parts of England as COVID-19 cases continue to increase. Leader of the Opposition  Sir Keir Starmer  calls for a national lockdown to be announced within 24 hours in order to tackle the rising number of COVID cases. Wendy Simon , the Acting  Mayor of Liverpool , and other Liverpool City Council members, have called for England to go into a national lockdown in order to curb rising COVID cases in the city. Garrett Emmerson, the Chief Executive of the  London Ambulance Service , describes the service as being under  incredible pressure  but  coping . Paediatricians have sought to reassure parents that the  new strain of COVID  is not more dangerous to children after a nurse based at a London hospital told the BBC that her hospital had  a while ward of children  suffering with the virus. 4 January Most of England's primary schools are reopened, amid concerns over whether pupils should be returning under the current COVID restrictions. After saying there is  no question  that tougher COVID measures will be introduced  in due course ,  Prime Minister Johnson makes a televised address in which he announces another lockdown for England, with rules similar to those in March 2020. People are permitted to leave home only for essential reasons, which include work, daily exercise, essential shopping and medical treatment. Schools are closed from the following day, though vulnerable children and those of key workers may still attend, and pre-school remains open, while university students will not return to campus but instead have online tuition. End of year examinations are once again cancelled. Grassroots sport is suspended, but not elite sport. Dialysis patient Brian Pinker, 82, has become the first person to receive the Oxford–AstraZeneca COVID-19 vaccine. 5 January The UK records over 60,000 positive cases of COVID in one day,  the highest ever, with over 50,000 of those cases being from England. Declaring that the government closed schools  with the heaviest of hearts , Cabinet Secretary  Michael Gove  confirms that  GCSE  and  A Level  examinations scheduled for summer 2021 have been cancelled, with grades once again based on teacher assessment.  But while GCSEs and A Levels are cancelled, vocational exams such as  BTECs  will still go ahead. Labour Leader  Sir Keir Starmer  calls for a  round the clock  COVID vaccination programme to tackle the rise in cases. England's Chief Medical officer, Professor  Chris Whitty , suggests  a few  COVID restrictions may be required in Winter 2021–22 to control the virus, particularly if people do not adhere to the government's  stay at home  message. 6 January With the third lockdown officially under way, Boris Johnson says he cannot guarantee that all children will be back at school before the summer holidays. MPs vote 524–16 in favour of the latest lockdown measures for England.  Legislation for the 3rd national lockdown comes into force by putting every area in England into the tier 4 area and strengthening the restrictions. Education Secretary  Gavin Williamson  confirms that GCSE and A Level grades for summer 2021 will be based on teachers' assessment. The UK government announces seven new vaccination hubs for England, to be located in London, Newcastle, Manchester, Birmingham, Bristol, Surrey and Stevenage. They are scheduled to become operational from the following week.
+
+2021-01-07 00:00:00
+A change in government rules regarding who can attend school now permits children without laptops or room to study to attend, sparking concerns schools will be overrun with such children. Nursery providers have asked the government to provide them with evidence that it is safe for them to remain open while schools and colleges are closed.
+
+2021-01-08 00:00:00
+Sadiq Kahn , the  Mayor of London , declares a  major incident  in London, where he says COVID is  out of control . Two UK's two headteachers' unions, the  NAHT  and  ASCL , have expressed concern at the number of children attending school during lockdown and called for limits; school attendance is at 50  in some areas. An England-wide advertising campaign launches on television, fronted by Chief Medical Officer  Chris Whitty , urging people to stay at home and act as though they have COVID. The Telegraph  reports that GP surgeries are being offered  1,000 to cancel appointments for the second COVID inoculation so that more first inoculations can be done, and are also being given a script for dealing with angry patients. With lockdown and school closures in force, it is reported that referrals for children with mental health problems have reached a record high.
+
+2021-01-10 00:00:00
+Regular rapid testing for people without COVID symptoms are to be made available throughout England in the coming week. As it is reported that 130,000 letters have been sent out so far inviting people to regional vaccination hubs for a COVID vaccine, a number of people aged over 80 have questioned why they have been asked to attend venues that can be as much as a 30–45 minute drive from home when they have been asked to shield.
+
+2021-01-12 00:00:00
+Home Secretary  Priti Patel  urges people to  play  their  part  in following COVID rules, and says she will back the police in enforcing them. A leaked memo warns that hospitals in Birmingham are  in a position of extremis  as COVID cases in the city rise, with 200 doctors set to be redeployed to the intensive care unit of the  Queen Elizabeth Hospital . It is reported that London's Nightingale Hospital has reopened and is taking COVID patients. Downing Street has defended Prime Minister Boris Johnson for taking a seven-mile bike ride, which it says complied with COVID regulations. The trip came to light after Johnson was spotted cycling in  Olympic Park .
+
+2021-01-13 00:00:00
+In a letter to the education watchdog  Ofqual , Education Secretary  Gavin Williamson  suggests that GCSE, AS and A Level students could be asked to sit mini-exams in order to help their teachers decide  deserved grades .
+
+2021-01-14 00:00:00
+Ambulance and COVID vaccination services in Yorkshire are hampered by heavy snow.
+
+2021-01-15 00:00:00
+Professor  Chris Whitty  forecasts that hospital admissions will peak in the next seven to ten days. A small number of intensive care patients with  COVID-19  are moved from hospitals in London to Newcastle Upon Tyne, it is reported. Police charge a 33-year-old man with fraud and common assault after he is alleged to have administered a fake COVID vaccine to a 92-year-old woman then charged her  160 in December 2020. Proposals published jointly by the Department for Education and Ofqual suggest GCSE and A Level results could be published in early July in 2021 rather than August as in previous years.
+
+2021-01-16 00:00:00
+Former  RAF  Flight Sergeant Louis Godwin, 95, becomes the first person to receive a COVID vaccination at a vaccination centre established in  Salisbury Cathedral .
+
+2021-01-17 00:00:00
+Speaking to  Sky News 's  Sophy Ridge on Sunday , Foreign Secretary  Dominic Raab  says the government's target is to offer every adult their first dose of COVID vaccine by September, with some lockdown restrictions being eased by March. The UK government announces a financial support package for airports in England, which is scheduled to begin by the end of January. NHS England Chief Executive Sir  Simon Stevens  says that 140 COVID injections are being given each minute, a rate four times greater than the number of cases being detected. In a letter to the UK government, a group of London-based businessmen call for financial support for the rail firm  Eurostar . The next phase of the  COVID vaccination programme  is announced, with people aged 70 and over, as well as those clinically extremely vulnerable, to begin receiving offers of vaccine over the forthcoming week.
+
+2021-01-18 00:00:00
+A further ten mass vaccination centres are opened at venues in England, including  Blackburn Cathedral  and  St Helens Rugby Ground . London is to begin trialling 24-hour vaccination centres by the end of January, it is reported.
+
+2021-01-19 00:00:00
+Figures released by the  Office for National Statistics  suggest that as many as one in eight people, or 5.4 million people, had been infected with COVID by December 2020.
+
+2021-01-20 00:00:00
+The government announces that the rollout of daily mass testing in secondary schools as an alternative to self-isolation will be paused because the benefits of it are unclear following the emergence of the  new variant of COVID . 24-hour vaccination schemes are piloted at hospitals in Birmingham and Nottingham.
+
+2021-01-21 00:00:00
+At a  Downing Street  Press Conference, Home Secretary  Priti Patel  announces that fines of  800 for anyone attending a house party of more than 15 people will be introduced in England from the following week. Education Secretary  Gavin Williamson  says that schools will be given two weeks notice before they return, but that he cannot say when this will be, though he hopes they will be open again before Easter. Pulse oximeters , which measure the oxygen level in the body, are being rolled out to patients at high risk of COVID, in a bid to detect the  silent hypoxia  element of the virus. The oximeter measures the level of oxygen in the blood. Boris Johnson says it is  too early  to say whether lockdown restrictions can be lifted in the spring.
+
+2021-01-22 00:00:00
+The  Metropolitan Police  announce the break up of a wedding party at the  Yesodey Hatorah Senior Girls' School  in  Stamford Hill , London. After initially claiming there were 400 attendees, they later revise this figure down to 150. A Downing Street spokesman has said there are no plans to give universal payments of  500 to everyone in England asked to self-isolate after the idea was suggested in a document produced by the  Department of Health and Social Care .
+
+2021-01-24 00:00:00
+Police have issued  15,000 in fines after 300 people attended a rave beneath a railway arch in London. Six COVID test centres across the  West Midlands  are temporarily closed after the area is hit by heavy snowfall.
+
+2021-01-25 00:00:00
+A number of Conservative MPs, including  Robert Halfon , chair of the House of Commons Education Select Committee, have urged the government to set out its strategy for reopening schools in England as concerns grow about the impact closures are having on children's education.  In response, Prime Minister Johnson says the government will give an update on when schools can reopen  as soon as we can . Health Secretary  Matt Hancock  says there are early signs that COVID restrictions are working, but that it is  difficult to put a timeline  on when they can be lifted.
+
+2021-01-26 00:00:00
+Fines of  200 are to be given to 31 Metropolitan Police officers who broke COVID rules by having a haircut; two officers who hired ta barber to give the haircuts are to face misconduct investigations.
+
+2021-01-27 00:00:00
+Prime Minister Johnson tells the House of Commons it will not be possible for schools to return in England after February half-term, but that he is hopeful it can begin to happen from 8 March. A final decision will depend on meeting vaccination targets, and schools will get two weeks notice before returning.
+
+2021-01-29 00:00:00
+The Health Protection (Coronavirus, Restrictions) (All Tiers and Self-Isolation) (England) (Amendment) Regulations 2021  comes into force at 5.00pm, levying fines of  800 on anyone attending a house party with over fifteen people and allowing police to access track and trace data. Education policy experts have called for schoolchildren in England to be allowed to repeat a year because of the school time they have missed during the pandemic.
+
+2021-01-30 00:00:00
+Health bosses in Nottinghamshire have apologised after Nottingham and Nottinghamshire Clinical Commissioning Group sent out letters to critically vulnerable children inviting them for COVID vaccinations.
+
+2021-01-31 00:00:00
+Dr  Susan Hopkins , head of strategy at  Public Health England , says England's lockdown should be eased  very slowly, very cautiously .
+
+2021-02-01 00:00:00
+NHS England  confirms that every older care home resident in England has been offered a COVID vaccine. Health Secretary  Matt Hancock  confirms that around 80,000 residents over the age of 16 in areas of Surrey, London, Kent, Hertfordshire, Southport and Walsall are to be asked to take tests for the  South African COVID-19 variant  after 11 cases were identified that could not be linked to travel.
+
+2021-02-02 00:00:00
+Health Secretary  Matt Hancock  tells the House of Commons people living in areas singled out for enhanced testing for the South African COVID variant should get tested and stay at home unless it is essential to go out. Hancock also tells Parliament that Liverpool and Bristol are also areas of interest for new variants. Figures published by the Department for Education show that 1.2 million school pupils (roughly 15  of the school population) were at school on 28 January, a rise from 14  the previous week. The increase in numbers comes from primary pupils and those attending special schools.
+
+2021-02-03 00:00:00
+Hampshire Constabulary  and  Sussex Police  have issued a  Community Protection Notice  against a 30-year-old woman prohibiting her from visiting hospitals in Hampshire and Sussex without an appointment after she filmed empty hospital corridors and posted the footage online.
+
+2021-02-04 00:00:00
+It is reported that teaching staff in London have been able to book and receive COVID vaccinations meant for health workers after a link to the booking site was forwarded to them via  WhatsApp .
+
+2021-02-05 00:00:00
+Police in Sheffield issue  34,000 worth of fines following a student party involving 150 people at a halls of residence.
+
+2021-02-06 00:00:00
+Testing for the  South African COVID variant  begins in Worcestershire after cases were discovered there with no apparent link to international travel. Fourteen adults are fined a collective total of more than  11,000 after attending a first birthday party, Nottinghamshire Police have confirmed.
+
+2021-02-07 00:00:00
+Companies that employ over 50 people and whose employees cannot work from home are now eligible for  lateral flow tests . The tests had previously only been available to firms with a workforce of 250 or more.
+
+2021-02-08 00:00:00
+Surge testing is to be introduced to parts of Manchester after four cases of a mutated version of the  B17 strain  were found in two unconnected households in the city. Deputy Chief Medical Officer  Jonathan Van-Tam  urges people aged 70 and over who have not received a COVID-19 vaccination to contact the NHS  without delay . Sir  Kevan Collins , England's newly appointed Education Recovery Commissioner, says that school pupils will need extra hours of learning, sport, music and drama to make up for education missed because of the pandemic. Heavy snow brings disruption to the vaccination process, with centres in the South East and East Anglia forced to close temporarily because of the adverse weather.
+
+2021-02-09 00:00:00
+Jonathan Van-Tam , England's Deputy Chief Medical Officer, warns people against booking summer holidays abroad in 2021, suggesting  the more elaborate your plans are for summer holidays... the more you are stepping into making guesses about the unknown . Head teachers leaders have warned against giving school pupils longer hours and shorter holidays as a way of catching up with missed education.
+
+2021-02-10 00:00:00
+Four councils in England – Eastbourne, Bexley, Luton and Peterborough – are being given emergency funding to balance their books, Communities Secretary  Robert Jenrick  announces. Jenrick says that while COVID is to blame for the financial situation of some of the councils, others are in their predicament because of  very poor management .
+
+2021-02-11 00:00:00
+Figures published by  NHS England  indicate that in December 2020, 224,205 people had been waiting for 12 months or longer for routine hospital treatment, the highest number since April 2008. A new booking system is launched for the hotel quarantine scheme, but taken down again within minutes because of a  minor technical issue . Office for National Statistics  figures show that 30,296 of the 50,888 COVID patients who died in England between January and November 2020 had a disability.
+
+2021-02-12 00:00:00
+Sir  Simon Stevens , the Chief Executive of  NHS England , says England is on course to offer the top four priority groups their first COVID vaccine by the target date of 15 February. The deadline to buy a property under the  Help to Buy  equity loans scheme is extended until the end of May amid concerns 16,000 sales could be at risk because of the COVID crisis.
+
+2021-02-13 00:00:00
+Prime Minister  Boris Johnson  says he is  optimistic  he will be able to set out  cautious  plans for reopening society later in the month. Heathrow Airport  says there are  significant gaps  in the hotel quarantine scheme scheduled to begin on 15 February. A case of  South African variant COVID  is discovered in the Hampshire village of  Bramley , requiring all residents over the age of 16 to participate in surge testing. The leaders of the Parliamentary  COVID Recovery Group  have written to Prime Minister Boris Johnson urging him to lift all COVID restrictions by the end of April.
+
+2021-02-14 00:00:00
+Foreign Secretary  Dominic Raab  rejects calls by the COVID Recovery Group to give a date for when restrictions will be eased.
+
+2021-02-15 00:00:00
+People aged 65–69 and those aged 16–64 classed as clinically vulnerable are invited to book their COVID vaccinations as the programme is expanded beyond the top four priority groups. The Managed Quarantine Service begins: travellers entering the UK from or via  red list  countries must pay for 11 nights in a designated hotel. Trade unions have expressed their concern that  patchy  financial support for people self-isolating because of COVID-19 is leaving many facing financial hardship. A study conducted at the  University Hospitals of Leicester NHS Trust  finds a lower take up of the vaccine among ethnic minority staff, with a 70.9  take up among white staff, compared to 58.5  of South Asian staff and 36.8  of black staff.
+
+2021-02-16 00:00:00
+An extra 1.7 million people are expected to be asked to join the 2.3 million already shielding from COVID-19 after the development of a new model that looks at other factors in addition to health, such as ethnicity, weight and deprivation. At least half of these extra people are yet to receive COVID vaccinations so will be prioritised for inoculation. Surge testing  for the  South African COVID variant  is to be expanded in Surrey, Norfolk and Southampton, while testing for a mutation of the  Kent variant  will be expanded in Manchester. West Midlands Police  confirm that four passengers arriving in the UK have been fined  10,000 for failing to declare their visit to a  red list  country.
+
+2021-02-17 00:00:00
+Prime Minister  Boris Johnson  says England's lockdown strategy will be led by  data not dates . Anne Longfield , the Children's Commissioner for England, calls for the government to focus on vulnerable children in plans to  build back better  after the pandemic. A woman from  Scarborough ,  North Yorkshire , who deliberately coughed at police officers investigating a breach of COVID rules is sentenced to four months imprisonment by the town's magistrates.
+
+2021-02-18 00:00:00
+Imperial College London 's React study has indicated COVID-19 infections in England have fallen by two-thirds since January, with an 80  drop in London. Data from  NHS England  suggests that 3 in 10 care home staff are yet to be vaccinated against COVID-19 despite being in one of the top priority groups. A man in his 30s with no underlying health conditions is offered a vaccine under the extremely clinically vulnerable category after an administrative error gave him a  BMI  reading of 28,000. The error, made by NHS Liverpool Clinical Commissioning Group, had meant the man's height was incorrectly recorded as 6.2 cm rather than 6 ft 2in.
+
+2021-02-19 00:00:00
+A joint statement released by the UK's teaching unions suggests it would be  reckless  to reopen all schools for pupils in England on 8 March.
+
+2021-02-20 00:00:00
+As part of plans to ease lockdown restrictions, care home residents will be allowed one visitor indoors from 8 March. They are asked not to hug or kiss, but hand holding will be permitted, and visitors must provide a negative COVID test and wear PPE during the visit.
+
+2021-02-21 00:00:00
+The organiser of a church group meeting that took place in a car park in Nottinghamshire is fined  10,000 by  Nottinghamshire Police  for breach of COVID regulations.
+
+2021-02-22 00:00:00
+Prime Minister  Boris Johnson  unveils a four-step plan for ending coronavirus restrictions in England by 21 June. Subject to four tests on vaccines, infection rates and new variants being met, the plan will include the following: Schools and colleges will reopen on 8 March, with outdoor schools activities allowed; universities will return at a later time: Outdoor gatherings of up to six people or two households will resume from 29 March, along with grassroots sports: Non-essential shops, hairdressers, gyms and outdoor hospitality will resume on 12 April: Two households will be able to mix indoors, with the rule of six applying to pub settings from 17 May: Legal limits on social contact to be lifted by 21 June: Speaking in the  House of Commons , Johnson describes the plan as  cautious but irreversible  and something that will be led by  data not dates , further adding that there is  no credible route to a zero-Covid Britain nor indeed a zero-Covid world . A mass testing programme is announced for all secondary schools in England, with home testing carried out twice a week.
+
+2021-02-24 00:00:00
+Education Secretary  Gavin Williamson  announces  700m of spending to help pupils catch up with missed study, saying that no child should have their prospects  blighted by the pandemic . The organisers of the  Reading and Leeds Festivals  say they are  confident  the event can go ahead in 2021 following the announcement of the easing of lockdown restrictions in England.
+
+2021-02-25 00:00:00
+The exams watchdog  Ofqual  confirms the results for GCSEs and A Levels whose exams are cancelled because of COVID-19 will be decided by schools using a combination of teacher assessment, coursework and exams. Exam assessments will be available if required but will not be conducted under exam conditions, while results will be published earlier in August than usual to allow time for appeals.
+
+2021-02-26 00:00:00
+Research at  Addenbrooke's Hospital  in Cambridge, suggests the  Pfizer–BioNTech vaccine  helps to slow the spread of COVID as well as preventing illness.
+
+2021-02-28 00:00:00
+The families of schoolchildren are to be offered two free rapid COVID tests per week under plans to reopen schools in England.
+
+2021-03-01 00:00:00
+Two million people aged 60–63 begin receiving letters inviting them to book a COVID vaccination through the national booking service.
+
+2021-03-03 00:00:00
+Chancellor  Rishi Sunak  unveils the  2021 budget , which includes  1bn of funding for 45 areas of England to aid in their recovery from the COVID-19 pandemic. Jamila Azad, a Labour Party councillor in Oxfordshire, is suspended by her party after claiming on social media to have received a COVID-19 vaccine from a private doctor.  She subsequently has the party's  whip  withdrawn. London woman  Sarah Everard  is murdered by police officer Wayne Couzens under the pretext of COVID regulations. Couzens is later arrested and sentenced to life in prison.
+
+2021-03-04 00:00:00
+People living in the  TS19 postcode area  of  Stockton-on-Tees  are urged to get tested for COVID-19 after evidence of the  South African variant  was found there.
+
+2021-03-05 00:00:00
+The BBC reports that some people with asthma are being refused priority vaccination status if they have not recently been to hospital.
+
+2021-03-06 00:00:00
+People aged 56–59 begin receiving letters inviting them to book a COVID-19 vaccine. Over 18 million people in England have had their first vaccine, roughly a third of the population. The actor  Laurence Fox  announces plans to run for  Mayor of London  in the  forthcoming election  on a platform of lifting lockdown measures a month earlier than planned. Education Secretary  Gavin Williamson  tells the BBC ministers are considering introducing shorter summer holidays and longer school days to help schoolchildren catch up on missed work.
+
+2021-03-08 00:00:00
+People wishing to travel overseas are required to complete a  Declaration to Travel  document to prove they are authorised to travel. Concerns are raised that secondary school pupils could be incorrectly told they have COVID after the government says that a positive test done at school can not be overridden by a better quality lab test. The network of  NHS Nightingale hospitals  are to close from April, it is announced, with the hospitals in London and Sunderland remaining open as vaccination centres.
+
+2021-03-10 00:00:00
+Since the return of schools in England, reports have emerged of children being asked to self-isolate following incorrect positive Rapid COVID test results which are later proven to be wrong by a PCR test giving a negative result. Parents have warned the situation is  ruining  the return to school, while experts argue children finding themselves in this situation are being unfairly punished.
+
+2021-03-11 00:00:00
+A further four cases of the  Brazilian variant COVID  are found in England, three in South Gloucestershire and one in Bradford. All are linked to previous cases identified in the UK. Health Secretary  Matt Hancock  announces that homeless people and those sleeping rough will be prioritised for COVID vaccines alongside those aged between 16 and 64 with underlying health conditions.
+
+2021-03-12 00:00:00
+Students at the  University of Manchester  hold a vote of no confidence on Vice-Chancellor  Nancy Rothwell's  leadership of the university over the response to the Covid-19 pandemic; the vote passed with 89  in favour.
+
+2021-03-16 00:00:00
+School attendance figures for the first week of the return of schools in England show attendance to be almost at pre-pandemic levels, with 95  of pupils at primary school and 89  at secondary school.
+
+2021-03-17 00:00:00
+People in England aged 50 and over are now invited to book their COVID vaccination. A letter from  NHS England  to local health organisations warns of a  significant reduction in the weekly supply  of COVID vaccines from the end of March. Health Secretary  Matt Hancock  describes the correspondence as a  standard  letter, though it is reported fewer AstraZeneca vaccinations will be available than anticipated.
+
+2021-03-18 00:00:00
+Prime Minister  Boris Johnson  confirms he will receive his first vaccination the following day, and urges people who are invited to get a vaccine to do so.
+
+2021-03-20 00:00:00
+Thousands of people attend an anti-lockdown march in London, at which 33 arrests are made, mainly for breaches of COVID regulations.
+
+2021-03-23 00:00:00
+The  steps  regulations  are published to coincide with the end of the  stay at home  order on 29 March. Measures include a  5,000 fine for unapproved travel outside England.
+
+2021-03-24 00:00:00
+Prime Minister  Boris Johnson  says that pubgoers could be asked to provide a vaccine certificate by landlords, but that whether to do so would be left up to individual publicans.
+
+2021-03-26 00:00:00
+The UK government announces that shops in England will be able to apply for permission to trade from 7am to 10pm from Mondays to Saturdays when non-essential retailers reopen on 12 April.
+
+2021-03-27 00:00:00
+Addressing the  Conservative Party 's virtual spring forum, Prime Minister  Boris Johnson  has said that despite a surge of COVID cases in Europe, there is nothing the UK's data to dissuade him  from continuing along our roadmap to freedom . Rapid home testing kits are to be offered to companies in England with more than 10 employees from 6 April, and where it is not possible to perform on-site testing.
+
+2021-03-28 00:00:00
+Culture Secretary  Oliver Dowden  says the government's plans to ease lockdown measures are on track and the  last thing in the world  it wants is another lockdown, but that dates  could be delayed if the situation deteriorates .
+
+2021-03-29 00:00:00
+Movement restrictions are loosened by the first phase of the  Steps  regulations , allowing two households or six people to meet outside. Weddings with up to six people are also permitted again. Prime Minister  Boris Johnson  urges people to be cautions as COVID remains a threat.
+
+2021-03-31 00:00:00
+People are urged to exercise caution following two days of extremely warm weather that have coincided with the easing of lockdown restrictions in England, and resulted in people descending on parks and beaches.
+
+2021-04-01 00:00:00
+UKHospitality  criticises new rules in place for pubs, bars and restaurants when they reopen on 12 April that will require everybody to sign in while limiting visits to the bar to one person from each group. UKHospitality says it will place extra burdens on pubs and staff, and may discourage people from visiting hospitality venues.
+
+2021-04-02 00:00:00
+Campaigners launch legal action against the UK government over guidelines that ban care home residents over the age of 65 from taking trips outside the home. Police break up a  Good Friday  service at Christ the King RC Church on London's Balham High Road following breaches of COVID rules, such as people not socially distancing or wearing face coverings. A video of officers addressing the congregation is posted online.
+
+2021-04-03 00:00:00
+The UK government announces that care home residents will be allowed two regular visitors indoors from 12 April, while babies and children will also be allowed. Visitors will be required to provide a negative COVID test and wear PPE during the visit. The UK government confirms that a  COVID passport system  will be trialled at a comedy evening at Liverpool's  Hot Water Comedy Club  on 16 April and continue at other events through to mid-May, while a  traffic light  system will indicate the level of risk posed by different countries once foreign travel returns.
+
+2021-04-04 00:00:00
+A 2021 FA Cup Semi-Final match on 18 April, the  Carabao Cup Final  on 25 April and the  2021 FA Cup Final  on 15 May will all be trialled with spectators as part of plans for the return of large events, with the games attended by 4,000, 8,000 and 21,000 respectively. The matches may also be part of trials for the  COVID passport scheme .
+
+2021-04-05 00:00:00
+Everybody in England is to be given access to two free rapid flow tests each week from Friday 9 April. Prime Minister  Boris Johnson  confirms that pubs, restaurants, hairdressers, gyms and non-essential shops can reopen from Monday 12 April.
+
+2021-04-09 00:00:00
+Philippines, Pakistan, Kenya and Bangladesh are added to the  redlist  of countries from where travel to England is banned, with travellers refused entry if they have visited those countries in the preceding ten days. Transport Secretary  Grant Shapps  says that people in England can start thinking about taking foreign holidays in summer 2021, but that the cost of COVID tests needs to be driven down.
+
+2021-04-11 00:00:00
+Addressing the congregation of Christ the King RC Church following  Sunday Mass , one of the Met Police officers who broke up a Good Friday service says that the police deeply regret the hurt caused by their actions.
+
+2021-04-12 00:00:00
+Surge testing is implemented in south London following the discovery of a significant cluster of  South African variant COVID .  The outbreak is believed to stem from an individual who returned from Africa in February. The areas affected by the outbreak are still allowed to relax COVID rules.
+
+2021-04-13 00:00:00
+Rollout of the  Moderna COVID vaccine  begins in England. The UK government says that students will be allowed to return to university campuses in England  no earlier than 17 May .
+
+2021-04-14 00:00:00
+Surge testing is extended to the Southwark and Barnet areas of London amid concerns about the South African COVID variant. Care home staff in England may be required to have a COVID vaccine under new plans being considered by the UK government.
+
+2021-04-15 00:00:00
+Figures from  NHS England  indicate that 4.7 million people were waiting for routine operations and procedures in February 2021, the largest waiting list numbers since records began in 2007. Of those, 388,000 had waited for more than a year, while two million operations took place through January and February 2021, while the health service was under pressure because of the pandemic.
+
+2021-04-18 00:00:00
+On the day the FA Cup semi-final between Leicester City and Southampton is held at London's Wembley Stadium as a pilot event with 4,000 spectators, it is confirmed that an outdoor gig will be held in Liverpool's  Sefton Park  on 2 May with near-normal conditions. 5,000 people will be allowed to attend the event without face coverings or social distancing rules, but must provide a negative COVID test beforehand. NHS Providers  have warned that the huge backlog of operations built up during the pandemic could take five years to clear. A gig in Manchester's  Platt Fields Park  due to be given by rapper  AJ Tracy  is cancelled shortly before it is scheduled to start because of the volume of people who turn up. Its organisers are subsequently fined  10,000 for a breach of COVID restrictions.
+
+2021-04-23 00:00:00
+Philip Hollobone , MP for  Kettering  tells the House of Commons there is  widespread outrage  over  Northamptonshire Police 's decision not to charge anyone in connection with a funeral in Kettering attended by 150 people in November 2020. A man was originally charged with breaching COVID regulations over the funeral, but the charges have since been dropped.
+
+2021-04-24 00:00:00
+An estimated 10,000 people attend an anti-lockdown protest at London's  Hyde Park ; eight police officers are injured while trying to disperse protestors and five arrests are made.
+
+2021-04-26 00:00:00
+With around two thirds of people in England aged 45–49 having received their first COVID vaccine, the programme is rolled out to those aged 44, roughly another half a million people. Organisers of the  Tramlines Festival  at Sheffield's  Hillsborough Park , confirm the event will go ahead from 23–25 July, with 35,000 people expected to attend each day.
+
+2021-04-27 00:00:00
+Adults aged 42 and over are invited to book their first COVID vaccine. The  City of London Corporation  announces plans to convert unused office space into housing in a bid to revitalise the area following the COVID crisis, with plans for 1,500 homes by 2030.
+
+2021-04-29 00:00:00
+Figures published by  NHS Test and Trace  show COVID COVID infection rates have fallen to their lowest in England since September 2020. Sir  Simon Stevens  confirms he will leave the post of Chief Executive of  NHS England  at the end of July and become a peer in the House of Lords.
+
 2021-04-30 00:00:00
 Adults aged 40 and over are invited to book their first COVID vaccination. Clubbers have gathered at a venue in Liverpool for the first nightclub event to be staged as part of trials for mass gatherings. The two-day event is expected to be attended by 6,000 ticketholders who are required to take COVID tests before and after attending, but can attend without face coverings and observing social distancing requirements. Surge testing takes place in parts of east London following the discovery of two cases of  South African variant COVID-19 .
 
@@ -15,355 +987,4 @@ Care home residents are permitted to leave their residence for low-risk trips su
 
 2021-05-05 00:00:00
 A Sheffield schoolgirl loses a High Court case to prevent her school from  requiring or encouraging  pupils to wear a face mask; she had argued that being required to wear masks risked  serious harm  to children's physical and mental health.
-
-2021-05-07 00:00:00
-The restored shrine of  St. Amphibalus  at  St Albans Cathedral  is to include a memento of the COVID-19 pandemic with the addition of a carved figure wearing a mask; the shrine's restoration was delayed by the pandemic.
-
-2021-05-10 00:00:00
-Prime Minister  Boris Johnson  confirms the  single biggest step  in the relaxing of restrictions for England on 17 May, but urges people to  exercise caution and common sense . From that date indoor hospitality will reopen and people will be able to hug again. Johnson also confirms that face coverings will no longer be required in secondary schools in England from 17 May. England records a day without any COVID related deaths.
-
-2021-05-11 00:00:00
-The UK government confirms that from 17 May people in England who have had both COVID vaccines will be able to use the  NHS app  as a  proof of vaccination ; a paper version will also be available by calling  119 . A  Freedom of Information  request discloses that eleven  Greater Manchester Police  officers were fined for breaches of COVID regulations during the first twelve months of the pandemic.
-
-2021-05-12 00:00:00
-Hospitality sector firms in the Greater Manchester town of  Bolton  express their concern at the easing of restrictions as the area experiences a fresh COVID surge. It has one of the highest rates of the Indian variant among its unvaccinated young population.
-
-2021-05-13 00:00:00
-Roughly a million people in England aged 38 and 39 become eligible for their first COVID vaccine, with pregnant women directed to vaccination centres offering the  Pfizer  of  Moderna  vaccines.
-
-2021-05-14 00:00:00
-Prime Minister  Boris Johnson  confirms the next round of relaxation of the coronavirus restrictions in England will go ahead on 17 May, but that the increase in numbers of  Indian variant COVID  could pose  serious disruption  to the easing of restrictions on 21 June. He further suggests some  serious choices  may be required if the variant is found to be  significantly  more transmissible. In order to help tackle the Indian variant, the gap between first and second vaccinations is narrowed to eight weeks for people in the top nine priority groups. The Army is to be deployed in Bolton and Blackburn with Darwen to help with the distribution of COVID tests. As the rules regarding face coverings for school pupils in England are relaxed from 17 May, pupils in the north west are advised to continue wearing them until 21 June amid concerns about  Indian variant COVID .
-
-2021-05-16 00:00:00
-Speaking on  BBC One 's  The Andrew Marr Show , Health Secretary  Matt Hancock  says a local lockdown in Bolton has not been ruled out as a way of tackling the rise in cases of  Indian variant COVID .
-
-2021-05-17 00:00:00
-Restrictions are relaxed allowing indoor hospitality to reopen with groups of up to six people. Bingo halls also reopen. Over 6,000 vaccinations have been carried out in the Bolton area over the preceding weekend as health officials seek to control the spread of  Indian variant COVID .
-
-2021-05-18 00:00:00
-People in England aged 37 become eligible for their first COVID vaccine.
-
-2021-05-19 00:00:00
-The vaccination programme is extended to those aged 36 living in England. With 2,967 cases of  Indian variant COVID  now confirmed in the UK, surge testing and vaccination is expanded to a further six areas –  Bedford ,  Burnley ,  Hounslow ,  Kirklees ,  Leicester  and  North Tyneside .
-
-2021-05-20 00:00:00
-People aged 34 and 35 are invited to book their first COVID vaccine.
-
-2021-05-21 00:00:00
-Public Health England  officials are investigating a new COVID variant which has presented 49 cases in the  Yorkshire and Humber  area.
-
-2021-05-22 00:00:00
-England's vaccination programme is extended to people aged 32 and 33.
-
-2021-05-26 00:00:00
-People in England aged 30 and 31 are invited to book their first COVID vaccine.
-
-2021-05-27 00:00:00
-Prime Minister  Boris Johnson  says there is nothing in the data to suggest the final lifting of restrictions in England cannot go ahead on 21 June. Pupils at four schools in  Kirklees , West Yorkshire are being offered surge testing amid rising cases of  Indian variant COVID  in the area. A coroner is to determine whether the death of BBC radio presenter  Lisa Shaw  may have been complicated by her receiving the  Oxford–AstraZeneca vaccine  after she was treated for blood clots within days of having her first vaccination.
-
-2021-05-31 00:00:00
-As England's ban on evictions expires, the  Joseph Rowntree Foundation  warns that as many as a million people face losing their homes in the coming months; 400,000 householders have already been received, or been told they will receive, eviction notices, the charity says. A pop-up vaccination centre is set up for the day at  Twickenham Stadium  after  NHS North West London  had 15,000 doses of  Pfizer vaccine  to spare. The centre breaks with the national convention by offering anyone over the age of 18 a walk in vaccination appointment. Demand is high and gates are closed at 6.45pm.
-
-2021-06-01 00:00:00
-The UK records 0 deaths from Covid-19 over a 24 hour period for the first time since March 2020
-
-2021-06-02 00:00:00
-Prime Minister  Boris Johnson  says there is still  nothing in the data  to suggest England's 21 June date for lifting restrictions should be delayed. The UK government announces its plan to help pupils in England catch up on missed education. The scheme is allocated  1.4bn over three years, but is criticised as a  damp squib  by headteachers. Prime Minister  Boris Johnson  promises there will be more money to follow. Sir  Kevan Collins  resigns as Education Recovery Commissioner, stating the funding  falls far short of what is needed .
-
-2021-06-03 00:00:00
-Bedford Borough Council  announces that door-to-door COVID testing will begin over the coming weekend; Bedford has the fifth highest number of COVID cases in the UK with 158 cases per 100,000.
-
-2021-06-05 00:00:00
-Media outlets, including  LBC , report that people aged over 40 are set to be offered their second COVID vaccination after eight weeks rather than twelve in order to help keep on track the 21 June date for relaxing restrictions. Surge testing begins in Bradford amid concerns about the spread of  Indian variant COVID  in the area. A pop-up vaccination centre is opened for the day at Belmont Health Centre in Stanmore, Harrow, offering anyone over the age of 18 the chance to have a COVID vaccine.
-
-2021-06-06 00:00:00
-Health Secretary  Matt Hancock  tells  Sky News  that  Indian variant COVID  is 40  more transmissible, but confirms that two vaccine doses work just as effectively against it as previous variants.  He also says the government is  absolutely open  to delaying the next round of lifting restrictions past 21 June.  On the topic of care home patients, he rejects claims made by  Dominic Cummings  that he said they were being tested for COVID before being discharged from hospital and returned to residential homes, but that they  would  be tested once adequate capacity was in place.
-
-2021-06-08 00:00:00
-England's vaccination programme is extended to adults aged 25–29. Greater Manchester and parts of Lancashire are to receive a  strengthened package of support  that includes military support and support for COVID testing in schools in order to tackle  Indian variant COVID . The advice for those living in the area has also changed, with people urged to meet up outdoors and avoid travelling to different areas, though the UK government stresses this is not a local lockdown.
-
-2021-06-10 00:00:00
-Data from  NHS England  shows that hospital waiting lists have exceeded five million for the first time.
-
-2021-06-11 00:00:00
-The  Association of Directors of Public Health  has urged the delay of the 21 June easing of restrictions in order to  stop us going backwards .  It is subsequently reported the government is considering a four week delay to the 21 June plans.
-
-2021-06-12 00:00:00
-A pop-up COVID vaccination centre is held in Sheffield, for anyone over the age of 18, and is quickly oversubscribed, requiring health officials to ask people to stop coming.
-
-2021-06-14 00:00:00
-Prime Minister  Boris Johnson  announces that England's relaxation of coronavirus restrictions planned for 21 June will be delayed by four weeks, until 19 July. The cap on wedding parties will be removed though.  By then it is planned that every adult will have been offered a first COVID vaccine, with at least three quarters having been fully vaccinated.  Leading figures in the live music and theatre sectors describe the delay as a  hammer blow  to their industries.  The hospitality industry urge the government to provide urgent financial help for the sector.
-
-2021-06-15 00:00:00
-People aged 23 and 24 become eligible to book their first COVID vaccination.
-
-2021-06-16 00:00:00
-The vaccine rollout opens to those aged 21 and 22 in England. It is reported COVID vaccinations are to become compulsory for care home workers in England.  This is subsequently confirmed by Health Secretary  Matt Hancock .
-
-2021-06-18 00:00:00
-Roughly 1.5 million people aged 18, 19 and 20 become eligible for their first COVID vaccination.  A total of 721,469 bookings are made during the first day of the programme being open to everyone over 18. Scottish First Minister  Nicola Sturgeon  announces a travel ban between Scotland and parts of Greater Manchester and Salford from Monday 21 June because of rising COVID cases in the area, a move that sparks anger from  Mayor of Greater Manchester   Andy Burnham , who accuses the Scottish Government of  hypocrisy .
-
-2021-06-19 00:00:00
-More pop-up vaccination centres are opened across England in a bid to offer every adult in England a first vaccine by 19 July.
-
-2021-06-21 00:00:00
-Prime Minister  Boris Johnson  says that things are  looking good  for the lifting of restrictions on 19 July. Several hundred people celebrate the  Summer solstice  at  Stonehenge  despite official advice to avoid doing so because of COVID restrictions. Three police officers are injured and fourteen people arrested at an anti-lockdown protest in Central London.
-
-2021-06-23 00:00:00
-Education Secretary  Gavin Williamson  suggests GCSE and E Level exams in England are likely to face  adjustments  in 2022 to factor in time lost because of the COVID crisis.
-
-2021-06-25 00:00:00
-A study of nine pilot events collectively attended by a total of 58,000 people has found no major transmission to have occurred, with just 28 COVID cases detected. A four day pop-up COVID vaccination clinic begins at  Arsenal Stadium , with  Arsenal F.C.  offering those who attend a free behind-the-scenes tour of the stadium.
-
-2021-06-26 00:00:00
-The  Grab a Jab  initiative sees hundreds of venues, including stadiums, shopping centres and theatres, turned into temporary vaccination centres in order to increase the number of people receiving COVID vaccinations. Thousands of people attend anti-lockdown protests in London.
-
-2021-06-28 00:00:00
-Health Secretary  Sajid Javid  tells MPs the UK government can  see no reason to go beyond  the  target date  for lifting restrictions in England on 19 July, and that although COVID-19 cases have risen the number of related deaths have not.
-
-2021-06-29 00:00:00
-Ministers suggest the COVID control system for schools in England that sees groups of pupils required to self-isolate following a single positive test could be scrapped in the autumn in favour of daily testing. A study has found the COVID death rate in  Greater Manchester  has been 25  higher than the rest of England throughout the pandemic. Scotland's Health Secretary,  Humza Yousaf , announces that the ban on non-essential travel between Scotland and the north west of England will be lifted from midnight.
-
-2021-06-30 00:00:00
-Education Secretary  Gavin Williamson  says he wants to see an end to the bubble system in schools that sees whole groups of pupils sent home to self-isolate after an increase in the number of pupils unable to attend school.
-
-2021-07-01 00:00:00
-Prime Minister  Boris Johnson  announces he will set out the final step of the roadmap for lifting restrictions in England in the next few days, and says he hopes that life will return to as close as possible to its pre-pandemic status.
-
-2021-07-03 00:00:00
-As COVID cases rise again, the  British Medical Association  calls for some COVID restrictions to remain in place in England beyond 19 July.
-
-2021-07-06 00:00:00
-England Cricket is required to name a replacement squad for its  One Day International  series with Pakistan after the original team have to self-isolate because of positive COVID tests among their members. More than 60,000 people are allowed to attend England's  Euro 2020  semi-final match with Denmark at  Wembley Stadium , meaning the stadium is at 75  capacity.
-
-2021-07-08 00:00:00
-The UK government confirms that fully vaccinated UK residents arriving into England from amber list countries will no longer be required to quarantine after 19 July, but will still be required to pay for COVID tests. Hospitals in Leeds postpone planned elective surgeries due to dealing with a rise in COVID cases. A study by  Imperial College London  attributes a faster rise in COVID cases among men over the preceding two weeks to fans watching  Euro 2020 .
-
-2021-07-10 00:00:00
-Ministers are reported to be considering exempting fully vaccinated NHS staff in England from having to self isolate if they are contacted by contact tracing.
-
-2021-07-12 00:00:00
-Health Secretary  Sajid Javid  and Prime Minister  Boris Johnson  confirm almost all COVID restrictions will be removed in England on 19 July. Public examinations for secondary school students are to resume in 2022, with pupils likely to have advanced warning of exam topics.
-
-2021-07-13 00:00:00
-Mayor of London  Sadiq Khan  confirms that face coverings will continue to be mandatory on London's transport network after 19 July. The House of Commons votes 319–246 to approve legislation requiring the compulsory vaccination of care home staff in England from October 2021. A snapshot of school attendance figures from one day during the previous week shows that almost 1.5 million pupils were absent due to self-isolation.
-
-2021-07-15 00:00:00
-Pavement dining and outdoor pint licensing in England is to continue for a further year to help the hospitality industry.
-
-2021-07-17 00:00:00
-Children aged between two and 16, adults aged over 50 and those in at risk groups will be offered a flu vaccine over the coming winter to help tackle both COVID and influenza. The  2021 Challenge Cup Final  between  Castleford Tigers  and  St Helens  is held at  Wembley Stadium  in front of a crowd of 45,000 spectators, half the stadium capacity. Transport for London  says that services on the  Metropolitan line  between  Aldgate  and  Amersham  have been suspended due to a staff shortage caused after they received  ping  alerts from the  NHS COVID-19 app . services on the  Piccadilly line  and  District line  are also affected.
-
-2021-07-19 00:00:00
-The final stage of COVID restrictions are lifted in England, allowing nightclubs to reopen and abolishing social distancing rules, while the wearing of face coverings no longer required by law. With nightclubs allowed to reopen, the UK government announces that people wishing to enter nightclubs and other venues with large gatherings will need to be fully vaccinated from the end of September 2021.
-
-2021-07-20 00:00:00
-Official school attendance figures for England show that 1.7 million pupils (23.3 ) were absent from school during the week of 12–16 July. Over a million of those absent were off school for COVID-related reasons, but only 47,000 of those had actually tested positive for the virus.
-
-2021-07-21 00:00:00
-A shortage of workers caused by the self-isolation  pingdemic  is reported to be affecting local authorities' ability to carry out refuse collections in some areas of England. Data released by the  Care Quality Commission  shows that 39,000 of the people who died after testing positive for COVID-19 in England between 10 April 2020 and 31 March 2021 were care home residents. NHS workers in England are offered a 3  pay rise  in recognition of unique impact of the pandemic  on them.
-
-2021-07-26 00:00:00
-A survey by  Public Health England  indicate that 40  of adults in England gained weight during lockdown, with the average weight gain being half a stone (equivalent to 3 kg).
-
-2021-07-29 00:00:00
-It is reported that some nightclubs in England have begun to ask clubgoers to produce an  NHS COVID Pass  ( proof of vaccination ) before being allowed entry.
-
-2021-07-31 00:00:00
-The BBC reports that ministers are no longer planning to make full vaccination compulsory for university lecturers in England.
-
-2021-08-06 00:00:00
-England s  R number  is estimated to be between 0.8 and 1.1, a fall from the previous week when it was estimated to be between 1.1 and 1.4.
-
-2021-08-07 00:00:00
-Students at the  University of Sussex  who are fully vaccinated are being offered the chance to win  5,000, with ten prizes on offer.
-
-2021-08-12 00:00:00
-Figures show that a record number of people are waiting for NHS hospital treatment in England, with a total of 5.45 million on waiting lists.
-
-2021-08-15 00:00:00
-The UK government confirms 23 August as the date by which all 16 and 17-year-olds will in England will have been offered a COVID vaccine, or the chance to book an appointment.
-
-2021-08-17 00:00:00
-Six of the UK's teaching unions have written to Education Secretary  Gavin Williamson  to call for urgent action for better ventilation in schools amid concerns about a rise in COVID cases when pupils return to the classroom for the new academic year.
-
-2021-08-19 00:00:00
-Official figures show that two areas of Newquay in Cornwall had of the highest COVID rates in England during the week ending 13 August, along with Yarborough near Grimsby in Lincolnshire.
-
-2021-08-24 00:00:00
-As COVID cases rise in Cornwall, the county's tourist board asks people to stay away from the area unless they have pre-booked holidays.
-
-2021-08-25 00:00:00
-Data from  Public Health England  indicate that the rate of COVID cases in South West England is  by far  highest among those aged 15–24.
-
-2021-08-26 00:00:00
-NHS organisations in England have been told to prepare for a possible extension of the COVID vaccination programme to 12–15-year-olds.  But the  Joint Committee on Vaccination and Immunisation  is reported to have concerns about the effect of the COVID vaccine on other vaccines administered to young children. The latest figures from  Public Health England  indicate COVID cases are on the rise again in most areas of England, apart from London and Yorkshire and the Humber, where they have fallen.
-
-2021-08-27 00:00:00
-Following an uptick in the number of COVID cases in the south west, Cornwall, the Isles of Scilly, Devon, Plymouth and Torbay are to receive extra help from the  Department of Health and Social Care  to help curb the increase. This will include mandatory face coverings for school and college students when gathering in communal areas. Scientists advising the UK government believe it is  highly likely  there will be high levels of COVID in schools in England by the end of September.
-
-2021-08-28 00:00:00
-The  Royal National Lifeboat Institute  says that lifeguards have been withdrawn from two beaches in Lincolnshire after one of their number tested positive for COVID.
-
-2021-09-02 00:00:00
-As schools prepare to return for the new academic year and concerns mount about their potential base as a spread for COVID, Dr Yvonne Doyle, medical director of  Public Health England  has said schools are not  drivers  or  hubs  of COVID infection.
-
-2021-09-05 00:00:00
-Vaccines Minister  Nadhim Zahawi  confirms that v will be required for nightclubs and other indoor venues in England from the end of September.
-
-2021-09-06 00:00:00
-The UK government confirms the NHS in England will get an extra  5.4bn over the coming six months to help deal with the backlog caused by COVID, and to help with its response to the pandemic.
-
-2021-09-07 00:00:00
-Addressing the  House of Commons , Prime Minister  Boris Johnson  announces a new  Health and Social Care Tax  worth  12bn designed to deal with the backlog caused by COVID and improve social care in England.
-
-2021-09-08 00:00:00
-Official figures have revealed that people in the north of England were 17  more likely to die from COVID-related illnesses than those in the rest of the country.
-
-2021-09-09 00:00:00
-Figures show that 5.6 million people were on NHS England's waiting lists in July, while the average waiting time for an ambulance during a life threatening call was eight and a half minutes in August; the target is seven minutes.
-
-2021-09-12 00:00:00
-Speaking on BBC One's  The Andrew Marr Show , Health Secretary  Sajid Javid  confirms plans to require proof of vaccination for nightclubs and other venues in England have been scrapped. 10 Downing Street says the plans will be kept  in reserve .
-
-2021-09-14 00:00:00
-Officials at  Northern Lincolnshire and Goole NHS Foundation Trust  confirm that patients at  Grimsby Hospital  have been forced to queue outside A amp;E due to  high demand for services . Boris Johnson discusses plans to emphasize vaccine boosters and vaccination of children 12–15 as part of efforts for handling the autumn and winter months. Johnson left open the possibility of  plan B  measures (which would include reinstating mask mandates, and possibly mandating proof of vaccination for certain venues, bringing England in line with restrictions in the other  Home Nations ) in the event of another surge, aiming to avoid lockdown.
-
-2021-09-17 00:00:00
-Al fresco dining is set to continue in central London, but may not do so in Soho, it is reported. Manchester United  releases figures for the 2020–21 football season indicating that losses it made at the turnstiles from physical attendances at matches were offset by money made from broadcasting.
-
-2021-09-21 00:00:00
-Staff at Cornwall's  Eden Project  are given a  wellbeing week  off work as a thank you for their work during the pandemic.
-
-2021-09-24 00:00:00
-England's  R number  falls slightly to between 0.8 and 1.0, down from 0.9 to 1.1 the previous week. Some schools in Corby and Kettering in Northamptonshire have brought back face mask requirements amid rising COVID cases in the area.
-
-2021-09-26 00:00:00
-The  Great Manchester Run  is held, following its cancellation in 2020 due to COVID.
-
-2021-09-30 00:00:00
-Data shows the level of face-to-face GP appointments in England has changed little since the winter lockdown, with 58  of appointments conducted in person during August 2021; this compares with 54  in January and a pre-COVID level of 80 . The UK government confirms that GCSE and A Level examination grades in England will be returned to pre-COVID levels over the next two years.
-
-2021-10-01 00:00:00
-The UK government confirms that GCSE and A-level grades in England will be returned to pre-pandemic levels over the next two years following unusually high grades during 2020 and 2021. Public examinations for secondary school education will be held in 2022, but the option of teacher based assessment will remain open.
-
-2021-10-04 00:00:00
-Parents of children aged 12–15 living in Northamptonshire, where COVID cases are high, are urged to get their children vaccinated.
-
-2021-10-05 00:00:00
-Department for Education figures indicate the number of pupils absent from school in England rose by two thirds in the two weeks to 30 September, with 204,000 (2.5  of school pupils) absent due to COVID-related reasons. The Vale Academy  in  Brigg , North Lincolnshire reintroduces bubbles due to high COVID cases in the area.
-
-2021-10-07 00:00:00
-Schools in Cambridgeshire are asked to reintroduce compulsory face masks for pupils after health officials said that 50  of recent COVID infections have been among those aged 0–17.
-
-2021-10-08 00:00:00
-Figures released by the  Office for National Statistics  for the week ending 2 October show an increase in COVID infections in English secondary schools, with one in 14 believed to have the virus, up from one in 20 the week before. Nationally the rate has risen from one in 85 to one in 70, the rise having been driven by the secondary school increase.
-
-2021-10-11 00:00:00
-Visiting is suspended at  Withybush Hospital  in  Haverfordwest ,  Pembrokeshire , after a rise in COVID cases.
-
-2021-10-21 00:00:00
-The  Royal Cornwall Hospitals Trust  declares a critical incident because of the pressures it is facing; the previous day saw over 100 people waiting for Accident and Emergency treatment with 25 ambulances waiting outside. Greater Manchester has cancelled its eight council-run bonfires due to COVID; the events normally attract around 100,000 attendees.
-
-2021-10-24 00:00:00
-New rules come into force allowing fully vaccinated travellers returning to England to take lateral flow tests instead of PCR tests.
-
-2021-10-31 00:00:00
-Health officials from  NHS England  are to visit around 800 schools in an attempt to accelerate the vaccination programme for 12–15-year-olds; around 600,000 people in that age group have already had the vaccine.
-
-2021-11-01 00:00:00
-Cambridgeshire and Peterborough councils become  enhanced response areas , with extra government support to tackle high COVID rates in the area. The support includes efforts to maximise vaccine rollout and is expected to be in place for five weeks.
-
-2021-11-02 00:00:00
-Diwali  celebrations return to Leicester following their cancellation in 2020 because of COVID.
-
-2021-11-04 00:00:00
-Birmingham's  German Christmas Market  returns after its cancellation in 2020. The event is smaller than in previous years, and  Birmingham City Council  warns it could change or close if COVID restrictions return.
-
-2021-11-05 00:00:00
-England's  R number  is estimated to be between 0.9 and 1.1, a fall from the same day the previous week when it was estimated to be between 1.1 and 1.3.
-
-2021-11-08 00:00:00
-Doctors are expressing concern about the number of older people who have not taken up the offer of a booster vaccine, with as many as 20  of those over 80 in the North East of England and North Cumbria yet to have the booster.
-
-2021-11-15 00:00:00
-Two men from  Rotherham , South Yorkshire, who fraudulently claimed  200,000 in emergency COVID funding by setting up bogus businesses then going into voluntary liquidation are banned from being company directors for thirteen and six years respectively.
-
-2021-11-18 00:00:00
-UK Health Security Agency  data for the period up to 14 November indicates COVID cases in England are now highest among children aged 5–9.
-
-2021-11-22 00:00:00
-People aged over 40 in England become eligible to book their COVID booster vaccination.
-
-2021-11-23 00:00:00
-COVID advice is updated for England, where people are urged to take a lateral flow test if they expect to be in a  high risk situation  that day, such as spending time in  crowded and enclosed spaces  and where  there is limited fresh air .
-
-2021-11-29 00:00:00
-Secondary school pupils in England are  strongly advised  to wear face coverings in communal areas.
-
-2021-11-30 00:00:00
-Rules regarding face coverings in England and PCR tests for travellers arriving into the UK come into force as a measure to offset the new  Omicron COVID variant  discovered in Southern Africa. Rules regarding face coverings in England and PCR tests for travellers arriving into the UK come into force. Prime Minister Johnson announces that by the end of January 2022, all adults in England over the age of 18 would be eligible to receive a vaccine booster.
-
-2021-12-04 00:00:00
-GP surgeries in England will be allowed to defer non-urgent health checks for over-75s in order to focus on providing the booster vaccine. The move is welcomed by doctors' leaders.
-
-2021-12-08 00:00:00
-Prime Minister Johnson announces that  plan B  measures would be implemented due to the threat of Omicron variant and to ensure a  close to normal  holiday season: From 10 December the mask mandate is extended to cinemas, theatres and similar indoor venues. From 13 December employees are being advised to work from home if possible. From 15 December attendees of nightclubs and large events must produce an NHS COVID Pass to enter.
-
-2021-12-30 00:00:00
-The  Welsh Government  announces that Wales will lend England four million lateral flow tests to help with the current shortage of tests being experienced by England.
-
-2022-01-01 00:00:00
-Although official events to celebrate New Year were cancelled in London, crowds gather to welcome in 2022. The fireworks display goes ahead as planned, but people are asked to stay away because of the risk of COVID. Professors  Chris Whitty  and  Jonathan Van-Tam , the respective Chief Medical Officer and Deputy Chief Medical officer for England, are both knighted in the  2022 New Year Honours . Also to be recognised with Honours are Dr  Jenny Harries , chief executive of the  UK Health Security Agency , and Dr  June Raine , chief executive of the vaccines regulator, the  Medicines and Healthcare products Regulatory Agency , who are both made dames.
-
-2022-01-02 00:00:00
-Ministers have said there is nothing in the data to suggest new COVID rules are needed for England. Health Minister  Edward Argar  urges  cool, calm heads , while  Steve Barclay  says there have been  significant behaviour change  as a result of Plan B measures. The UK government announces that face masks are to be worn in schools in England when classes resume following the Christmas holiday.
-
-2022-01-03 00:00:00
-A letter signed by Education Secretary  Nadhim Zahawi  advises schools in England to prepare for staff absences by merging classes into larger groups, and to consider what it describes as  flexible  teaching options. A major incident is declared at four Lincolnshire hospitals due to staff shortages because of COVID.  It is one of six NHS trusts where major incidents have been declared. The  Royal College of Nursing  urges the UK government to take a more cautious approach as the  Omicron variant  continues to spread. Figures produced by  NHS Digital  and obtained by the  Press Association  show that thousands of people in England required hospital treatment during the lockdowns of 2020 and 2021 after undertaking activities such as DIY,  remote work , cookery and dog walking.
-
-2022-01-05 00:00:00
-As figures suggest one in fifteen people in the UK had COVID on New Year's Eve, Prime Minister  Boris Johnson  confirms that Plan B measures in England will stay in place for a further three weeks. Rules regarding PCR tests in England are to change from the following week, meaning anyone testing positive for COVID with a lateral flow test but who have no symptoms will no longer need to follow the test with a PCR test; they will still be required to self-isolate for seven days though. At least ten hospital trusts in England have declared critical incidents due to COVID, with  Manchester University NHS Foundation Trust  being the latest to do so.
-
-2022-01-06 00:00:00
-On the eve of changes to the rules regarding PCR tests for travellers to and from England, Transport Secretary  Grant Shapps  describes them as having  outlived  their  usefulness  because Omicron is now  widespread and worldwide . Details of a review used by the UK government to reintroduce face masks in schools for England comes to light in which the evidence of their effectiveness is described as  not conclusive . A total of 356 passengers were handed  200 fines for not wearing face masks between 30 November and 21 December 2021, the Mayor of London confirms.
-
-2022-01-07 00:00:00
-From 4am people in England who are fully vaccinated are no longer required to take a pre-departure COVID test before travelling abroad, while anyone arriving in England who has had both vaccines is not required to self-isolate while waiting for the results of a PCR test. Around 200 military personnel have been deployed to help short-staffed hospitals and ambulance services in England.
-
-2022-01-11 00:00:00
-People in England without COVID symptoms no longer need a PCR test to confirm a positive lateral flow test following a change in the rules. Data shows that 6.6  of teachers in England, roughly one in 12, were absent from schools in England during the first week of the winter term.
-
-2022-01-13 00:00:00
-Health Secretary  Sajid Javid  confirms the period of self-isolation in England following a positive COVID test is to be cut to five full days from Monday 17 January. The number of people on hospital waiting lists in England reaches six million, with roughly one in 20 waiting for routine operations such as knee surgery for over a year. Almost one in three local authorities in England report they are having to ration care for elderly and disabled people because of  Omicron variant -related absences.
-
-2022-01-15 00:00:00
-The  Football Association  grants Arsenal permission to postpone a north London derby match with Tottenham scheduled for the following day because Arsenal is unable to field a team due to absences from COVID, suspensions, injuries and players being away at the  2021 Africa Cup of Nations .
-
-2022-01-17 00:00:00
-Avanti West Coast ,  c2c ,  East Midlands Railway  and  South Western Railway  all introduce emergency timetables in order to cope with staff shortages. Train operator  Avanti West Coast  reduces its services between  London Euston  and  Manchester Piccadilly  from three trains per hour to one train per hour in a bid to make the service more reliable while its staff experience a high number of absences due. The revised timetable is scheduled to be in place until 25 February with a weekly review. 19 January Prime Minister Boris Johnson announces that the requirements to present COVID passes at certain venues and events and to wear face coverings on public transport and in certain indoor locations, along with the guidance to work remotely, would cease to apply after 26 January. But  Mayor of London   Sadiq Khan  announces that masks will continue to be compulsory on  Transport for London  services, and urges the UK government to rethink its decision. Self-styled  guerrilla journalist  Debbie Hicks, who took film inside  Gloucestershire Royal Hospital  in December 2020 in an attempt to prove it was empty and that the COVID pandemic was therefore a hoax, is convicted of a public order offence following a trial at  Gloucester Crown Court .
-
-2022-01-20 00:00:00
-Several large employers, including banks, insurers and advertising companies, say they have made plans for their staff to return to the office following the UK government's decision to end  remote work  advice in England with immediate effect.
-
-2022-01-21 00:00:00
-The major incident declared in London in December by Mayor  Sadiq Khan  as Omicron cases spread in the city has been stood down.
-
-2022-01-22 00:00:00
-The  Royal College of GPs  urges the UK government to extend the deadline for NHS staff in England to be vaccinated beyond 9 February in order to prevent a shortage of staff.
-
-2022-01-24 00:00:00
-The UK and Scottish Governments announce that double vaccinated people arriving in England and Scotland will no longer be required to take COVID tests from 11 February.
-
-2022-01-25 00:00:00
-Figures show that around one million children were absent from school in England on Thursday 20 January for COVID-related reasons.
-
-2022-01-27 00:00:00
-Plan B measures are lifted in England bringing an end to the mask mandate, but a number of retailers, including Sainsbury's, Tesco, John Lewis, Waitrose and Morrisons will continue to encourage people to wear them, along with several rail operators.
-
-2022-01-28 00:00:00
-Some people in England who are at high risk from COVID say they have been left out of plans to give vulnerable patients quick access to treatments. Special walk-in vaccination sessions have been held in Lincolnshire aimed at people with a phobia of needles. A man has been fined  7,000 for repeatedly leaving his room at a quarantine hotel in April 2021 to smoke, even after his wife had tested positive for COVID.
-
-2022-01-31 00:00:00
-Health Secretary  Sajid Javid  announces the legal requirement for frontline NHS staff in England to be vaccinated by 1 April will be scrapped, saying the measure is  no longer proportionate . Restrictions for care homes in England are relaxed. From this date there is no limit on the number of visitors residents can receive, while the period of self-isolation following a positive COVID test is cut from fourteen to ten days, and the protocol following an outbreak is now required for fourteen rather than twenty-eight days. Children in England aged 5–11 and considered to be most at risk from being seriously ill with COVID become eligible for their first vaccine.
 

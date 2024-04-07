@@ -77,6 +77,8 @@ import sys
 
 #########DRIVER FUNCTION#######
 def main(file,token_file):
+    dates.clear()
+    values.clear()
     file_obj = open(file, 'r', encoding="utf-8")
     data = file_obj.read()
     lexer = lex.lex()

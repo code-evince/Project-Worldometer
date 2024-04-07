@@ -1,48 +1,109 @@
 Created by PLY version 3.11 (http://www.dabeaz.com/ply)
 
+Unused terminals:
+
+    CLOSEDIV
+    CLOSESPAN
+    CLOSESTYLE
+    GARBAGE
+    OPENDIV
+    OPENSPAN
+    OPENSTYLE
+    SEPA
+    TABLEH
+    TABLET
+    spa
+    spo
+
 Grammar
 
 Rule 0     S' -> start
-Rule 1     start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
-Rule 2     content -> CONTENT content
-Rule 3     content -> empty
-Rule 4     skiptag -> CLOSEBAR skiptag
-Rule 5     skiptag -> BEGINDATA skiptag
-Rule 6     skiptag -> CONTENT skiptag
-Rule 7     skiptag -> empty
-Rule 8     skipdata -> CLOSEBAR skipdata
-Rule 9     skipdata -> CONTENT skipdata
-Rule 10    skipdata -> BEGINCAT skiptag
-Rule 11    skipdata -> empty
-Rule 12    empty -> <empty>
+Rule 1     start -> table
+Rule 2     skiptag -> CONTENT skiptag
+Rule 3     skiptag -> OPENHREF skiptag
+Rule 4     skiptag -> CLOSEHREF skiptag
+Rule 5     skiptag -> OPENDATA skiptag
+Rule 6     skiptag -> CLOSEDATA skiptag
+Rule 7     skiptag -> OPENHEADER skiptag
+Rule 8     skiptag -> CLOSEHEADER skiptag
+Rule 9     skiptag -> THEAD_OPEN skiptag
+Rule 10    skiptag -> THEAD_CLOSE skiptag
+Rule 11    skiptag -> OPENTABLE skiptag
+Rule 12    skiptag -> CLOSETABLE skiptag
+Rule 13    skiptag -> CLOSEROW skiptag
+Rule 14    skiptag -> empty
+Rule 15    table -> BEGINTABLEA skiptag OPENROW startrow CLOSETABLE
+Rule 16    startrow -> firstrow CLOSEROW startrow
+Rule 17    startrow -> OPENROW getcell CLOSEROW startrow
+Rule 18    startrow -> empty
+Rule 19    firstrow -> OPENDATA content CLOSEDATA firstrow
+Rule 20    firstrow -> empty
+Rule 21    content -> CONTENT CONTENT CONTENT CONTENT
+Rule 22    content -> CONTENT CONTENT CONTENT
+Rule 23    content -> CONTENT CONTENT
+Rule 24    content -> CONTENT
+Rule 25    content -> empty
+Rule 26    getcell -> OPENDATA content CLOSEDATA skipdata getcell
+Rule 27    getcell -> empty
+Rule 28    skipdata -> CONTENT skipdata
+Rule 29    skipdata -> CLOSEDATA skipdata
+Rule 30    skipdata -> empty
+Rule 31    empty -> <empty>
 
 Terminals, with rules where they appear
 
-BEGIN                : 1
-BEGINCAT             : 1 10
-BEGINDATA            : 1 1 5
-CLOSEBAR             : 1 1 1 4 8
-CONTENT              : 1 1 2 6 9
+BEGINTABLEA          : 15
+CLOSEDATA            : 6 19 26 29
+CLOSEDIV             : 
+CLOSEHEADER          : 8
+CLOSEHREF            : 4
+CLOSEROW             : 13 16 17
+CLOSESPAN            : 
+CLOSESTYLE           : 
+CLOSETABLE           : 12 15
+CONTENT              : 2 21 21 21 21 22 22 22 23 23 24 28
+GARBAGE              : 
+OPENDATA             : 5 19 26
+OPENDIV              : 
+OPENHEADER           : 7
+OPENHREF             : 3
+OPENROW              : 15 17
+OPENSPAN             : 
+OPENSTYLE            : 
+OPENTABLE            : 11
+SEPA                 : 
+TABLEH               : 
+TABLET               : 
+THEAD_CLOSE          : 10
+THEAD_OPEN           : 9
 error                : 
+spa                  : 
+spo                  : 
 
 Nonterminals, with rules where they appear
 
-content              : 1 2
-empty                : 3 7 11
-skipdata             : 1 1 8 9
-skiptag              : 1 4 5 6 10
+content              : 19 26
+empty                : 14 18 20 25 27 30
+firstrow             : 16 19
+getcell              : 17 26
+skipdata             : 26 28 29
+skiptag              : 2 3 4 5 6 7 8 9 10 11 12 13 15
 start                : 0
+startrow             : 15 16 17
+table                : 1
 
 Parsing method: LALR
 
 state 0
 
     (0) S' -> . start
-    (1) start -> . BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (1) start -> . table
+    (15) table -> . BEGINTABLEA skiptag OPENROW startrow CLOSETABLE
 
-    BEGIN           shift and go to state 2
+    BEGINTABLEA     shift and go to state 3
 
     start                          shift and go to state 1
+    table                          shift and go to state 2
 
 state 1
 
@@ -52,334 +113,897 @@ state 1
 
 state 2
 
-    (1) start -> BEGIN . skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
-    (4) skiptag -> . CLOSEBAR skiptag
-    (5) skiptag -> . BEGINDATA skiptag
-    (6) skiptag -> . CONTENT skiptag
-    (7) skiptag -> . empty
-    (12) empty -> .
+    (1) start -> table .
 
-    CLOSEBAR        shift and go to state 4
-    BEGINDATA       shift and go to state 5
-    CONTENT         shift and go to state 6
-    BEGINCAT        reduce using rule 12 (empty -> .)
+    $end            reduce using rule 1 (start -> table .)
 
-    skiptag                        shift and go to state 3
-    empty                          shift and go to state 7
 
 state 3
 
-    (1) start -> BEGIN skiptag . BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (15) table -> BEGINTABLEA . skiptag OPENROW startrow CLOSETABLE
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    BEGINCAT        shift and go to state 8
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 4
+    empty                          shift and go to state 17
 
 state 4
 
-    (4) skiptag -> CLOSEBAR . skiptag
-    (4) skiptag -> . CLOSEBAR skiptag
-    (5) skiptag -> . BEGINDATA skiptag
-    (6) skiptag -> . CONTENT skiptag
-    (7) skiptag -> . empty
-    (12) empty -> .
+    (15) table -> BEGINTABLEA skiptag . OPENROW startrow CLOSETABLE
 
-  ! shift/reduce conflict for BEGINDATA resolved as shift
-    CLOSEBAR        shift and go to state 4
-    BEGINDATA       shift and go to state 5
-    CONTENT         shift and go to state 6
-    BEGINCAT        reduce using rule 12 (empty -> .)
+    OPENROW         shift and go to state 18
 
-  ! BEGINDATA       [ reduce using rule 12 (empty -> .) ]
-
-    skiptag                        shift and go to state 9
-    empty                          shift and go to state 7
 
 state 5
 
-    (5) skiptag -> BEGINDATA . skiptag
-    (4) skiptag -> . CLOSEBAR skiptag
-    (5) skiptag -> . BEGINDATA skiptag
-    (6) skiptag -> . CONTENT skiptag
-    (7) skiptag -> . empty
-    (12) empty -> .
+    (12) skiptag -> CLOSETABLE . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-  ! shift/reduce conflict for BEGINDATA resolved as shift
-    CLOSEBAR        shift and go to state 4
-    BEGINDATA       shift and go to state 5
     CONTENT         shift and go to state 6
-    BEGINCAT        reduce using rule 12 (empty -> .)
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
-  ! BEGINDATA       [ reduce using rule 12 (empty -> .) ]
-
-    skiptag                        shift and go to state 10
-    empty                          shift and go to state 7
+    skiptag                        shift and go to state 19
+    empty                          shift and go to state 17
 
 state 6
 
-    (6) skiptag -> CONTENT . skiptag
-    (4) skiptag -> . CLOSEBAR skiptag
-    (5) skiptag -> . BEGINDATA skiptag
-    (6) skiptag -> . CONTENT skiptag
-    (7) skiptag -> . empty
-    (12) empty -> .
+    (2) skiptag -> CONTENT . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-  ! shift/reduce conflict for BEGINDATA resolved as shift
-    CLOSEBAR        shift and go to state 4
-    BEGINDATA       shift and go to state 5
     CONTENT         shift and go to state 6
-    BEGINCAT        reduce using rule 12 (empty -> .)
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
-  ! BEGINDATA       [ reduce using rule 12 (empty -> .) ]
-
-    skiptag                        shift and go to state 11
-    empty                          shift and go to state 7
+    skiptag                        shift and go to state 20
+    empty                          shift and go to state 17
 
 state 7
 
-    (7) skiptag -> empty .
+    (3) skiptag -> OPENHREF . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    BEGINCAT        reduce using rule 7 (skiptag -> empty .)
-    BEGINDATA       reduce using rule 7 (skiptag -> empty .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 21
+    empty                          shift and go to state 17
 
 state 8
 
-    (1) start -> BEGIN skiptag BEGINCAT . content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
-    (2) content -> . CONTENT content
-    (3) content -> . empty
-    (12) empty -> .
+    (4) skiptag -> CLOSEHREF . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    CONTENT         shift and go to state 13
-    CLOSEBAR        reduce using rule 12 (empty -> .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
-    content                        shift and go to state 12
-    empty                          shift and go to state 14
+    skiptag                        shift and go to state 22
+    empty                          shift and go to state 17
 
 state 9
 
-    (4) skiptag -> CLOSEBAR skiptag .
+    (5) skiptag -> OPENDATA . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    BEGINCAT        reduce using rule 4 (skiptag -> CLOSEBAR skiptag .)
-    BEGINDATA       reduce using rule 4 (skiptag -> CLOSEBAR skiptag .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 23
+    empty                          shift and go to state 17
 
 state 10
 
-    (5) skiptag -> BEGINDATA skiptag .
+    (6) skiptag -> CLOSEDATA . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    BEGINCAT        reduce using rule 5 (skiptag -> BEGINDATA skiptag .)
-    BEGINDATA       reduce using rule 5 (skiptag -> BEGINDATA skiptag .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 24
+    empty                          shift and go to state 17
 
 state 11
 
-    (6) skiptag -> CONTENT skiptag .
+    (7) skiptag -> OPENHEADER . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    BEGINCAT        reduce using rule 6 (skiptag -> CONTENT skiptag .)
-    BEGINDATA       reduce using rule 6 (skiptag -> CONTENT skiptag .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 25
+    empty                          shift and go to state 17
 
 state 12
 
-    (1) start -> BEGIN skiptag BEGINCAT content . CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (8) skiptag -> CLOSEHEADER . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    CLOSEBAR        shift and go to state 15
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 26
+    empty                          shift and go to state 17
 
 state 13
 
-    (2) content -> CONTENT . content
-    (2) content -> . CONTENT content
-    (3) content -> . empty
-    (12) empty -> .
+    (9) skiptag -> THEAD_OPEN . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    CONTENT         shift and go to state 13
-    CLOSEBAR        reduce using rule 12 (empty -> .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
-    content                        shift and go to state 16
-    empty                          shift and go to state 14
+    skiptag                        shift and go to state 27
+    empty                          shift and go to state 17
 
 state 14
 
-    (3) content -> empty .
+    (10) skiptag -> THEAD_CLOSE . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    CLOSEBAR        reduce using rule 3 (content -> empty .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 28
+    empty                          shift and go to state 17
 
 state 15
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR . skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
-    (8) skipdata -> . CLOSEBAR skipdata
-    (9) skipdata -> . CONTENT skipdata
-    (10) skipdata -> . BEGINCAT skiptag
-    (11) skipdata -> . empty
-    (12) empty -> .
+    (11) skiptag -> OPENTABLE . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    CLOSEBAR        shift and go to state 18
-    CONTENT         shift and go to state 20
-    BEGINCAT        shift and go to state 17
-    BEGINDATA       reduce using rule 12 (empty -> .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
-    skipdata                       shift and go to state 19
-    empty                          shift and go to state 21
+    skiptag                        shift and go to state 29
+    empty                          shift and go to state 17
 
 state 16
 
-    (2) content -> CONTENT content .
+    (13) skiptag -> CLOSEROW . skiptag
+    (2) skiptag -> . CONTENT skiptag
+    (3) skiptag -> . OPENHREF skiptag
+    (4) skiptag -> . CLOSEHREF skiptag
+    (5) skiptag -> . OPENDATA skiptag
+    (6) skiptag -> . CLOSEDATA skiptag
+    (7) skiptag -> . OPENHEADER skiptag
+    (8) skiptag -> . CLOSEHEADER skiptag
+    (9) skiptag -> . THEAD_OPEN skiptag
+    (10) skiptag -> . THEAD_CLOSE skiptag
+    (11) skiptag -> . OPENTABLE skiptag
+    (12) skiptag -> . CLOSETABLE skiptag
+    (13) skiptag -> . CLOSEROW skiptag
+    (14) skiptag -> . empty
+    (31) empty -> .
 
-    CLOSEBAR        reduce using rule 2 (content -> CONTENT content .)
+    CONTENT         shift and go to state 6
+    OPENHREF        shift and go to state 7
+    CLOSEHREF       shift and go to state 8
+    OPENDATA        shift and go to state 9
+    CLOSEDATA       shift and go to state 10
+    OPENHEADER      shift and go to state 11
+    CLOSEHEADER     shift and go to state 12
+    THEAD_OPEN      shift and go to state 13
+    THEAD_CLOSE     shift and go to state 14
+    OPENTABLE       shift and go to state 15
+    CLOSETABLE      shift and go to state 5
+    CLOSEROW        shift and go to state 16
+    OPENROW         reduce using rule 31 (empty -> .)
 
+    skiptag                        shift and go to state 30
+    empty                          shift and go to state 17
 
 state 17
 
-    (10) skipdata -> BEGINCAT . skiptag
-    (4) skiptag -> . CLOSEBAR skiptag
-    (5) skiptag -> . BEGINDATA skiptag
-    (6) skiptag -> . CONTENT skiptag
-    (7) skiptag -> . empty
-    (12) empty -> .
+    (14) skiptag -> empty .
 
-  ! shift/reduce conflict for BEGINDATA resolved as shift
-    CLOSEBAR        shift and go to state 4
-    BEGINDATA       shift and go to state 5
-    CONTENT         shift and go to state 6
+    OPENROW         reduce using rule 14 (skiptag -> empty .)
 
-  ! BEGINDATA       [ reduce using rule 12 (empty -> .) ]
-
-    skiptag                        shift and go to state 22
-    empty                          shift and go to state 7
 
 state 18
 
-    (8) skipdata -> CLOSEBAR . skipdata
-    (8) skipdata -> . CLOSEBAR skipdata
-    (9) skipdata -> . CONTENT skipdata
-    (10) skipdata -> . BEGINCAT skiptag
-    (11) skipdata -> . empty
-    (12) empty -> .
+    (15) table -> BEGINTABLEA skiptag OPENROW . startrow CLOSETABLE
+    (16) startrow -> . firstrow CLOSEROW startrow
+    (17) startrow -> . OPENROW getcell CLOSEROW startrow
+    (18) startrow -> . empty
+    (19) firstrow -> . OPENDATA content CLOSEDATA firstrow
+    (20) firstrow -> . empty
+    (31) empty -> .
 
-    CLOSEBAR        shift and go to state 18
-    CONTENT         shift and go to state 20
-    BEGINCAT        shift and go to state 17
-    BEGINDATA       reduce using rule 12 (empty -> .)
+    OPENROW         shift and go to state 31
+    OPENDATA        shift and go to state 35
+    CLOSETABLE      reduce using rule 31 (empty -> .)
+    CLOSEROW        reduce using rule 31 (empty -> .)
 
-    skipdata                       shift and go to state 23
-    empty                          shift and go to state 21
+    startrow                       shift and go to state 32
+    firstrow                       shift and go to state 33
+    empty                          shift and go to state 34
 
 state 19
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata . BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (12) skiptag -> CLOSETABLE skiptag .
 
-    BEGINDATA       shift and go to state 24
+    OPENROW         reduce using rule 12 (skiptag -> CLOSETABLE skiptag .)
 
 
 state 20
 
-    (9) skipdata -> CONTENT . skipdata
-    (8) skipdata -> . CLOSEBAR skipdata
-    (9) skipdata -> . CONTENT skipdata
-    (10) skipdata -> . BEGINCAT skiptag
-    (11) skipdata -> . empty
-    (12) empty -> .
+    (2) skiptag -> CONTENT skiptag .
 
-    CLOSEBAR        shift and go to state 18
-    CONTENT         shift and go to state 20
-    BEGINCAT        shift and go to state 17
-    BEGINDATA       reduce using rule 12 (empty -> .)
+    OPENROW         reduce using rule 2 (skiptag -> CONTENT skiptag .)
 
-    skipdata                       shift and go to state 25
-    empty                          shift and go to state 21
 
 state 21
 
-    (11) skipdata -> empty .
+    (3) skiptag -> OPENHREF skiptag .
 
-    BEGINDATA       reduce using rule 11 (skipdata -> empty .)
+    OPENROW         reduce using rule 3 (skiptag -> OPENHREF skiptag .)
 
 
 state 22
 
-    (10) skipdata -> BEGINCAT skiptag .
+    (4) skiptag -> CLOSEHREF skiptag .
 
-    BEGINDATA       reduce using rule 10 (skipdata -> BEGINCAT skiptag .)
+    OPENROW         reduce using rule 4 (skiptag -> CLOSEHREF skiptag .)
 
 
 state 23
 
-    (8) skipdata -> CLOSEBAR skipdata .
+    (5) skiptag -> OPENDATA skiptag .
 
-    BEGINDATA       reduce using rule 8 (skipdata -> CLOSEBAR skipdata .)
+    OPENROW         reduce using rule 5 (skiptag -> OPENDATA skiptag .)
 
 
 state 24
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA . CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (6) skiptag -> CLOSEDATA skiptag .
 
-    CONTENT         shift and go to state 26
+    OPENROW         reduce using rule 6 (skiptag -> CLOSEDATA skiptag .)
 
 
 state 25
 
-    (9) skipdata -> CONTENT skipdata .
+    (7) skiptag -> OPENHEADER skiptag .
 
-    BEGINDATA       reduce using rule 9 (skipdata -> CONTENT skipdata .)
+    OPENROW         reduce using rule 7 (skiptag -> OPENHEADER skiptag .)
 
 
 state 26
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT . CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (8) skiptag -> CLOSEHEADER skiptag .
 
-    CLOSEBAR        shift and go to state 27
+    OPENROW         reduce using rule 8 (skiptag -> CLOSEHEADER skiptag .)
 
 
 state 27
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR . skipdata BEGINDATA CONTENT CLOSEBAR
-    (8) skipdata -> . CLOSEBAR skipdata
-    (9) skipdata -> . CONTENT skipdata
-    (10) skipdata -> . BEGINCAT skiptag
-    (11) skipdata -> . empty
-    (12) empty -> .
+    (9) skiptag -> THEAD_OPEN skiptag .
 
-    CLOSEBAR        shift and go to state 18
-    CONTENT         shift and go to state 20
-    BEGINCAT        shift and go to state 17
-    BEGINDATA       reduce using rule 12 (empty -> .)
+    OPENROW         reduce using rule 9 (skiptag -> THEAD_OPEN skiptag .)
 
-    skipdata                       shift and go to state 28
-    empty                          shift and go to state 21
 
 state 28
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata . BEGINDATA CONTENT CLOSEBAR
+    (10) skiptag -> THEAD_CLOSE skiptag .
 
-    BEGINDATA       shift and go to state 29
+    OPENROW         reduce using rule 10 (skiptag -> THEAD_CLOSE skiptag .)
 
 
 state 29
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA . CONTENT CLOSEBAR
+    (11) skiptag -> OPENTABLE skiptag .
 
-    CONTENT         shift and go to state 30
+    OPENROW         reduce using rule 11 (skiptag -> OPENTABLE skiptag .)
 
 
 state 30
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT . CLOSEBAR
+    (13) skiptag -> CLOSEROW skiptag .
 
-    CLOSEBAR        shift and go to state 31
+    OPENROW         reduce using rule 13 (skiptag -> CLOSEROW skiptag .)
 
 
 state 31
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR .
+    (17) startrow -> OPENROW . getcell CLOSEROW startrow
+    (26) getcell -> . OPENDATA content CLOSEDATA skipdata getcell
+    (27) getcell -> . empty
+    (31) empty -> .
 
-    $end            reduce using rule 1 (start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR .)
+    OPENDATA        shift and go to state 37
+    CLOSEROW        reduce using rule 31 (empty -> .)
 
-WARNING: 
-WARNING: Conflicts:
-WARNING: 
-WARNING: shift/reduce conflict for BEGINDATA in state 4 resolved as shift
-WARNING: shift/reduce conflict for BEGINDATA in state 5 resolved as shift
-WARNING: shift/reduce conflict for BEGINDATA in state 6 resolved as shift
-WARNING: shift/reduce conflict for BEGINDATA in state 17 resolved as shift
+    getcell                        shift and go to state 36
+    empty                          shift and go to state 38
+
+state 32
+
+    (15) table -> BEGINTABLEA skiptag OPENROW startrow . CLOSETABLE
+
+    CLOSETABLE      shift and go to state 39
+
+
+state 33
+
+    (16) startrow -> firstrow . CLOSEROW startrow
+
+    CLOSEROW        shift and go to state 40
+
+
+state 34
+
+    (18) startrow -> empty .
+    (20) firstrow -> empty .
+
+    CLOSETABLE      reduce using rule 18 (startrow -> empty .)
+    CLOSEROW        reduce using rule 20 (firstrow -> empty .)
+
+
+state 35
+
+    (19) firstrow -> OPENDATA . content CLOSEDATA firstrow
+    (21) content -> . CONTENT CONTENT CONTENT CONTENT
+    (22) content -> . CONTENT CONTENT CONTENT
+    (23) content -> . CONTENT CONTENT
+    (24) content -> . CONTENT
+    (25) content -> . empty
+    (31) empty -> .
+
+    CONTENT         shift and go to state 42
+    CLOSEDATA       reduce using rule 31 (empty -> .)
+
+    content                        shift and go to state 41
+    empty                          shift and go to state 43
+
+state 36
+
+    (17) startrow -> OPENROW getcell . CLOSEROW startrow
+
+    CLOSEROW        shift and go to state 44
+
+
+state 37
+
+    (26) getcell -> OPENDATA . content CLOSEDATA skipdata getcell
+    (21) content -> . CONTENT CONTENT CONTENT CONTENT
+    (22) content -> . CONTENT CONTENT CONTENT
+    (23) content -> . CONTENT CONTENT
+    (24) content -> . CONTENT
+    (25) content -> . empty
+    (31) empty -> .
+
+    CONTENT         shift and go to state 42
+    CLOSEDATA       reduce using rule 31 (empty -> .)
+
+    content                        shift and go to state 45
+    empty                          shift and go to state 43
+
+state 38
+
+    (27) getcell -> empty .
+
+    CLOSEROW        reduce using rule 27 (getcell -> empty .)
+
+
+state 39
+
+    (15) table -> BEGINTABLEA skiptag OPENROW startrow CLOSETABLE .
+
+    $end            reduce using rule 15 (table -> BEGINTABLEA skiptag OPENROW startrow CLOSETABLE .)
+
+
+state 40
+
+    (16) startrow -> firstrow CLOSEROW . startrow
+    (16) startrow -> . firstrow CLOSEROW startrow
+    (17) startrow -> . OPENROW getcell CLOSEROW startrow
+    (18) startrow -> . empty
+    (19) firstrow -> . OPENDATA content CLOSEDATA firstrow
+    (20) firstrow -> . empty
+    (31) empty -> .
+
+    OPENROW         shift and go to state 31
+    OPENDATA        shift and go to state 35
+    CLOSETABLE      reduce using rule 31 (empty -> .)
+    CLOSEROW        reduce using rule 31 (empty -> .)
+
+    firstrow                       shift and go to state 33
+    startrow                       shift and go to state 46
+    empty                          shift and go to state 34
+
+state 41
+
+    (19) firstrow -> OPENDATA content . CLOSEDATA firstrow
+
+    CLOSEDATA       shift and go to state 47
+
+
+state 42
+
+    (21) content -> CONTENT . CONTENT CONTENT CONTENT
+    (22) content -> CONTENT . CONTENT CONTENT
+    (23) content -> CONTENT . CONTENT
+    (24) content -> CONTENT .
+
+    CONTENT         shift and go to state 48
+    CLOSEDATA       reduce using rule 24 (content -> CONTENT .)
+
+
+state 43
+
+    (25) content -> empty .
+
+    CLOSEDATA       reduce using rule 25 (content -> empty .)
+
+
+state 44
+
+    (17) startrow -> OPENROW getcell CLOSEROW . startrow
+    (16) startrow -> . firstrow CLOSEROW startrow
+    (17) startrow -> . OPENROW getcell CLOSEROW startrow
+    (18) startrow -> . empty
+    (19) firstrow -> . OPENDATA content CLOSEDATA firstrow
+    (20) firstrow -> . empty
+    (31) empty -> .
+
+    OPENROW         shift and go to state 31
+    OPENDATA        shift and go to state 35
+    CLOSETABLE      reduce using rule 31 (empty -> .)
+    CLOSEROW        reduce using rule 31 (empty -> .)
+
+    startrow                       shift and go to state 49
+    firstrow                       shift and go to state 33
+    empty                          shift and go to state 34
+
+state 45
+
+    (26) getcell -> OPENDATA content . CLOSEDATA skipdata getcell
+
+    CLOSEDATA       shift and go to state 50
+
+
+state 46
+
+    (16) startrow -> firstrow CLOSEROW startrow .
+
+    CLOSETABLE      reduce using rule 16 (startrow -> firstrow CLOSEROW startrow .)
+
+
+state 47
+
+    (19) firstrow -> OPENDATA content CLOSEDATA . firstrow
+    (19) firstrow -> . OPENDATA content CLOSEDATA firstrow
+    (20) firstrow -> . empty
+    (31) empty -> .
+
+    OPENDATA        shift and go to state 35
+    CLOSEROW        reduce using rule 31 (empty -> .)
+
+    firstrow                       shift and go to state 51
+    empty                          shift and go to state 52
+
+state 48
+
+    (21) content -> CONTENT CONTENT . CONTENT CONTENT
+    (22) content -> CONTENT CONTENT . CONTENT
+    (23) content -> CONTENT CONTENT .
+
+    CONTENT         shift and go to state 53
+    CLOSEDATA       reduce using rule 23 (content -> CONTENT CONTENT .)
+
+
+state 49
+
+    (17) startrow -> OPENROW getcell CLOSEROW startrow .
+
+    CLOSETABLE      reduce using rule 17 (startrow -> OPENROW getcell CLOSEROW startrow .)
+
+
+state 50
+
+    (26) getcell -> OPENDATA content CLOSEDATA . skipdata getcell
+    (28) skipdata -> . CONTENT skipdata
+    (29) skipdata -> . CLOSEDATA skipdata
+    (30) skipdata -> . empty
+    (31) empty -> .
+
+    CONTENT         shift and go to state 56
+    CLOSEDATA       shift and go to state 54
+    OPENDATA        reduce using rule 31 (empty -> .)
+    CLOSEROW        reduce using rule 31 (empty -> .)
+
+    skipdata                       shift and go to state 55
+    empty                          shift and go to state 57
+
+state 51
+
+    (19) firstrow -> OPENDATA content CLOSEDATA firstrow .
+
+    CLOSEROW        reduce using rule 19 (firstrow -> OPENDATA content CLOSEDATA firstrow .)
+
+
+state 52
+
+    (20) firstrow -> empty .
+
+    CLOSEROW        reduce using rule 20 (firstrow -> empty .)
+
+
+state 53
+
+    (21) content -> CONTENT CONTENT CONTENT . CONTENT
+    (22) content -> CONTENT CONTENT CONTENT .
+
+    CONTENT         shift and go to state 58
+    CLOSEDATA       reduce using rule 22 (content -> CONTENT CONTENT CONTENT .)
+
+
+state 54
+
+    (29) skipdata -> CLOSEDATA . skipdata
+    (28) skipdata -> . CONTENT skipdata
+    (29) skipdata -> . CLOSEDATA skipdata
+    (30) skipdata -> . empty
+    (31) empty -> .
+
+    CONTENT         shift and go to state 56
+    CLOSEDATA       shift and go to state 54
+    OPENDATA        reduce using rule 31 (empty -> .)
+    CLOSEROW        reduce using rule 31 (empty -> .)
+
+    skipdata                       shift and go to state 59
+    empty                          shift and go to state 57
+
+state 55
+
+    (26) getcell -> OPENDATA content CLOSEDATA skipdata . getcell
+    (26) getcell -> . OPENDATA content CLOSEDATA skipdata getcell
+    (27) getcell -> . empty
+    (31) empty -> .
+
+    OPENDATA        shift and go to state 37
+    CLOSEROW        reduce using rule 31 (empty -> .)
+
+    getcell                        shift and go to state 60
+    empty                          shift and go to state 38
+
+state 56
+
+    (28) skipdata -> CONTENT . skipdata
+    (28) skipdata -> . CONTENT skipdata
+    (29) skipdata -> . CLOSEDATA skipdata
+    (30) skipdata -> . empty
+    (31) empty -> .
+
+    CONTENT         shift and go to state 56
+    CLOSEDATA       shift and go to state 54
+    OPENDATA        reduce using rule 31 (empty -> .)
+    CLOSEROW        reduce using rule 31 (empty -> .)
+
+    skipdata                       shift and go to state 61
+    empty                          shift and go to state 57
+
+state 57
+
+    (30) skipdata -> empty .
+
+    OPENDATA        reduce using rule 30 (skipdata -> empty .)
+    CLOSEROW        reduce using rule 30 (skipdata -> empty .)
+
+
+state 58
+
+    (21) content -> CONTENT CONTENT CONTENT CONTENT .
+
+    CLOSEDATA       reduce using rule 21 (content -> CONTENT CONTENT CONTENT CONTENT .)
+
+
+state 59
+
+    (29) skipdata -> CLOSEDATA skipdata .
+
+    OPENDATA        reduce using rule 29 (skipdata -> CLOSEDATA skipdata .)
+    CLOSEROW        reduce using rule 29 (skipdata -> CLOSEDATA skipdata .)
+
+
+state 60
+
+    (26) getcell -> OPENDATA content CLOSEDATA skipdata getcell .
+
+    CLOSEROW        reduce using rule 26 (getcell -> OPENDATA content CLOSEDATA skipdata getcell .)
+
+
+state 61
+
+    (28) skipdata -> CONTENT skipdata .
+
+    OPENDATA        reduce using rule 28 (skipdata -> CONTENT skipdata .)
+    CLOSEROW        reduce using rule 28 (skipdata -> CONTENT skipdata .)
+
