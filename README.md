@@ -60,7 +60,23 @@ To run the workflow:
 
 
 
-## Description
+## Module Description
 
-This project is a [brief description of your project]. It aims to [state the purpose or goal of your project]. Whether you're a developer looking to contribute, a user exploring its features, or a researcher leveraging its capabilities, this project provides [mention the benefits or value proposition of your project]. With an intuitive interface and powerful functionality, it's designed to [highlight the key advantages or strengths of your project]. From [specific use case or scenario] to [another potential application], this project offers [mention another advantage or benefit] to [target audience or user group].
+This module crawls the wikipedia Coivid Timeline, extract all the world wide news, responses for all time. Further it parses specific countries and extract all its news.
+
+## Folders and Files
+
+checkCountriesCache.txt, checkResponsesCache.txt, checkTimelinesCache.txt - These files contain the time when all the websites of countries, responses and timelines respectively were parsed. These websites are parsed only when it has been parsed in the last 24 hours. Thus it leads to faster execution and performance time.
+
+CovidNewsTxt - Contains text files we get after parsing Countries, Responses and Timelines webpages.
+Format of text file: 'Date::News'
+
+Webpages - Contains the webpages of countries, responses and timelines
+
+menu2.py - contains menu for Module Wikipedia
+
+utilities - This folder contains the mapper, reducer and combiner used for addressing queries related to Country, Responses and Timelines
+
+JaccardResults - Contains text files that stores news for all the countries for given time period. These files are then used for calculating Jaccard Score
+
 
