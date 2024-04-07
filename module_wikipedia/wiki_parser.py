@@ -2,7 +2,6 @@ import sys
 import os
 import ply.lex as lex
 import ply.yacc as yacc
-from tabulate import tabulate
 from urllib.request import Request, urlopen
 
 sys.stderr = open(os.devnull, 'w')

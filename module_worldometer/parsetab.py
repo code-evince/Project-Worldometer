@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'BEGIN BEGINCAT BEGINDATA CLOSEBAR CONTENTstart : BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBARcontent : CONTENT content\n                | empty skiptag : CLOSEBAR skiptag\n                | BEGINDATA skiptag\n                | CONTENT skiptag\n                | empty\n    skipdata : CLOSEBAR skipdata\n                | CONTENT skipdata\n                | BEGINCAT skiptag\n                | empty\n    empty :'
+_lr_signature = 'BEGIN BEGINCAT BEGINDATA CLOSEBAR CONTENTstart : BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBARcontent : CONTENT content\n                | empty skiptag : CLOSEBAR skiptag\n                | BEGINDATA skiptag\n                | CONTENT skiptag\n                | empty\n    skipdata : CLOSEBAR skipdata\n                | CONTENT skipdata\n                | BEGINCAT skiptag\n                | empty\n    empty :'
     
-_lr_action_items = {'BEGIN':([0,],[2,]),'$end':([1,27,],[0,-1,]),'CLOSEBAR':([2,4,5,6,8,12,13,14,15,16,17,18,20,26,],[4,4,4,4,-12,15,-12,-3,18,-2,4,18,18,27,]),'BEGINDATA':([2,4,5,6,7,9,10,11,15,17,18,19,20,21,22,23,25,],[5,5,5,5,-7,-4,-5,-6,-12,5,-12,24,-12,-11,-10,-8,-9,]),'CONTENT':([2,4,5,6,8,13,15,17,18,20,24,],[6,6,6,6,13,13,20,6,20,20,26,]),'BEGINCAT':([2,3,4,5,6,7,9,10,11,15,18,20,],[-12,8,-12,-12,-12,-7,-4,-5,-6,17,17,17,]),}
+_lr_action_items = {'BEGIN':([0,],[2,]),'$end':([1,31,],[0,-1,]),'CLOSEBAR':([2,4,5,6,8,12,13,14,15,16,17,18,20,26,27,30,],[4,4,4,4,-12,15,-12,-3,18,-2,4,18,18,27,18,31,]),'BEGINDATA':([2,4,5,6,7,9,10,11,15,17,18,19,20,21,22,23,25,27,28,],[5,5,5,5,-7,-4,-5,-6,-12,5,-12,24,-12,-11,-10,-8,-9,-12,29,]),'CONTENT':([2,4,5,6,8,13,15,17,18,20,24,27,29,],[6,6,6,6,13,13,20,6,20,20,26,20,30,]),'BEGINCAT':([2,3,4,5,6,7,9,10,11,15,18,20,27,],[-12,8,-12,-12,-12,-7,-4,-5,-6,17,17,17,17,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'start':([0,],[1,]),'skiptag':([2,4,5,6,17,],[3,9,10,11,22,]),'empty':([2,4,5,6,8,13,15,17,18,20,],[7,7,7,7,14,14,21,7,21,21,]),'content':([8,13,],[12,16,]),'skipdata':([15,18,20,],[19,23,25,]),}
+_lr_goto_items = {'start':([0,],[1,]),'skiptag':([2,4,5,6,17,],[3,9,10,11,22,]),'empty':([2,4,5,6,8,13,15,17,18,20,27,],[7,7,7,7,14,14,21,7,21,21,21,]),'content':([8,13,],[12,16,]),'skipdata':([15,18,20,27,],[19,23,25,28,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,16 +27,16 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> start","S'",1,None,None,None),
-  ('start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR','start',9,'p_start','graph_activeCases.py',48),
-  ('content -> CONTENT content','content',2,'p_content','graph_activeCases.py',52),
-  ('content -> empty','content',1,'p_content','graph_activeCases.py',53),
-  ('skiptag -> CLOSEBAR skiptag','skiptag',2,'p_skiptag','graph_activeCases.py',57),
-  ('skiptag -> BEGINDATA skiptag','skiptag',2,'p_skiptag','graph_activeCases.py',58),
-  ('skiptag -> CONTENT skiptag','skiptag',2,'p_skiptag','graph_activeCases.py',59),
-  ('skiptag -> empty','skiptag',1,'p_skiptag','graph_activeCases.py',60),
-  ('skipdata -> CLOSEBAR skipdata','skipdata',2,'p_skipdata','graph_activeCases.py',64),
-  ('skipdata -> CONTENT skipdata','skipdata',2,'p_skipdata','graph_activeCases.py',65),
-  ('skipdata -> BEGINCAT skiptag','skipdata',2,'p_skipdata','graph_activeCases.py',66),
-  ('skipdata -> empty','skipdata',1,'p_skipdata','graph_activeCases.py',67),
-  ('empty -> <empty>','empty',0,'p_empty','graph_activeCases.py',72),
+  ('start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR','start',13,'p_start','graph_recovered_newCases.py',49),
+  ('content -> CONTENT content','content',2,'p_content','graph_recovered_newCases.py',55),
+  ('content -> empty','content',1,'p_content','graph_recovered_newCases.py',56),
+  ('skiptag -> CLOSEBAR skiptag','skiptag',2,'p_skiptag','graph_recovered_newCases.py',60),
+  ('skiptag -> BEGINDATA skiptag','skiptag',2,'p_skiptag','graph_recovered_newCases.py',61),
+  ('skiptag -> CONTENT skiptag','skiptag',2,'p_skiptag','graph_recovered_newCases.py',62),
+  ('skiptag -> empty','skiptag',1,'p_skiptag','graph_recovered_newCases.py',63),
+  ('skipdata -> CLOSEBAR skipdata','skipdata',2,'p_skipdata','graph_recovered_newCases.py',67),
+  ('skipdata -> CONTENT skipdata','skipdata',2,'p_skipdata','graph_recovered_newCases.py',68),
+  ('skipdata -> BEGINCAT skiptag','skipdata',2,'p_skipdata','graph_recovered_newCases.py',69),
+  ('skipdata -> empty','skipdata',1,'p_skipdata','graph_recovered_newCases.py',70),
+  ('empty -> <empty>','empty',0,'p_empty','graph_recovered_newCases.py',75),
 ]

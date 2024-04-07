@@ -1,4 +1,4 @@
-import worldometer
+import wom_downloader as wom
 import warnings
 import time
 warnings.filterwarnings("ignore")
@@ -9,8 +9,8 @@ import getWorld
 from getData import main as getCountryData
 sys.stderr = open(os.devnull,'w')
 
-worldometers_countrylist = ('France', 'UK', 'Russia', 'Italy', 'Germany', 'Spain', 'Poland', 'Netherlands', 'Ukraine', 'Belgium', 'USA', 'Mexico', 'Canada', 'Cuba', 'Costa Rica', 'Panama', 'India', 'Turkey', 'Iran', 'Indonesia', 'Philippines', 'Japan', 'Israel', 'Malaysia', 'Thailand', 'Vietnam', 'Iraq', 'Bangladesh', 'Pakistan', 'Brazil', 'Argentina', 'Colombia', 'Peru', 'Chile', 'Bolivia', 'Uruguay', 'Paraguay', 'Venezuela', 'South Africa', 'Morocco', 'Tunisia', 'Ethiopia', 'Libya', 'Egypt', 'Kenya', 'Zambia', 'Algeria', 'Botswana', 'Nigeria', 'Zimbabwe', 'Australia', 'Fiji', 'Papua New Guinea', 'New Caledonia', 'New Zealand')
-# worldometers_countrylist = ('France', 'India', 'USA')
+worldometers_countrylist = ('France', 'UK', 'Russia', 'Italy', 'Germany', 'Spain', 'Poland', 'Netherlands', 'Ukraine', 'Belgium', 'USA', 'Mexico', 'Canada', 'Cuba', 'Costa Rica', 'Panama', 'India', 'Turkey', 'Iran', 'Indonesia', 'Philippines', 'Japan', 'Israel', 'Malaysia', 'Thailand', 'Iraq', 'Bangladesh', 'Pakistan', 'Brazil', 'Argentina', 'Colombia', 'Peru', 'Chile', 'Bolivia', 'Uruguay', 'Paraguay', 'Venezuela', 'South Africa', 'Morocco', 'Tunisia', 'Ethiopia', 'Libya', 'Egypt', 'Kenya', 'Zambia', 'Algeria', 'Botswana', 'Nigeria', 'Zimbabwe', 'Australia', 'Fiji', 'Papua New Guinea', 'New Caledonia', 'New Zealand', 'Vietnam')
+# worldometers_countrylist = ('Vietnam', 'France')
 
 def get_current_time():
     return time.time()
@@ -56,7 +56,7 @@ def main():
         print("1. World Data and queries")
         print("2. Country Data and queries")
         print("3. MAIN MENU")
-        user = int(input("Your input : "))
+        user = int(input("Enter your choice : "))
         if(user == 3):
             exit = 1
             continue
@@ -74,7 +74,7 @@ def main():
             print("10. New Recovered")
             print("11. GO BACK")
             print("12. MAIN MENU")
-            ip = int(input("\nYour input : "))
+            ip = int(input("\nEnter your choice : "))
             # country = input("Enter name of the Country : ")
             if(ip==12):
                 exit=1
@@ -98,7 +98,7 @@ def main():
             print("6.  MAIN MENU")
 
             #input
-            ip = int(input("\nYour input : "))
+            ip = int(input("\nEnter your choice : "))
             # # country = "Bolivia"
             # # start_date = "08-04-2020"
             # # end_date = "12-04-2022"
@@ -118,9 +118,12 @@ def main():
                 start_date = input("Enter the start date[dd-mm-yyyy format]: ")
                 end_date = input("Enter the end date[dd-mm-yyyy format]: ")
                 if not check_last_updated("module_worldometer/checkCountryCache.txt"):
-                    print('\nDownloading & Parsing Countries webpages...\n')
+                    print('\nDownloading Countries webpages...\n')
+                    wom.downloader()
+                    print('\nParsing Countries webpages...\n')
                     for i in worldometers_countrylist:
                         getCountryData(i)
+                        print(f'Parsed Country: {i}')
                 run_map_reduce2(start_date, end_date, ip, country)
     pass
 

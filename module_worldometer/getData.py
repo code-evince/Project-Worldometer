@@ -21,6 +21,7 @@ def write_last_updated_time(file_name):
         print(f"An error occurred while writing last updated time: {str(e)}")
 
 def main(country):
+    # print(country)
 
     # country = input("Enter the name of the country: ")
     active_cases = graph_activeCases.fetchActiveCases(country)

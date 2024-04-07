@@ -1,11 +1,11 @@
 import os
 import subprocess
-import sys
 import nltk
 nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from datetime import datetime
+
 def run_map_reduce2(start_date, end_date):
     #Extracting start date and end date in month year formate Eg.01-05-2020 -> 05_2020
     s_m_year_temp = start_date[3:]

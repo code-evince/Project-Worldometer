@@ -3,7 +3,7 @@ Created by PLY version 3.11 (http://www.dabeaz.com/ply)
 Grammar
 
 Rule 0     S' -> start
-Rule 1     start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+Rule 1     start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
 Rule 2     content -> CONTENT content
 Rule 3     content -> empty
 Rule 4     skiptag -> CLOSEBAR skiptag
@@ -20,16 +20,16 @@ Terminals, with rules where they appear
 
 BEGIN                : 1
 BEGINCAT             : 1 10
-BEGINDATA            : 1 5
-CLOSEBAR             : 1 1 4 8
-CONTENT              : 1 2 6 9
+BEGINDATA            : 1 1 5
+CLOSEBAR             : 1 1 1 4 8
+CONTENT              : 1 1 2 6 9
 error                : 
 
 Nonterminals, with rules where they appear
 
 content              : 1 2
 empty                : 3 7 11
-skipdata             : 1 8 9
+skipdata             : 1 1 8 9
 skiptag              : 1 4 5 6 10
 start                : 0
 
@@ -38,7 +38,7 @@ Parsing method: LALR
 state 0
 
     (0) S' -> . start
-    (1) start -> . BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (1) start -> . BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
 
     BEGIN           shift and go to state 2
 
@@ -52,7 +52,7 @@ state 1
 
 state 2
 
-    (1) start -> BEGIN . skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (1) start -> BEGIN . skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
     (4) skiptag -> . CLOSEBAR skiptag
     (5) skiptag -> . BEGINDATA skiptag
     (6) skiptag -> . CONTENT skiptag
@@ -69,7 +69,7 @@ state 2
 
 state 3
 
-    (1) start -> BEGIN skiptag . BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (1) start -> BEGIN skiptag . BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
 
     BEGINCAT        shift and go to state 8
 
@@ -144,7 +144,7 @@ state 7
 
 state 8
 
-    (1) start -> BEGIN skiptag BEGINCAT . content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (1) start -> BEGIN skiptag BEGINCAT . content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
     (2) content -> . CONTENT content
     (3) content -> . empty
     (12) empty -> .
@@ -181,7 +181,7 @@ state 11
 
 state 12
 
-    (1) start -> BEGIN skiptag BEGINCAT content . CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
+    (1) start -> BEGIN skiptag BEGINCAT content . CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
 
     CLOSEBAR        shift and go to state 15
 
@@ -208,7 +208,7 @@ state 14
 
 state 15
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR . skipdata BEGINDATA CONTENT CLOSEBAR
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR . skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
     (8) skipdata -> . CLOSEBAR skipdata
     (9) skipdata -> . CONTENT skipdata
     (10) skipdata -> . BEGINCAT skiptag
@@ -268,7 +268,7 @@ state 18
 
 state 19
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata . BEGINDATA CONTENT CLOSEBAR
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata . BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
 
     BEGINDATA       shift and go to state 24
 
@@ -313,7 +313,7 @@ state 23
 
 state 24
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA . CONTENT CLOSEBAR
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA . CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
 
     CONTENT         shift and go to state 26
 
@@ -327,16 +327,54 @@ state 25
 
 state 26
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT . CLOSEBAR
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT . CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR
 
     CLOSEBAR        shift and go to state 27
 
 
 state 27
 
-    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR .
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR . skipdata BEGINDATA CONTENT CLOSEBAR
+    (8) skipdata -> . CLOSEBAR skipdata
+    (9) skipdata -> . CONTENT skipdata
+    (10) skipdata -> . BEGINCAT skiptag
+    (11) skipdata -> . empty
+    (12) empty -> .
 
-    $end            reduce using rule 1 (start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR .)
+    CLOSEBAR        shift and go to state 18
+    CONTENT         shift and go to state 20
+    BEGINCAT        shift and go to state 17
+    BEGINDATA       reduce using rule 12 (empty -> .)
+
+    skipdata                       shift and go to state 28
+    empty                          shift and go to state 21
+
+state 28
+
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata . BEGINDATA CONTENT CLOSEBAR
+
+    BEGINDATA       shift and go to state 29
+
+
+state 29
+
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA . CONTENT CLOSEBAR
+
+    CONTENT         shift and go to state 30
+
+
+state 30
+
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT . CLOSEBAR
+
+    CLOSEBAR        shift and go to state 31
+
+
+state 31
+
+    (1) start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR .
+
+    $end            reduce using rule 1 (start -> BEGIN skiptag BEGINCAT content CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR skipdata BEGINDATA CONTENT CLOSEBAR .)
 
 WARNING: 
 WARNING: Conflicts:

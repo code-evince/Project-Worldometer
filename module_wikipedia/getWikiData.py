@@ -2,13 +2,13 @@ import time
 import sys
 import os
 import re
-import subprocess
 import warnings
 import wiki_parser
 import wiki_parser_2019
 import wiki_parser_2023_2024
 import wiki_parser_country
 import wiki_parser_singapore_2022
+
 warnings.filterwarnings("ignore")
 sys.stderr = open(os.devnull,'w')
 

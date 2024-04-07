@@ -1,6 +1,9 @@
 import subprocess
 
 def main():
+    requirements = "pip install nltk; pip install datetime; pip install PLY"
+    subprocess.run(requirements, shell=True)
+    
     print("################################################################")
     print("                        PROJECT COVID-19                        ")
     print("----------------------------------------------------------------")

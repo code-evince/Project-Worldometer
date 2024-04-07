@@ -2,9 +2,6 @@ import time
 import sys
 import os
 import subprocess
-import locale
-# import getWikiData
-# from getData import main as getCountryData
 import warnings
 from datetime import datetime
 import sys
