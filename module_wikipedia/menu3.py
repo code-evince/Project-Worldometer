@@ -220,7 +220,7 @@ def run_map_reduce4(start_date, end_date, country_name):
 
     cmd = cmd + ')'
     
-    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 module_wikipedia/utilities/reducer_countries.py {start_date} {end_date} > module_wikipedia/JaccardResults/{country_name}_result.txt'
+    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 module_wikipedia/utilities/reducer_countries.py {start_date} {end_date} > {country_name}_result.txt'
 
     
     subprocess.run(cmd, shell=True)
@@ -254,12 +254,12 @@ def jaccard_similarity(start_date, end_date, current_country_name):
     for country in countries:
         run_map_reduce4(start_date, end_date, country)
 
-    file1 = f'module_wikipedia/JaccardResults/{current_country_name}_result.txt'
+    file1 = f'module_wikipedia/{current_country_name}_result.txt'
 
     similarity = dict()
     for country in countries:
         if country != current_country_name: #Check for all countries except current country
-            file2 = f'module_wikipedia/JaccardResults/{country}_result.txt'
+            file2 = f'module_wikipedia/{country}_result.txt'
             similarity[country] = get_jaccard_similarity(file1, file2)
     
     print(similarity)
@@ -386,7 +386,7 @@ def main():
                     else:
 
                         print()
-                        print(f'|| News information available for {country} is from [{countries_date_range[country]}] ||')
+                        print(f'|| News information available for {country} is from {countries_date_range[country]} ||')
                         print()
 
                         start_date = input("Enter the start date[dd-mm-yyyy format]: ")
@@ -406,8 +406,6 @@ def main():
                                 print('End Date beyond scope')
                             elif start_year > end_year:
                                 print('Start Date greater than End Date')
-                            elif start_year > '2024':
-                                print('Start Date beyond scope')
                             else:
                                 run_map_reduce3(start_date, end_date, country)
 
@@ -423,21 +421,11 @@ def main():
             country = input("Enter name of the Country: ")
             ##############################################
             countries = ['Australia', 'England', 'India', 'Malaysia', 'Singapore']
-            countries_date_range = {'Australia':'January 2020 to May 2022',
-                                    'England': 'January 2020 to December 2022',
-                                    'India': 'January 2020 to May 2021', 
-                                    'Malaysia': 'January 2020 to December 2023',
-                                    'Singapore': 'January 2020 to November 2022'
-                                    }
 
             if country not in countries:
                 print('Country Name not valid!')
             
             else:
-                print()
-                print(f'|| Jaccard Sim. available for {country} is from [{countries_date_range[country]}] ||')
-                print()
-
                 start_date = input("Enter the start date[dd-mm-yyyy format]: ")
                 end_date = input("Enter the end date[dd-mm-yyyy format]: ")
                 print()
@@ -451,11 +439,12 @@ def main():
                     
                     start_year = start_date[-4:]
                     end_year = end_date[-4:]
+
                     if end_year < '2020':
                         print('End Date beyond scope')
                     elif start_year > end_year:
                         print('Start Date greater than End Date')
-                    elif start_year > '2023':
+                    elif start_date > '2023':
                         print('Jaccard Score 0')
                     else:
                         jaccard_similarity(start_date, end_date, country) 

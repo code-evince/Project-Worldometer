@@ -95,8 +95,8 @@ def run_map_reduce1(start_date, end_date):
         else:
             year = file_name[0:4]
         cat_cmd = f'cat CovidNewsTxt/timelines/{file_name} |' 
-        mapper_cmd = f'python3 mapper_timelines.py {year} | sort -nk 1 |'
-        combiner_cmd = f'python3 combiner_timelines.py  &'
+        mapper_cmd = f'python3 utilities/mapper_timelines.py {year} | sort -nk 1 |'
+        combiner_cmd = f'python3 utilities/combiner_timelines.py  &'
 
         cmd += cat_cmd + mapper_cmd + combiner_cmd
     
@@ -104,7 +104,7 @@ def run_map_reduce1(start_date, end_date):
 
     cmd = cmd + ')'
     
-    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_timelines.py {start_date} {end_date}'
+    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 utilities/reducer_timelines.py {start_date} {end_date}'
 
     print(cmd)
 
@@ -139,8 +139,8 @@ def run_map_reduce2(start_date, end_date):
     for file_name in valid_files:
         year = file_name[3:7]
         cat_cmd = f'cat CovidNewsTxt/responses/{file_name} |' 
-        mapper_cmd = f'python3 mapper_responses.py {year} | sort -nk 1 |'
-        combiner_cmd = f'python3 combiner_responses.py  ;'
+        mapper_cmd = f'python3 utilities/mapper_responses.py {year} | sort -nk 1 |'
+        combiner_cmd = f'python3 utilities/combiner_responses.py  ;'
 
         cmd += cat_cmd + mapper_cmd + combiner_cmd
     
@@ -148,7 +148,7 @@ def run_map_reduce2(start_date, end_date):
 
     cmd = cmd + ')'
     
-    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_responses.py {start_date} {end_date}'
+    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 utilities/reducer_responses.py {start_date} {end_date}'
 
     subprocess.run(cmd, shell=True)
     
@@ -178,8 +178,8 @@ def run_map_reduce3(start_date, end_date, country_name):
     for file_name in valid_files:
         year = file_name[-8:-4]
         cat_cmd = f'cat CovidNewsTxt/countries/{file_name} |' 
-        mapper_cmd = f'python3 mapper_countries.py {year} | sort -nk 1 |'
-        combiner_cmd = f'python3 combiner_countries.py  &'
+        mapper_cmd = f'python3 utilities/mapper_countries.py {year} | sort -nk 1 |'
+        combiner_cmd = f'python3 utilities/combiner_countries.py  &'
 
         cmd += cat_cmd + mapper_cmd + combiner_cmd
     
@@ -187,7 +187,7 @@ def run_map_reduce3(start_date, end_date, country_name):
 
     cmd = cmd + ')'
     
-    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_countries.py {start_date} {end_date}'
+    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 utilities/reducer_countries.py {start_date} {end_date}'
     
     subprocess.run(cmd, shell=True)
     
@@ -217,8 +217,8 @@ def run_map_reduce4(start_date, end_date, country_name):
     for file_name in valid_files:
         year = file_name[-8:-4]
         cat_cmd = f'cat CovidNewsTxt/countries/{file_name} |' 
-        mapper_cmd = f'python3 mapper_countries.py {year} | sort -nk 1 |'
-        combiner_cmd = f'python3 combiner_countries.py  &'
+        mapper_cmd = f'python3 utilities/mapper_countries.py {year} | sort -nk 1 |'
+        combiner_cmd = f'python3 utilities/combiner_countries.py  &'
 
         cmd += cat_cmd + mapper_cmd + combiner_cmd
     
@@ -226,7 +226,7 @@ def run_map_reduce4(start_date, end_date, country_name):
 
     cmd = cmd + ')'
     
-    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_countries.py {start_date} {end_date} > {country_name}_result.txt'
+    cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 utilities/reducer_countries.py {start_date} {end_date} > {country_name}_result.txt'
 
     
     subprocess.run(cmd, shell=True)
@@ -318,8 +318,7 @@ def main():
                 start_date = input("Enter the start date[dd-mm-yyyy format]: ")
                 end_date = input("Enter the end date[dd-mm-yyyy format]: ")
 
-                # run_map_reduce1(start_date, end_date)
-
+                
                 if not is_valid_date(start_date):
                     print('Invalid Start Date')
                 elif not is_valid_date(end_date):
@@ -391,7 +390,7 @@ def main():
                     print()
                     print(f'News information available for {country} is from {countries_date_range[country]}')
                     print()
-                    
+
                     start_date = input("Enter the start date[dd-mm-yyyy format]: ")
                     end_date = input("Enter the end date[dd-mm-yyyy format]: ")
 
