@@ -5,7 +5,7 @@ import nltk
 nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-
+from datetime import datetime
 def run_map_reduce2(start_date, end_date):
     #Extracting start date and end date in month year formate Eg.01-05-2020 -> 05_2020
     s_m_year_temp = start_date[3:]
@@ -14,24 +14,22 @@ def run_map_reduce2(start_date, end_date):
     e_m_year_temp = end_date[3:]
     e_m_year = e_m_year_temp.replace('-', '_')
 
-    print(s_m_year)
-    print(e_m_year)
+    s_m_year = datetime.strptime(str(s_m_year), '%m_%Y')
+    e_m_year = datetime.strptime(str(e_m_year), '%m_%Y')
 
     valid_files = [] #Stores all files between start and end date
 
     for root, dirs, files in os.walk('CovidNewsTxt/responses'):
         for file_name in files:
             m_year = file_name[:-4]
-            # print(m_year)
+            
+            m_year = datetime.strptime(str(m_year), '%m_%Y')
+
             if s_m_year <= m_year <= e_m_year:
+
                 valid_files.append(file_name)
 
     valid_files = sorted(valid_files)
-    
-    print()
-    print(valid_files)
-    print()
-
 
     cmd = '('
     for file_name in valid_files:
@@ -48,9 +46,7 @@ def run_map_reduce2(start_date, end_date):
     
     cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_responses.py {start_date} {end_date}'
 
-    print(cmd)
-    print()
-
+    print(valid_files)
     subprocess.run(cmd, shell=True)
 
 def run_map_reduce1(start_date, end_date):
@@ -64,22 +60,26 @@ def run_map_reduce1(start_date, end_date):
     print(s_m_year)
     print(e_m_year)
 
+    start_m_year = datetime.strptime(str(s_m_year), '%m_%Y')
+    end_m_year = datetime.strptime(str(e_m_year), '%m_%Y')
+
     valid_files = [] #Stores all files between start and end date
 
-    print(f'End year ----------- {e_m_year[3:]}')
     for root, dirs, files in os.walk('CovidNewsTxt/timelines'):
         for file_name in files:
             if len(file_name) == 11:
                 end_year = e_m_year[3:]
                 if end_year > '2019':
+
                     m_year = file_name[:-4]
-                    # print(m_year)
-                    if s_m_year <= m_year <= e_m_year:
+                    m_year = datetime.strptime(str(m_year), '%m_%Y')
+
+                    if start_m_year <= m_year <= end_m_year:
                         valid_files.append(file_name)
             else:
                 print(file_name)
-                start_year = s_m_year[3:]
-                end_year = e_m_year[3:]
+                start_year = str(s_m_year[3:])
+                end_year = str(e_m_year[3:])
                 current_year = file_name[0:4]
                 
                 if start_year <= current_year <= end_year:
@@ -260,6 +260,5 @@ def jaccard_similarity(start_date, end_date, current_country_name):
 
 
         
-jaccard_similarity('15-06-2020', '15-12-2021', 'Singapore')
-
+jaccard_similarity('15-02-2020', '18-11-2022', 'Malaysia')
 

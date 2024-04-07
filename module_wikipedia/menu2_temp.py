@@ -6,7 +6,7 @@ import locale
 # import getWikiData
 # from getData import main as getCountryData
 import warnings
-import datetime
+from datetime import datetime
 import sys
 import nltk
 nltk.download('punkt')
@@ -55,6 +55,12 @@ def run_map_reduce1(start_date, end_date):
     e_m_year_temp = end_date[3:]
     e_m_year = e_m_year_temp.replace('-', '_')
 
+    print(s_m_year)
+    print(e_m_year)
+
+    start_m_year = datetime.strptime(str(s_m_year), '%m_%Y')
+    end_m_year = datetime.strptime(str(e_m_year), '%m_%Y')
+
     valid_files = [] #Stores all files between start and end date
 
     for root, dirs, files in os.walk('CovidNewsTxt/timelines'):
@@ -62,17 +68,26 @@ def run_map_reduce1(start_date, end_date):
             if len(file_name) == 11:
                 end_year = e_m_year[3:]
                 if end_year > '2019':
+
                     m_year = file_name[:-4]
-                    if s_m_year <= m_year <= e_m_year:
+                    m_year = datetime.strptime(str(m_year), '%m_%Y')
+
+                    if start_m_year <= m_year <= end_m_year:
                         valid_files.append(file_name)
             else:
-                start_year = s_m_year[3:]
-                end_year = e_m_year[3:]
+                print(file_name)
+                start_year = str(s_m_year[3:])
+                end_year = str(e_m_year[3:])
                 current_year = file_name[0:4]
                 
                 if start_year <= current_year <= end_year:
                     valid_files.append(file_name)
             
+
+    print()
+    print(valid_files)
+    print()
+
     cmd = '('
     for file_name in valid_files:
         if len(file_name) == 11:
@@ -91,6 +106,8 @@ def run_map_reduce1(start_date, end_date):
     
     cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_timelines.py {start_date} {end_date}'
 
+    print(cmd)
+
     subprocess.run(cmd, shell=True)
 
 def run_map_reduce2(start_date, end_date):
@@ -101,22 +118,29 @@ def run_map_reduce2(start_date, end_date):
     e_m_year_temp = end_date[3:]
     e_m_year = e_m_year_temp.replace('-', '_')
 
+    s_m_year = datetime.strptime(str(s_m_year), '%m_%Y')
+    e_m_year = datetime.strptime(str(e_m_year), '%m_%Y')
+
     valid_files = [] #Stores all files between start and end date
 
     for root, dirs, files in os.walk('CovidNewsTxt/responses'):
         for file_name in files:
             m_year = file_name[:-4]
+            
+            m_year = datetime.strptime(str(m_year), '%m_%Y')
+
             if s_m_year <= m_year <= e_m_year:
+
                 valid_files.append(file_name)
 
     valid_files = sorted(valid_files)
-    
+
     cmd = '('
     for file_name in valid_files:
         year = file_name[3:7]
         cat_cmd = f'cat CovidNewsTxt/responses/{file_name} |' 
         mapper_cmd = f'python3 mapper_responses.py {year} | sort -nk 1 |'
-        combiner_cmd = f'python3 combiner_responses.py  &'
+        combiner_cmd = f'python3 combiner_responses.py  ;'
 
         cmd += cat_cmd + mapper_cmd + combiner_cmd
     
@@ -125,7 +149,6 @@ def run_map_reduce2(start_date, end_date):
     cmd = cmd + ')'
     
     cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_responses.py {start_date} {end_date}'
-
 
     subprocess.run(cmd, shell=True)
     
@@ -205,7 +228,6 @@ def run_map_reduce4(start_date, end_date, country_name):
     
     cmd = cmd + f' |sort -t - -k 3,3n -k 2,2n -k 1,1n |python3 reducer_countries.py {start_date} {end_date} > {country_name}_result.txt'
 
-    print(cmd)
     
     subprocess.run(cmd, shell=True)
 
@@ -232,8 +254,6 @@ def get_jaccard_similarity(file1, file2):
 def jaccard_similarity(start_date, end_date, current_country_name):
     # Read contents of files
     # List of countries
-    start_year = start_date[-4:]
-    end_year = end_date[-4:]
 
     countries = ['Australia', 'England', 'India', 'Malaysia', 'Singapore']
 
@@ -245,11 +265,10 @@ def jaccard_similarity(start_date, end_date, current_country_name):
     similarity = dict()
     for country in countries:
         if country != current_country_name: #Check for all countries except current country
-            if country == 'India' and start_year > 2021:
-                continue
-            else:
-                file2 = f'{country}_result.txt'
-                similarity[country] = get_jaccard_similarity(file1, file2)
+            file2 = f'{country}_result.txt'
+            similarity[country] = get_jaccard_similarity(file1, file2)
+    
+    print(similarity)
 
     max_value = 0
     max_key = None
@@ -263,14 +282,10 @@ def jaccard_similarity(start_date, end_date, current_country_name):
 
 def is_valid_date(date_str):
     try:
-        # Set the locale to ensure consistent interpretation of date format
-        locale.setlocale(locale.LC_TIME, 'en_IN.UTF-8')  # Set to 'en_IN.UTF-8' for English, India
-        
-        # Attempt to parse the date string
+        # Parse the date string using strptime
         datetime.strptime(date_str, '%d-%m-%Y')
         return True
-    except Exception as e:
-        # If ValueError is raised, it means the date string is not valid
+    except ValueError:
         return False
     
 def main():
@@ -302,6 +317,8 @@ def main():
 
                 start_date = input("Enter the start date[dd-mm-yyyy format]: ")
                 end_date = input("Enter the end date[dd-mm-yyyy format]: ")
+
+                # run_map_reduce1(start_date, end_date)
 
                 if not is_valid_date(start_date):
                     print('Invalid Start Date')
@@ -360,11 +377,21 @@ def main():
                 country = input("Enter name of the Country: ")
 
                 countries = ['Australia', 'England', 'India', 'Malaysia', 'Singapore']
-
+                countries_date_range = {'Australia':'January 2020 to December 2022',
+                                        'England': 'January 2020 to December 2022',
+                                        'India': 'January 2020 to December 2022', 
+                                        'Malaysia': 'January 2020 to December 2022',
+                                        'Singapore': 'January 2020 to December 2022'
+                                        }
                 if country not in countries:
                     print('Country Name not valid')
                 
                 else:
+
+                    print()
+                    print(f'News information available for {country} is from {countries_date_range[country]}')
+                    print()
+                    
                     start_date = input("Enter the start date[dd-mm-yyyy format]: ")
                     end_date = input("Enter the end date[dd-mm-yyyy format]: ")
 
@@ -407,16 +434,15 @@ def main():
                         print('Invalid End Date')
                     
                     else:
+                        
                         start_year = start_date[-4:]
                         end_year = end_date[-4:]
 
-                        # if start_year > '2022':
-                        #     print('Start Date beyond scope')
                         if end_year < '2020':
                             print('End Date beyond scope')
                         elif start_year > end_year:
                             print('Start Date greater than End Date')
-                        elif start_date > 2023:
+                        elif start_date > '2023':
                             print('Jaccard Score 0')
                         else:
                             jaccard_similarity(start_date, end_date, country) 
