@@ -1,5 +1,8 @@
 repository link = https://github.com/code-evince/Project-Worldometer
 
+```bash
+python3 main.py
+```
 module_wikipedia
 
 module_worldometer
@@ -51,7 +54,7 @@ To run the workflow:
 
 1. Run the module worldometer  with appropriate command-line arguments:
    ```bash
-   python3 menu.py 
+   python3 menu.py
 
 ![Screenshot 2024-03-29 043346](https://github.com/code-evince/Project-Worldometer/assets/38295546/7f533633-5f7f-4151-bfe1-560f929859b1)
 
